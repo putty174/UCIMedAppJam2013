@@ -28,6 +28,8 @@
 		41433EB91835DAC9007588F7 /* SummaryNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41433EB81835DAC9007588F7 /* SummaryNavigationController.m */; };
 		41433EBF1835DDEF007588F7 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41433EBE1835DDEF007588F7 /* CalendarViewController.m */; };
 		41433EC21835DE11007588F7 /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41433EC11835DE11007588F7 /* SummaryViewController.m */; };
+		41433EC51835EB2B007588F7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 41433EC31835EB2B007588F7 /* LICENSE */; };
+		41433EC61835EB2B007588F7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 41433EC41835EB2B007588F7 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		41433EBE1835DDEF007588F7 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
 		41433EC01835DE11007588F7 /* SummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryViewController.h; sourceTree = "<group>"; };
 		41433EC11835DE11007588F7 /* SummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryViewController.m; sourceTree = "<group>"; };
+		41433EC31835EB2B007588F7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		41433EC41835EB2B007588F7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,8 @@
 				41433EBA1835DAD7007588F7 /* Symptoms */,
 				41433E7718357F0B007588F7 /* AppDelegate.h */,
 				41433E7818357F0B007588F7 /* AppDelegate.m */,
+				41433EC31835EB2B007588F7 /* LICENSE */,
+				41433EC41835EB2B007588F7 /* README.md */,
 				41433E7A18357F0B007588F7 /* Main.storyboard */,
 				41433E8318357F0B007588F7 /* Images.xcassets */,
 				41433E6F18357F0B007588F7 /* Supporting Files */,
@@ -291,6 +297,8 @@
 			files = (
 				41433E8418357F0B007588F7 /* Images.xcassets in Resources */,
 				41433E7318357F0B007588F7 /* InfoPlist.strings in Resources */,
+				41433EC61835EB2B007588F7 /* README.md in Resources */,
+				41433EC51835EB2B007588F7 /* LICENSE in Resources */,
 				41433E7C18357F0B007588F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,6 +536,7 @@
 				41433E9C18357F0B007588F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		41433E9D18357F0B007588F7 /* Build configuration list for PBXNativeTarget "TopSecretProjectForTeam11Tests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +545,7 @@
 				41433E9F18357F0B007588F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
