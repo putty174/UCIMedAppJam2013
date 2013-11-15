@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  AddSymptomController.h
 //  KevinTest
 //
 //  Created by App Jam on 11/14/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface AddSymptomController : UIViewController
 
 @end

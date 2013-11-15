@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  newView.h
 //  KevinTest
 //
 //  Created by App Jam on 11/14/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface AddSymptomView : UIView
 
 @end

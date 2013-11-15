@@ -14,14 +14,20 @@
 		41433E7518357F0B007588F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41433E7418357F0B007588F7 /* main.m */; };
 		41433E7918357F0B007588F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41433E7818357F0B007588F7 /* AppDelegate.m */; };
 		41433E7C18357F0B007588F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41433E7A18357F0B007588F7 /* Main.storyboard */; };
-		41433E7F18357F0B007588F7 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41433E7E18357F0B007588F7 /* FirstViewController.m */; };
-		41433E8218357F0B007588F7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41433E8118357F0B007588F7 /* SecondViewController.m */; };
 		41433E8418357F0B007588F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41433E8318357F0B007588F7 /* Images.xcassets */; };
 		41433E8B18357F0B007588F7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41433E8A18357F0B007588F7 /* XCTest.framework */; };
 		41433E8C18357F0B007588F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41433E6818357F0B007588F7 /* Foundation.framework */; };
 		41433E8D18357F0B007588F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41433E6C18357F0B007588F7 /* UIKit.framework */; };
 		41433E9518357F0B007588F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41433E9318357F0B007588F7 /* InfoPlist.strings */; };
 		41433E9718357F0B007588F7 /* KevinTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41433E9618357F0B007588F7 /* KevinTestTests.m */; };
+		41433EAA1835A891007588F7 /* AddSymptomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41433EA91835A891007588F7 /* AddSymptomView.m */; };
+		41433EAD1835AB6D007588F7 /* SymptomsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41433EAC1835AB6D007588F7 /* SymptomsNavigationController.m */; };
+		41433EB01835AC95007588F7 /* AddSymptomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41433EAF1835AC95007588F7 /* AddSymptomController.m */; };
+		41433EB31835CD2E007588F7 /* SymptomsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41433EB21835CD2E007588F7 /* SymptomsTableView.m */; };
+		41433EB61835DAA7007588F7 /* CalendarNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41433EB51835DAA7007588F7 /* CalendarNavigationController.m */; };
+		41433EB91835DAC9007588F7 /* SummaryNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41433EB81835DAC9007588F7 /* SummaryNavigationController.m */; };
+		41433EBF1835DDEF007588F7 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41433EBE1835DDEF007588F7 /* CalendarViewController.m */; };
+		41433EC21835DE11007588F7 /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41433EC11835DE11007588F7 /* SummaryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,27 +41,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		41433E6518357F0B007588F7 /* KevinTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KevinTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41433E6518357F0B007588F7 /* TopSecretProjectForTeam11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopSecretProjectForTeam11.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41433E6818357F0B007588F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		41433E6A18357F0B007588F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		41433E6C18357F0B007588F7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		41433E7018357F0B007588F7 /* KevinTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KevinTest-Info.plist"; sourceTree = "<group>"; };
+		41433E7018357F0B007588F7 /* TopSecretProjectForTeam11-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TopSecretProjectForTeam11-Info.plist"; sourceTree = "<group>"; };
 		41433E7218357F0B007588F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		41433E7418357F0B007588F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		41433E7618357F0B007588F7 /* KevinTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KevinTest-Prefix.pch"; sourceTree = "<group>"; };
+		41433E7618357F0B007588F7 /* TopSecretProjectForTeam11-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TopSecretProjectForTeam11-Prefix.pch"; sourceTree = "<group>"; };
 		41433E7718357F0B007588F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		41433E7818357F0B007588F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		41433E7B18357F0B007588F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		41433E7D18357F0B007588F7 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		41433E7E18357F0B007588F7 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		41433E8018357F0B007588F7 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		41433E8118357F0B007588F7 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		41433E8318357F0B007588F7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		41433E8918357F0B007588F7 /* KevinTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KevinTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41433E8918357F0B007588F7 /* TopSecretProjectForTeam11Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopSecretProjectForTeam11Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41433E8A18357F0B007588F7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		41433E9218357F0B007588F7 /* KevinTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KevinTestTests-Info.plist"; sourceTree = "<group>"; };
+		41433E9218357F0B007588F7 /* TopSecretProjectForTeam11Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TopSecretProjectForTeam11Tests-Info.plist"; sourceTree = "<group>"; };
 		41433E9418357F0B007588F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		41433E9618357F0B007588F7 /* KevinTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KevinTestTests.m; sourceTree = "<group>"; };
+		41433EA81835A891007588F7 /* AddSymptomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddSymptomView.h; sourceTree = "<group>"; };
+		41433EA91835A891007588F7 /* AddSymptomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddSymptomView.m; sourceTree = "<group>"; };
+		41433EAB1835AB6D007588F7 /* SymptomsNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymptomsNavigationController.h; sourceTree = "<group>"; };
+		41433EAC1835AB6D007588F7 /* SymptomsNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomsNavigationController.m; sourceTree = "<group>"; };
+		41433EAE1835AC95007588F7 /* AddSymptomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddSymptomController.h; sourceTree = "<group>"; };
+		41433EAF1835AC95007588F7 /* AddSymptomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddSymptomController.m; sourceTree = "<group>"; };
+		41433EB11835CD2E007588F7 /* SymptomsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymptomsTableView.h; sourceTree = "<group>"; };
+		41433EB21835CD2E007588F7 /* SymptomsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomsTableView.m; sourceTree = "<group>"; };
+		41433EB41835DAA7007588F7 /* CalendarNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarNavigationController.h; sourceTree = "<group>"; };
+		41433EB51835DAA7007588F7 /* CalendarNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarNavigationController.m; sourceTree = "<group>"; };
+		41433EB71835DAC9007588F7 /* SummaryNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryNavigationController.h; sourceTree = "<group>"; };
+		41433EB81835DAC9007588F7 /* SummaryNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryNavigationController.m; sourceTree = "<group>"; };
+		41433EBD1835DDEF007588F7 /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
+		41433EBE1835DDEF007588F7 /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
+		41433EC01835DE11007588F7 /* SummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryViewController.h; sourceTree = "<group>"; };
+		41433EC11835DE11007588F7 /* SummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +103,8 @@
 		41433E5C18357F0B007588F7 = {
 			isa = PBXGroup;
 			children = (
-				41433E6E18357F0B007588F7 /* KevinTest */,
-				41433E9018357F0B007588F7 /* KevinTestTests */,
+				41433E6E18357F0B007588F7 /* TopSecretProjectForTeam11 */,
+				41433E9018357F0B007588F7 /* TopSecretProjectForTeam11Tests */,
 				41433E6718357F0B007588F7 /* Frameworks */,
 				41433E6618357F0B007588F7 /* Products */,
 			);
@@ -95,8 +113,8 @@
 		41433E6618357F0B007588F7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				41433E6518357F0B007588F7 /* KevinTest.app */,
-				41433E8918357F0B007588F7 /* KevinTestTests.xctest */,
+				41433E6518357F0B007588F7 /* TopSecretProjectForTeam11.app */,
+				41433E8918357F0B007588F7 /* TopSecretProjectForTeam11Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,57 +130,95 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		41433E6E18357F0B007588F7 /* KevinTest */ = {
+		41433E6E18357F0B007588F7 /* TopSecretProjectForTeam11 */ = {
 			isa = PBXGroup;
 			children = (
+				41433EBC1835DB43007588F7 /* Summary */,
+				41433EBB1835DB1F007588F7 /* Calendar */,
+				41433EBA1835DAD7007588F7 /* Symptoms */,
 				41433E7718357F0B007588F7 /* AppDelegate.h */,
 				41433E7818357F0B007588F7 /* AppDelegate.m */,
 				41433E7A18357F0B007588F7 /* Main.storyboard */,
-				41433E7D18357F0B007588F7 /* FirstViewController.h */,
-				41433E7E18357F0B007588F7 /* FirstViewController.m */,
-				41433E8018357F0B007588F7 /* SecondViewController.h */,
-				41433E8118357F0B007588F7 /* SecondViewController.m */,
 				41433E8318357F0B007588F7 /* Images.xcassets */,
 				41433E6F18357F0B007588F7 /* Supporting Files */,
 			);
+			name = TopSecretProjectForTeam11;
 			path = KevinTest;
 			sourceTree = "<group>";
 		};
 		41433E6F18357F0B007588F7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				41433E7018357F0B007588F7 /* KevinTest-Info.plist */,
+				41433E7018357F0B007588F7 /* TopSecretProjectForTeam11-Info.plist */,
 				41433E7118357F0B007588F7 /* InfoPlist.strings */,
 				41433E7418357F0B007588F7 /* main.m */,
-				41433E7618357F0B007588F7 /* KevinTest-Prefix.pch */,
+				41433E7618357F0B007588F7 /* TopSecretProjectForTeam11-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		41433E9018357F0B007588F7 /* KevinTestTests */ = {
+		41433E9018357F0B007588F7 /* TopSecretProjectForTeam11Tests */ = {
 			isa = PBXGroup;
 			children = (
 				41433E9618357F0B007588F7 /* KevinTestTests.m */,
 				41433E9118357F0B007588F7 /* Supporting Files */,
 			);
+			name = TopSecretProjectForTeam11Tests;
 			path = KevinTestTests;
 			sourceTree = "<group>";
 		};
 		41433E9118357F0B007588F7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				41433E9218357F0B007588F7 /* KevinTestTests-Info.plist */,
+				41433E9218357F0B007588F7 /* TopSecretProjectForTeam11Tests-Info.plist */,
 				41433E9318357F0B007588F7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		41433EBA1835DAD7007588F7 /* Symptoms */ = {
+			isa = PBXGroup;
+			children = (
+				41433EA81835A891007588F7 /* AddSymptomView.h */,
+				41433EA91835A891007588F7 /* AddSymptomView.m */,
+				41433EAB1835AB6D007588F7 /* SymptomsNavigationController.h */,
+				41433EAC1835AB6D007588F7 /* SymptomsNavigationController.m */,
+				41433EAE1835AC95007588F7 /* AddSymptomController.h */,
+				41433EAF1835AC95007588F7 /* AddSymptomController.m */,
+				41433EB11835CD2E007588F7 /* SymptomsTableView.h */,
+				41433EB21835CD2E007588F7 /* SymptomsTableView.m */,
+			);
+			name = Symptoms;
+			sourceTree = "<group>";
+		};
+		41433EBB1835DB1F007588F7 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				41433EB41835DAA7007588F7 /* CalendarNavigationController.h */,
+				41433EB51835DAA7007588F7 /* CalendarNavigationController.m */,
+				41433EBD1835DDEF007588F7 /* CalendarViewController.h */,
+				41433EBE1835DDEF007588F7 /* CalendarViewController.m */,
+			);
+			name = Calendar;
+			sourceTree = "<group>";
+		};
+		41433EBC1835DB43007588F7 /* Summary */ = {
+			isa = PBXGroup;
+			children = (
+				41433EB71835DAC9007588F7 /* SummaryNavigationController.h */,
+				41433EB81835DAC9007588F7 /* SummaryNavigationController.m */,
+				41433EC01835DE11007588F7 /* SummaryViewController.h */,
+				41433EC11835DE11007588F7 /* SummaryViewController.m */,
+			);
+			name = Summary;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		41433E6418357F0B007588F7 /* KevinTest */ = {
+		41433E6418357F0B007588F7 /* TopSecretProjectForTeam11 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41433E9A18357F0B007588F7 /* Build configuration list for PBXNativeTarget "KevinTest" */;
+			buildConfigurationList = 41433E9A18357F0B007588F7 /* Build configuration list for PBXNativeTarget "TopSecretProjectForTeam11" */;
 			buildPhases = (
 				41433E6118357F0B007588F7 /* Sources */,
 				41433E6218357F0B007588F7 /* Frameworks */,
@@ -172,14 +228,14 @@
 			);
 			dependencies = (
 			);
-			name = KevinTest;
+			name = TopSecretProjectForTeam11;
 			productName = KevinTest;
-			productReference = 41433E6518357F0B007588F7 /* KevinTest.app */;
+			productReference = 41433E6518357F0B007588F7 /* TopSecretProjectForTeam11.app */;
 			productType = "com.apple.product-type.application";
 		};
-		41433E8818357F0B007588F7 /* KevinTestTests */ = {
+		41433E8818357F0B007588F7 /* TopSecretProjectForTeam11Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41433E9D18357F0B007588F7 /* Build configuration list for PBXNativeTarget "KevinTestTests" */;
+			buildConfigurationList = 41433E9D18357F0B007588F7 /* Build configuration list for PBXNativeTarget "TopSecretProjectForTeam11Tests" */;
 			buildPhases = (
 				41433E8518357F0B007588F7 /* Sources */,
 				41433E8618357F0B007588F7 /* Frameworks */,
@@ -190,9 +246,9 @@
 			dependencies = (
 				41433E8F18357F0B007588F7 /* PBXTargetDependency */,
 			);
-			name = KevinTestTests;
+			name = TopSecretProjectForTeam11Tests;
 			productName = KevinTestTests;
-			productReference = 41433E8918357F0B007588F7 /* KevinTestTests.xctest */;
+			productReference = 41433E8918357F0B007588F7 /* TopSecretProjectForTeam11Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -209,7 +265,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 41433E6018357F0B007588F7 /* Build configuration list for PBXProject "KevinTest" */;
+			buildConfigurationList = 41433E6018357F0B007588F7 /* Build configuration list for PBXProject "TopSecretProjectForTeam11" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -222,8 +278,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				41433E6418357F0B007588F7 /* KevinTest */,
-				41433E8818357F0B007588F7 /* KevinTestTests */,
+				41433E6418357F0B007588F7 /* TopSecretProjectForTeam11 */,
+				41433E8818357F0B007588F7 /* TopSecretProjectForTeam11Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -254,10 +310,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41433E8218357F0B007588F7 /* SecondViewController.m in Sources */,
+				41433EB61835DAA7007588F7 /* CalendarNavigationController.m in Sources */,
+				41433EBF1835DDEF007588F7 /* CalendarViewController.m in Sources */,
+				41433EAD1835AB6D007588F7 /* SymptomsNavigationController.m in Sources */,
+				41433EC21835DE11007588F7 /* SummaryViewController.m in Sources */,
 				41433E7918357F0B007588F7 /* AppDelegate.m in Sources */,
-				41433E7F18357F0B007588F7 /* FirstViewController.m in Sources */,
+				41433EB91835DAC9007588F7 /* SummaryNavigationController.m in Sources */,
+				41433EAA1835A891007588F7 /* AddSymptomView.m in Sources */,
 				41433E7518357F0B007588F7 /* main.m in Sources */,
+				41433EB31835CD2E007588F7 /* SymptomsTableView.m in Sources */,
+				41433EB01835AC95007588F7 /* AddSymptomController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +336,7 @@
 /* Begin PBXTargetDependency section */
 		41433E8F18357F0B007588F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 41433E6418357F0B007588F7 /* KevinTest */;
+			target = 41433E6418357F0B007588F7 /* TopSecretProjectForTeam11 */;
 			targetProxy = 41433E8E18357F0B007588F7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -385,9 +447,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KevinTest/KevinTest-Prefix.pch";
-				INFOPLIST_FILE = "KevinTest/KevinTest-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "KevinTest/TopSecretProjectForTeam11-Prefix.pch";
+				INFOPLIST_FILE = "KevinTest/TopSecretProjectForTeam11-Info.plist";
+				PRODUCT_NAME = TopSecretProjectForTeam11;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -398,9 +460,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KevinTest/KevinTest-Prefix.pch";
-				INFOPLIST_FILE = "KevinTest/KevinTest-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "KevinTest/TopSecretProjectForTeam11-Prefix.pch";
+				INFOPLIST_FILE = "KevinTest/TopSecretProjectForTeam11-Info.plist";
+				PRODUCT_NAME = TopSecretProjectForTeam11;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -421,8 +483,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "KevinTestTests/KevinTestTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "KevinTestTests/TopSecretProjectForTeam11Tests-Info.plist";
+				PRODUCT_NAME = TopSecretProjectForTeam11Tests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -440,8 +502,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KevinTest/KevinTest-Prefix.pch";
-				INFOPLIST_FILE = "KevinTestTests/KevinTestTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "KevinTestTests/TopSecretProjectForTeam11Tests-Info.plist";
+				PRODUCT_NAME = TopSecretProjectForTeam11Tests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -450,7 +512,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		41433E6018357F0B007588F7 /* Build configuration list for PBXProject "KevinTest" */ = {
+		41433E6018357F0B007588F7 /* Build configuration list for PBXProject "TopSecretProjectForTeam11" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				41433E9818357F0B007588F7 /* Debug */,
@@ -459,7 +521,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		41433E9A18357F0B007588F7 /* Build configuration list for PBXNativeTarget "KevinTest" */ = {
+		41433E9A18357F0B007588F7 /* Build configuration list for PBXNativeTarget "TopSecretProjectForTeam11" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				41433E9B18357F0B007588F7 /* Debug */,
@@ -467,7 +529,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		41433E9D18357F0B007588F7 /* Build configuration list for PBXNativeTarget "KevinTestTests" */ = {
+		41433E9D18357F0B007588F7 /* Build configuration list for PBXNativeTarget "TopSecretProjectForTeam11Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				41433E9E18357F0B007588F7 /* Debug */,
