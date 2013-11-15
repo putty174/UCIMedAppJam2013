@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "41433E6418357F0B007588F7"
-               BuildableName = "KevinTest.app"
+               BuildableName = "TopSecretProjectForTeam11.app"
                BlueprintName = "TopSecretProjectForTeam11"
                ReferencedContainer = "container:TopSecretProjectForTeam11.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "41433E8818357F0B007588F7"
-               BuildableName = "KevinTestTests.xctest"
+               BuildableName = "TopSecretProjectForTeam11Tests.xctest"
                BlueprintName = "TopSecretProjectForTeam11Tests"
                ReferencedContainer = "container:TopSecretProjectForTeam11.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "41433E6418357F0B007588F7"
-            BuildableName = "KevinTest.app"
+            BuildableName = "TopSecretProjectForTeam11.app"
             BlueprintName = "TopSecretProjectForTeam11"
             ReferencedContainer = "container:TopSecretProjectForTeam11.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "41433E6418357F0B007588F7"
-            BuildableName = "KevinTest.app"
+            BuildableName = "TopSecretProjectForTeam11.app"
             BlueprintName = "TopSecretProjectForTeam11"
             ReferencedContainer = "container:TopSecretProjectForTeam11.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "41433E6418357F0B007588F7"
-            BuildableName = "KevinTest.app"
+            BuildableName = "TopSecretProjectForTeam11.app"
             BlueprintName = "TopSecretProjectForTeam11"
             ReferencedContainer = "container:TopSecretProjectForTeam11.xcodeproj">
          </BuildableReference>
