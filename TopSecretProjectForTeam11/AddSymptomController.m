@@ -38,12 +38,19 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)symptomsText:(UITextField *)sender {
+- (IBAction)symptomsEditText:(UITextField *)sender {
 }
+
 - (IBAction)painSlider:(UISlider *)sender {
     _symptom.pain = sender.value;
     self.painNumber.text = [[NSString alloc] initWithFormat:@"%d", (int)sender.value];
     
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    //[self.view endEditing:YES];
+    [self.symptomsEditText endEditing:YES];
 }
 
 - (IBAction)saveSymptomButton:(UIButton *)sender {
