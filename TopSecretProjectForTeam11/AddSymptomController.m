@@ -40,5 +40,6 @@
 - (IBAction)symtomsText:(UITextField *)sender {
 }
 - (IBAction)painSlider:(UISlider *)sender {
+    self.painNumber.text = [[NSString alloc] initWithFormat:@"%d", (int)sender.value];
 }
 @end
