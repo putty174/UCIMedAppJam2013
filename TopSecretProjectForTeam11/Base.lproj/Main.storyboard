@@ -73,6 +73,7 @@
                     <navigationItem key="navigationItem" id="vaU-UW-7Pg"/>
                     <connections>
                         <outlet property="painNumber" destination="pti-i0-zQv" id="GlX-9g-Itq"/>
+                        <outlet property="painValue" destination="TR2-Fl-zTJ" id="StZ-5I-jRj"/>
                         <outlet property="symptomsEditText" destination="ESI-Oy-drH" id="xpF-K0-cwJ"/>
                     </connections>
                 </viewController>

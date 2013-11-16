@@ -12,6 +12,7 @@
 @interface AddSymptomController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *painNumber;
+@property (weak, nonatomic) IBOutlet UISlider *painValue;
 
 @property SymptomObject *symptom;
 @property (strong, nonatomic) IBOutlet UITextField *symptomsEditText;

@@ -42,13 +42,13 @@
 }
 
 - (IBAction)painSlider:(UISlider *)sender {
-    _symptom.pain = sender.value;
     self.painNumber.text = [[NSString alloc] initWithFormat:@"%d", (int)sender.value];
     
 }
 
 - (IBAction)symptomsSave:(UIButton *)sender {
-    
+    _symptom.symptom = self.symptomsEditText.text;
+    _symptom.pain = roundf(self.painValue.value);
 }
 
 - (IBAction)symptomsReset:(UIButton *)sender {
