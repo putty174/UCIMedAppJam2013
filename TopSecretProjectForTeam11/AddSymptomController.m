@@ -49,6 +49,7 @@
 - (IBAction)symptomsSave:(UIButton *)sender {
     _symptom.symptom = self.symptomsEditText.text;
     _symptom.pain = roundf(self.painValue.value);
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction)symptomsReset:(UIButton *)sender {
