@@ -52,7 +52,9 @@
 }
 
 - (IBAction)symptomsReset:(UIButton *)sender {
-    
+    [[self symptomsEditText] setText: @""];
+    [[self painValue] setValue:0];
+    [[self painNumber] setText: @"0"];
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
