@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SymptomObject.h"
 
 @interface AddSymptomController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *painNumber;
@@ -14,5 +15,7 @@
 - (IBAction)painSlider:(UISlider *)sender;
 - (IBAction)saveSymptomButton:(UIButton *)sender;
 - (IBAction)resetSymptomButton:(UIButton *)sender;
+
+
 
 @end
