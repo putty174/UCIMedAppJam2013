@@ -33,6 +33,13 @@
     [[self symptomsEditText] setText: @""];
     [[self painValue] setValue:0];
     [[self painNumber] setText: @"0"];
+    
+    _symptomEventStore = [[EKEventStore alloc] init];
+    _symptom.event = [EKEvent eventWithEventStore:_symptomEventStore];
+    _symptom.event.title = _symptom.symptom;
+    _symptom.event.startDate = [[NSDate alloc] init];
+    _symptom.event.endDate = [[NSDate alloc] init];
+    [_symptom.event setCalendar:[_symptomEventStore defaultCalendarForNewEvents]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,6 +59,19 @@
 - (IBAction)symptomsSave:(UIButton *)sender {
     _symptom.symptom = self.symptomsEditText.text;
     _symptom.pain = roundf(self.painValue.value);
+    
+    _symptom.event.title = _symptom.symptom;
+    _symptom.event.startDate = [NSDate date];
+    _symptom.event.endDate = [NSDate date];
+    
+    NSError *symptomErr;
+    [_symptomEventStore saveEvent:_symptom.event span:EKSpanThisEvent error:&symptomErr];
+    if([symptomErr code] == 0)
+    {
+        UIAlertView *symptomAlert = [[UIAlertView alloc] initWithTitle:@"Symptom Saved" message:@"Your symptom has been saved." delegate:Nil cancelButtonTitle:@"Done" otherButtonTitles:nil, nil];
+        [symptomAlert show];
+    }
+    
     [self.navigationController popViewControllerAnimated:YES];
 }
 

@@ -17,6 +17,8 @@
 @property SymptomObject *symptom;
 @property (strong, nonatomic) IBOutlet UITextField *symptomsEditText;
 
+@property EKEventStore *symptomEventStore;
+
 
 - (IBAction)painSlider:(UISlider *)sender;
 - (IBAction)symptomsSave:(UIButton *)sender;
