@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DD94D73183745940086C009 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD94D72183745940086C009 /* EventKit.framework */; };
 		41433E6918357F0B007588F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41433E6818357F0B007588F7 /* Foundation.framework */; };
 		41433E6B18357F0B007588F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41433E6A18357F0B007588F7 /* CoreGraphics.framework */; };
 		41433E6D18357F0B007588F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41433E6C18357F0B007588F7 /* UIKit.framework */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DD94D72183745940086C009 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		410F2C831837282D00AF7D2D /* TopSecretProjectForTeam11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopSecretProjectForTeam11.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		410F2C841837282D00AF7D2D /* TopSecretProjectForTeam11Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopSecretProjectForTeam11Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41433E6818357F0B007588F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -80,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DD94D73183745940086C009 /* EventKit.framework in Frameworks */,
 				41433E6B18357F0B007588F7 /* CoreGraphics.framework in Frameworks */,
 				41433E6D18357F0B007588F7 /* UIKit.framework in Frameworks */,
 				41433E6918357F0B007588F7 /* Foundation.framework in Frameworks */,
@@ -99,6 +102,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DD94D6E1837432C0086C009 /* SymptomObject */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SymptomObject;
+			sourceTree = "<group>";
+		};
 		41433E5C18357F0B007588F7 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +123,7 @@
 		41433E6718357F0B007588F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0DD94D72183745940086C009 /* EventKit.framework */,
 				41433E6818357F0B007588F7 /* Foundation.framework */,
 				41433E6A18357F0B007588F7 /* CoreGraphics.framework */,
 				41433E6C18357F0B007588F7 /* UIKit.framework */,
@@ -124,6 +135,7 @@
 		41433E6E18357F0B007588F7 /* TopSecretProjectForTeam11 */ = {
 			isa = PBXGroup;
 			children = (
+				0DD94D6E1837432C0086C009 /* SymptomObject */,
 				41433EBC1835DB43007588F7 /* Summary */,
 				41433EBB1835DB1F007588F7 /* Calendar */,
 				41433EBA1835DAD7007588F7 /* Symptoms */,
