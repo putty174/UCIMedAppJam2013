@@ -30,6 +30,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.symptom = [[SymptomObject alloc] init];
+    [[self symptomsEditText] setText: @""];
+    [[self painValue] setValue:0];
+    [[self painNumber] setText: @"0"];
 }
 
 - (void)didReceiveMemoryWarning
