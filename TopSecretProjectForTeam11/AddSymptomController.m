@@ -37,9 +37,15 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)symtomsText:(UITextField *)sender {
+- (IBAction)symptomsText:(UITextField *)sender {
 }
 - (IBAction)painSlider:(UISlider *)sender {
     self.painNumber.text = [[NSString alloc] initWithFormat:@"%d", (int)sender.value];
+}
+
+- (IBAction)saveSymptomButton:(UIButton *)sender {
+}
+
+- (IBAction)resetSymptomButton:(UIButton *)sender {
 }
 @end

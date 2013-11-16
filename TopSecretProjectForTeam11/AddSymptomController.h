@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface AddSymptomController : UIViewController
-- (IBAction)symtomsText:(UITextField *)sender;
 @property (weak, nonatomic) IBOutlet UILabel *painNumber;
+- (IBAction)symptomsText:(UITextField *)sender;
 - (IBAction)painSlider:(UISlider *)sender;
+- (IBAction)saveSymptomButton:(UIButton *)sender;
+- (IBAction)resetSymptomButton:(UIButton *)sender;
 
 @end
