@@ -34,6 +34,35 @@
     [[self painValue] setValue:0];
     [[self painNumber] setText: @"0"];
     
+    //set up permissions for Calender use
+    float version = [[UIDevice currentDevice].systemVersion floatValue];
+    if(version >= 6.0)
+    {
+        UIAlertView *accessAlert = [[UIAlertView alloc] initWithTitle:@"Symptom Saved" message:@"Your symptom has been saved." delegate:Nil cancelButtonTitle:@"Done" otherButtonTitles:nil, nil];
+        
+        EKAuthorizationStatus status = [EKEventStore authorizationStatusForEntityType:EKEntityTypeEvent];
+        if(status == EKAuthorizationStatusNotDetermined)
+        {
+            [_symptomEventStore requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error)
+             {
+                 if(!granted)
+                 {
+                     [accessAlert show];
+                 }
+                 else
+                 {
+                     [accessAlert show];
+                 }
+             }];
+            
+        }
+        else
+        {
+            [accessAlert show];
+        }
+    }
+    
+    //set up event property for SymptomObject
     _symptomEventStore = [[EKEventStore alloc] init];
     _symptom.event = [EKEvent eventWithEventStore:_symptomEventStore];
     _symptom.event.title = _symptom.symptom;
