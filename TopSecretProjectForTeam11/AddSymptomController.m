@@ -20,7 +20,7 @@
     if (self) {
         // Custom initialization
         
-        self.view.backgroundColor = [UIColor yellowColor];
+        self.view.backgroundColor = [UIColor whiteColor];
     }
     return self;
 }
@@ -37,4 +37,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)symtomsText:(UITextField *)sender {
+}
+- (IBAction)painSlider:(UISlider *)sender {
+}
 @end

@@ -59,8 +59,9 @@
 {
     int pos = indexPath.row;
     if (pos == 0) {
-        AddSymptomController *created = [[AddSymptomController alloc] init];
-        [[self navigationController] pushViewController:created animated:YES];
+        //AddSymptomController *created = [[AddSymptomController alloc] init];
+        //[[self navigationController] pushViewController:created animated:YES];
+        [self performSegueWithIdentifier: @"AddSymptomsSegue" sender: self];
     }
 }
 

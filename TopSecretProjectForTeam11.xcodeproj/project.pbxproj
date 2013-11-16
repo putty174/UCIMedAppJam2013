@@ -19,7 +19,6 @@
 		41433E8C18357F0B007588F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41433E6818357F0B007588F7 /* Foundation.framework */; };
 		41433E8D18357F0B007588F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41433E6C18357F0B007588F7 /* UIKit.framework */; };
 		41433E9518357F0B007588F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41433E9318357F0B007588F7 /* InfoPlist.strings */; };
-		41433EAA1835A891007588F7 /* AddSymptomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41433EA91835A891007588F7 /* AddSymptomView.m */; };
 		41433EAD1835AB6D007588F7 /* SymptomsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41433EAC1835AB6D007588F7 /* SymptomsNavigationController.m */; };
 		41433EB01835AC95007588F7 /* AddSymptomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41433EAF1835AC95007588F7 /* AddSymptomController.m */; };
 		41433EB31835CD2E007588F7 /* SymptomsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41433EB21835CD2E007588F7 /* SymptomsTableView.m */; };
@@ -42,7 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		41433E6518357F0B007588F7 /* TopSecretProjectForTeam11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = TopSecretProjectForTeam11.app; path = "/Users/appjam/Desktop/Team11Project/build/Debug-iphoneos/TopSecretProjectForTeam11.app"; sourceTree = "<absolute>"; };
+		410F2C831837282D00AF7D2D /* TopSecretProjectForTeam11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopSecretProjectForTeam11.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		410F2C841837282D00AF7D2D /* TopSecretProjectForTeam11Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopSecretProjectForTeam11Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41433E6818357F0B007588F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		41433E6A18357F0B007588F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		41433E6C18357F0B007588F7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -54,12 +54,9 @@
 		41433E7818357F0B007588F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		41433E7B18357F0B007588F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41433E8318357F0B007588F7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		41433E8918357F0B007588F7 /* TopSecretProjectForTeam11Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TopSecretProjectForTeam11Tests.xctest; path = "/Users/appjam/Desktop/Team11Project/build/Debug-iphoneos/TopSecretProjectForTeam11Tests.xctest"; sourceTree = "<absolute>"; };
 		41433E8A18357F0B007588F7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		41433E9218357F0B007588F7 /* TopSecretProjectForTeam11Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TopSecretProjectForTeam11Tests-Info.plist"; sourceTree = "<group>"; };
 		41433E9418357F0B007588F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		41433EA81835A891007588F7 /* AddSymptomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddSymptomView.h; sourceTree = "<group>"; };
-		41433EA91835A891007588F7 /* AddSymptomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddSymptomView.m; sourceTree = "<group>"; };
 		41433EAB1835AB6D007588F7 /* SymptomsNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymptomsNavigationController.h; sourceTree = "<group>"; };
 		41433EAC1835AB6D007588F7 /* SymptomsNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomsNavigationController.m; sourceTree = "<group>"; };
 		41433EAE1835AC95007588F7 /* AddSymptomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddSymptomController.h; sourceTree = "<group>"; };
@@ -108,6 +105,8 @@
 				41433E6E18357F0B007588F7 /* TopSecretProjectForTeam11 */,
 				41433E9018357F0B007588F7 /* TopSecretProjectForTeam11Tests */,
 				41433E6718357F0B007588F7 /* Frameworks */,
+				410F2C831837282D00AF7D2D /* TopSecretProjectForTeam11.app */,
+				410F2C841837282D00AF7D2D /* TopSecretProjectForTeam11Tests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,8 +169,6 @@
 		41433EBA1835DAD7007588F7 /* Symptoms */ = {
 			isa = PBXGroup;
 			children = (
-				41433EA81835A891007588F7 /* AddSymptomView.h */,
-				41433EA91835A891007588F7 /* AddSymptomView.m */,
 				41433EAB1835AB6D007588F7 /* SymptomsNavigationController.h */,
 				41433EAC1835AB6D007588F7 /* SymptomsNavigationController.m */,
 				41433EAE1835AC95007588F7 /* AddSymptomController.h */,
@@ -221,7 +218,7 @@
 			);
 			name = TopSecretProjectForTeam11;
 			productName = TopSecretProjectForTeam11;
-			productReference = 41433E6518357F0B007588F7 /* TopSecretProjectForTeam11.app */;
+			productReference = 410F2C831837282D00AF7D2D /* TopSecretProjectForTeam11.app */;
 			productType = "com.apple.product-type.application";
 		};
 		41433E8818357F0B007588F7 /* TopSecretProjectForTeam11Tests */ = {
@@ -239,7 +236,7 @@
 			);
 			name = TopSecretProjectForTeam11Tests;
 			productName = TopSecretProjectForTeam11Tests;
-			productReference = 41433E8918357F0B007588F7 /* TopSecretProjectForTeam11Tests.xctest */;
+			productReference = 410F2C841837282D00AF7D2D /* TopSecretProjectForTeam11Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -309,7 +306,6 @@
 				41433EC21835DE11007588F7 /* SummaryViewController.m in Sources */,
 				41433E7918357F0B007588F7 /* AppDelegate.m in Sources */,
 				41433EB91835DAC9007588F7 /* SummaryNavigationController.m in Sources */,
-				41433EAA1835A891007588F7 /* AddSymptomView.m in Sources */,
 				41433E7518357F0B007588F7 /* main.m in Sources */,
 				41433EB31835CD2E007588F7 /* SymptomsTableView.m in Sources */,
 				41433EB01835AC95007588F7 /* AddSymptomController.m in Sources */,
