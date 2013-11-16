@@ -18,8 +18,8 @@
 
 
 - (IBAction)painSlider:(UISlider *)sender;
-- (IBAction)saveSymptomButton:(UIButton *)sender;
-- (IBAction)resetSymptomButton:(UIButton *)sender;
+- (IBAction)symptomsSave:(UIButton *)sender;
+- (IBAction)symptomsReset:(UIButton *)sender;
 
 
 

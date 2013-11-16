@@ -47,15 +47,17 @@
     
 }
 
+- (IBAction)symptomsSave:(UIButton *)sender {
+    
+}
+
+- (IBAction)symptomsReset:(UIButton *)sender {
+    
+}
+
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     //[self.view endEditing:YES];
     [self.symptomsEditText endEditing:YES];
-}
-
-- (IBAction)saveSymptomButton:(UIButton *)sender {
-}
-
-- (IBAction)resetSymptomButton:(UIButton *)sender {
 }
 @end
