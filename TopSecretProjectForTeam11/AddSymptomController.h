@@ -7,10 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SymptomObject.h"
 
 @interface AddSymptomController : UIViewController
-- (IBAction)symtomsText:(UITextField *)sender;
+
 @property (weak, nonatomic) IBOutlet UILabel *painNumber;
+
+@property SymptomObject *symptom;
+
+- (IBAction)symtomsText:(UITextField *)sender;
 - (IBAction)painSlider:(UISlider *)sender;
+
+
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "AddSymptomController.h"
+#import "SymptomObject.h"
 
 @interface AddSymptomController ()
 
@@ -19,7 +20,6 @@
     self = [super init];
     if (self) {
         // Custom initialization
-        
         self.view.backgroundColor = [UIColor whiteColor];
     }
     return self;
@@ -29,6 +29,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.symptom = [[SymptomObject alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,8 +39,11 @@
 }
 
 - (IBAction)symtomsText:(UITextField *)sender {
+    _symptom.symptom = [[NSString alloc]initWithString:sender.text];
 }
 - (IBAction)painSlider:(UISlider *)sender {
+    _symptom.pain = sender.value;
     self.painNumber.text = [[NSString alloc] initWithFormat:@"%d", (int)sender.value];
+    
 }
 @end

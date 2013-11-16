@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0DD94D73183745940086C009 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD94D72183745940086C009 /* EventKit.framework */; };
+		0DD94D76183746050086C009 /* SymptomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD94D75183746050086C009 /* SymptomObject.m */; };
 		41433E6918357F0B007588F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41433E6818357F0B007588F7 /* Foundation.framework */; };
 		41433E6B18357F0B007588F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41433E6A18357F0B007588F7 /* CoreGraphics.framework */; };
 		41433E6D18357F0B007588F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41433E6C18357F0B007588F7 /* UIKit.framework */; };
@@ -43,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		0DD94D72183745940086C009 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		0DD94D74183746050086C009 /* SymptomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymptomObject.h; sourceTree = "<group>"; };
+		0DD94D75183746050086C009 /* SymptomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomObject.m; sourceTree = "<group>"; };
 		410F2C831837282D00AF7D2D /* TopSecretProjectForTeam11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopSecretProjectForTeam11.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		410F2C841837282D00AF7D2D /* TopSecretProjectForTeam11Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopSecretProjectForTeam11Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41433E6818357F0B007588F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -105,6 +108,8 @@
 		0DD94D6E1837432C0086C009 /* SymptomObject */ = {
 			isa = PBXGroup;
 			children = (
+				0DD94D74183746050086C009 /* SymptomObject.h */,
+				0DD94D75183746050086C009 /* SymptomObject.m */,
 			);
 			name = SymptomObject;
 			sourceTree = "<group>";
@@ -312,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DD94D76183746050086C009 /* SymptomObject.m in Sources */,
 				41433EB61835DAA7007588F7 /* CalendarNavigationController.m in Sources */,
 				41433EBF1835DDEF007588F7 /* CalendarViewController.m in Sources */,
 				41433EAD1835AB6D007588F7 /* SymptomsNavigationController.m in Sources */,
