@@ -57,7 +57,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    int pos = indexPath.row;
+    NSInteger pos = indexPath.row;
     if (pos == 0) {
         //AddSymptomController *created = [[AddSymptomController alloc] init];
         //[[self navigationController] pushViewController:created animated:YES];
