@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DC2EB5218398C9300C83558 /* SymptomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC2EB5118398C9300C83558 /* SymptomViewController.m */; };
 		0DD94D73183745940086C009 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD94D72183745940086C009 /* EventKit.framework */; };
 		0DD94D76183746050086C009 /* SymptomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD94D75183746050086C009 /* SymptomObject.m */; };
 		1B631F531838B99F00B637A6 /* AddOccurrencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B631F521838B99F00B637A6 /* AddOccurrencesController.m */; };
@@ -37,8 +38,6 @@
 		5DE630CA1837F8E80005795D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630C91837F8E80005795D /* HomeViewController.m */; };
 		5DE630CD1837F9460005795D /* HomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630CC1837F9460005795D /* HomeNavigationController.m */; };
 		5DE630D11838236C0005795D /* SymptomsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630D01838236C0005795D /* SymptomsTableViewController.m */; };
-		5DE630D4183839FD0005795D /* CalendarCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630D3183839FD0005795D /* CalendarCollectionViewController.m */; };
-		5DE630D7183841F20005795D /* dayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630D6183841F20005795D /* dayCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DC2EB5018398C9300C83558 /* SymptomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymptomViewController.h; sourceTree = "<group>"; };
+		0DC2EB5118398C9300C83558 /* SymptomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomViewController.m; sourceTree = "<group>"; };
 		0DD94D72183745940086C009 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		0DD94D74183746050086C009 /* SymptomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymptomObject.h; sourceTree = "<group>"; };
 		0DD94D75183746050086C009 /* SymptomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomObject.m; sourceTree = "<group>"; };
@@ -101,10 +102,6 @@
 		5DE630CC1837F9460005795D /* HomeNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeNavigationController.m; sourceTree = "<group>"; };
 		5DE630CF1838236C0005795D /* SymptomsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymptomsTableViewController.h; sourceTree = "<group>"; };
 		5DE630D01838236C0005795D /* SymptomsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomsTableViewController.m; sourceTree = "<group>"; };
-		5DE630D2183839FD0005795D /* CalendarCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarCollectionViewController.h; sourceTree = "<group>"; };
-		5DE630D3183839FD0005795D /* CalendarCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarCollectionViewController.m; sourceTree = "<group>"; };
-		5DE630D5183841F20005795D /* dayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dayCell.h; sourceTree = "<group>"; };
-		5DE630D6183841F20005795D /* dayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dayCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +134,8 @@
 			children = (
 				0DD94D74183746050086C009 /* SymptomObject.h */,
 				0DD94D75183746050086C009 /* SymptomObject.m */,
+				0DC2EB5018398C9300C83558 /* SymptomViewController.h */,
+				0DC2EB5118398C9300C83558 /* SymptomViewController.m */,
 			);
 			name = SymptomObject;
 			sourceTree = "<group>";
@@ -167,6 +166,7 @@
 		41433E6E18357F0B007588F7 /* TopSecretProjectForTeam11 */ = {
 			isa = PBXGroup;
 			children = (
+				5DE630D81838D0FD0005795D /* calLib */,
 				0DD94D6E1837432C0086C009 /* SymptomObject */,
 				41433EBC1835DB43007588F7 /* Summary */,
 				41433EBB1835DB1F007588F7 /* Calendar */,
@@ -236,10 +236,6 @@
 				41433EB51835DAA7007588F7 /* CalendarNavigationController.m */,
 				41433EBD1835DDEF007588F7 /* CalendarViewController.h */,
 				41433EBE1835DDEF007588F7 /* CalendarViewController.m */,
-				5DE630D2183839FD0005795D /* CalendarCollectionViewController.h */,
-				5DE630D3183839FD0005795D /* CalendarCollectionViewController.m */,
-				5DE630D5183841F20005795D /* dayCell.h */,
-				5DE630D6183841F20005795D /* dayCell.m */,
 			);
 			name = Calendar;
 			sourceTree = "<group>";
@@ -277,6 +273,13 @@
 				5DE630D01838236C0005795D /* SymptomsTableViewController.m */,
 			);
 			name = Home;
+			sourceTree = "<group>";
+		};
+		5DE630D81838D0FD0005795D /* calLib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = calLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,19 +386,18 @@
 				5DE630CD1837F9460005795D /* HomeNavigationController.m in Sources */,
 				1B631F561838BB1A00B637A6 /* AddTreatmentController.m in Sources */,
 				41433EBF1835DDEF007588F7 /* CalendarViewController.m in Sources */,
-				5DE630D7183841F20005795D /* dayCell.m in Sources */,
 				41433EAD1835AB6D007588F7 /* SymptomsNavigationController.m in Sources */,
 				41433EC21835DE11007588F7 /* SummaryViewController.m in Sources */,
 				418B64E518387A70005A668D /* TreatmentDelegate.m in Sources */,
 				1B631F531838B99F00B637A6 /* AddOccurrencesController.m in Sources */,
 				418B64E418387A70005A668D /* OccurrencesDelegate.m in Sources */,
 				41433E7918357F0B007588F7 /* AppDelegate.m in Sources */,
+				0DC2EB5218398C9300C83558 /* SymptomViewController.m in Sources */,
 				5DE630CA1837F8E80005795D /* HomeViewController.m in Sources */,
 				5DE630D11838236C0005795D /* SymptomsTableViewController.m in Sources */,
 				41433EB91835DAC9007588F7 /* SummaryNavigationController.m in Sources */,
 				41433E7518357F0B007588F7 /* main.m in Sources */,
 				41433EB31835CD2E007588F7 /* SymptomsTableView.m in Sources */,
-				5DE630D4183839FD0005795D /* CalendarCollectionViewController.m in Sources */,
 				41433EB01835AC95007588F7 /* AddSymptomController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

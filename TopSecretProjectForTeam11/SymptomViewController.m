@@ -1,18 +1,20 @@
 //
-//  CalendarCollectionViewController.m
+//  SymptomViewController.m
 //  TopSecretProjectForTeam11
 //
-//  Created by Mary Nguyen on 11/16/13.
+//  Created by Max on 11/17/13.
 //  Copyright (c) 2013 App Jam. All rights reserved.
 //
 
-#import "CalendarCollectionViewController.h"
+#import "SymptomViewController.h"
 
-@interface CalendarCollectionViewController ()
+@interface SymptomViewController ()
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIView *ContentView;
 
 @end
 
-@implementation CalendarCollectionViewController
+@implementation SymptomViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,13 +29,19 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.header = [[UICollectionViewCell alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    [self.scrollView layoutIfNeeded];
+    self.scrollView.contentSize = self.ContentView.bounds.size;
 }
 
 @end
