@@ -28,6 +28,8 @@
     [self.symptomsTable setAllowsSelection:YES];
     [self.view addSubview:self.symptomsTable];
     
+    _symptomEventStore = [[EKEventStore alloc] init];
+    
     self.array = [[NSMutableArray alloc] initWithObjects:@"Add New", @"recent symptom", nil];
 }
 
@@ -61,7 +63,41 @@
     if (pos == 0) {
         //AddSymptomController *created = [[AddSymptomController alloc] init];
         //[[self navigationController] pushViewController:created animated:YES];
-        [self performSegueWithIdentifier: @"AddSymptomsSegue" sender: self];
+        //set up permissions for Calender use
+        float version = [[UIDevice currentDevice].systemVersion floatValue];
+        if(version >= 6.0)
+        {
+            UIAlertView *accessAlert = [[UIAlertView alloc] initWithTitle:@"Permission Denied" message:@"Permission has not been granted to track new symptoms." delegate:Nil cancelButtonTitle:@"Done" otherButtonTitles:nil, nil];
+            
+            EKAuthorizationStatus status = [EKEventStore authorizationStatusForEntityType:EKEntityTypeEvent];
+            if(status == EKAuthorizationStatusNotDetermined)
+            {
+                [_symptomEventStore requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error)
+                 {
+                     if(!granted)
+                     {
+                         [accessAlert show];
+                     }
+                     else
+                     {
+                         [self performSegueWithIdentifier: @"AddSymptomsSegue" sender: self];
+                     }
+                 }];
+                if (status == EKAuthorizationStatusAuthorized)
+                {
+                    [self performSegueWithIdentifier: @"AddSymptomsSegue" sender: self];
+                }
+                
+            }
+            else if (status == EKAuthorizationStatusDenied)
+            {
+                [accessAlert show];
+            }
+            if (status == EKAuthorizationStatusAuthorized)
+            {
+                [self performSegueWithIdentifier: @"AddSymptomsSegue" sender: self];
+            }
+        }
     }
 }
 

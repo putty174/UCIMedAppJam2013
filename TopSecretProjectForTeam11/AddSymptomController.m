@@ -41,30 +41,6 @@
     _symptom.event.startDate = [[NSDate alloc] init];
     _symptom.event.endDate = [[NSDate alloc] init];
     [_symptom.event setCalendar:[_symptomEventStore defaultCalendarForNewEvents]];
-    
-    //set up permissions for Calender use
-    float version = [[UIDevice currentDevice].systemVersion floatValue];
-    if(version >= 6.0)
-    {
-        UIAlertView *accessAlert = [[UIAlertView alloc] initWithTitle:@"Permission Denied" message:@"No permission to make Events." delegate:Nil cancelButtonTitle:@"Done" otherButtonTitles:nil, nil];
-        
-        EKAuthorizationStatus status = [EKEventStore authorizationStatusForEntityType:EKEntityTypeEvent];
-        if(status == EKAuthorizationStatusNotDetermined)
-        {
-            [_symptomEventStore requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error)
-             {
-                 if(!granted)
-                 {
-                     [accessAlert show];
-                 }
-             }];
-            
-        }
-        else
-        {
-            [accessAlert show];
-        }
-    }
 }
 
 - (void)didReceiveMemoryWarning
