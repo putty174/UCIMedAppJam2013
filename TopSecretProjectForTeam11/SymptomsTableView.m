@@ -30,7 +30,7 @@
     
     _symptomEventStore = [[EKEventStore alloc] init];
     
-    self.array = [[NSMutableArray alloc] initWithObjects:@"Add New", @"recent symptom", nil];
+    self.array = [[NSMutableArray alloc] initWithObjects:@"Add New", @"Recent Symptoms", nil];
 }
 
 - (void)didReceiveMemoryWarning

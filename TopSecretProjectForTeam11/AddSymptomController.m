@@ -70,7 +70,7 @@
         
         _symptom.event.title = _symptom.symptom;
         _symptom.event.startDate = [NSDate date];
-        _symptom.event.endDate = [NSDate date];
+        _symptom.event.endDate = [_symptom.event.startDate dateByAddingTimeInterval:1];
         
         NSError *symptomErr;
         [_symptomEventStore saveEvent:_symptom.event span:EKSpanThisEvent error:&symptomErr];
