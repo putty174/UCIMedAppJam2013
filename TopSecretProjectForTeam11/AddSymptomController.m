@@ -60,7 +60,7 @@
 - (IBAction)symptomsSave:(UIButton *)sender {
     if ([self.symptomsEditText.text isEqualToString:@""])
     {
-        UIAlertView *blankSymptom = [[UIAlertView alloc] initWithTitle:@"Blank Symptom" message:@"Please enter a symptom name" delegate:nil cancelButtonTitle:@"Back" otherButtonTitles:nil, nil];
+        UIAlertView *blankSymptom = [[UIAlertView alloc] initWithTitle:@"No Symptom" message:@"Please enter a symptom name" delegate:nil cancelButtonTitle:@"Back" otherButtonTitles:nil, nil];
         [blankSymptom show];
     }
     else
@@ -85,7 +85,7 @@
 }
 
 - (IBAction)symptomsReset:(UIButton *)sender {
-    if (![self.symptomsEditText.text isEqualToString:@""])
+    if (![self.symptomsEditText.text isEqualToString:@""] || self.painValue.value != 0)
     {
         UIAlertView *filledFields = [[UIAlertView alloc] initWithTitle:@"Reset Fields" message:@"Are you sure?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Reset", nil];
         [filledFields show];
