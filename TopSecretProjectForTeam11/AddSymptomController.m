@@ -140,6 +140,9 @@
 {
     //[self.view endEditing:YES];
     [self.symptomsEditText endEditing:YES];
+    if (self.currentSegment == 2) {
+        [((UITextField*)self.currentDynamicView) endEditing:YES];
+    }
 }
 
 /* Swap between views to add attributes for the symptom being added*/
