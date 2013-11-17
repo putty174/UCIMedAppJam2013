@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0DD94D73183745940086C009 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD94D72183745940086C009 /* EventKit.framework */; };
 		0DD94D76183746050086C009 /* SymptomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD94D75183746050086C009 /* SymptomObject.m */; };
+		410F2C881838462500AF7D2D /* OccurrencesDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 410F2C871838462500AF7D2D /* OccurrencesDelegate.m */; };
+		410F2C8B183846C100AF7D2D /* TreatmentDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 410F2C8A183846C100AF7D2D /* TreatmentDelegate.m */; };
 		41433E6918357F0B007588F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41433E6818357F0B007588F7 /* Foundation.framework */; };
 		41433E6B18357F0B007588F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41433E6A18357F0B007588F7 /* CoreGraphics.framework */; };
 		41433E6D18357F0B007588F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41433E6C18357F0B007588F7 /* UIKit.framework */; };
@@ -48,6 +50,10 @@
 		0DD94D75183746050086C009 /* SymptomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomObject.m; sourceTree = "<group>"; };
 		410F2C831837282D00AF7D2D /* TopSecretProjectForTeam11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopSecretProjectForTeam11.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		410F2C841837282D00AF7D2D /* TopSecretProjectForTeam11Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopSecretProjectForTeam11Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		410F2C861838462500AF7D2D /* OccurrencesDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OccurrencesDelegate.h; sourceTree = "<group>"; };
+		410F2C871838462500AF7D2D /* OccurrencesDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OccurrencesDelegate.m; sourceTree = "<group>"; };
+		410F2C89183846C100AF7D2D /* TreatmentDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreatmentDelegate.h; sourceTree = "<group>"; };
+		410F2C8A183846C100AF7D2D /* TreatmentDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreatmentDelegate.m; sourceTree = "<group>"; };
 		41433E6818357F0B007588F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		41433E6A18357F0B007588F7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		41433E6C18357F0B007588F7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -112,6 +118,17 @@
 				0DD94D75183746050086C009 /* SymptomObject.m */,
 			);
 			name = SymptomObject;
+			sourceTree = "<group>";
+		};
+		410F2C85183845AD00AF7D2D /* TableViewClasses */ = {
+			isa = PBXGroup;
+			children = (
+				410F2C861838462500AF7D2D /* OccurrencesDelegate.h */,
+				410F2C871838462500AF7D2D /* OccurrencesDelegate.m */,
+				410F2C89183846C100AF7D2D /* TreatmentDelegate.h */,
+				410F2C8A183846C100AF7D2D /* TreatmentDelegate.m */,
+			);
+			name = TableViewClasses;
 			sourceTree = "<group>";
 		};
 		41433E5C18357F0B007588F7 = {
@@ -186,6 +203,7 @@
 		41433EBA1835DAD7007588F7 /* Symptoms */ = {
 			isa = PBXGroup;
 			children = (
+				410F2C85183845AD00AF7D2D /* TableViewClasses */,
 				41433EAB1835AB6D007588F7 /* SymptomsNavigationController.h */,
 				41433EAC1835AB6D007588F7 /* SymptomsNavigationController.m */,
 				41433EAE1835AC95007588F7 /* AddSymptomController.h */,
@@ -323,10 +341,12 @@
 				41433EAD1835AB6D007588F7 /* SymptomsNavigationController.m in Sources */,
 				41433EC21835DE11007588F7 /* SummaryViewController.m in Sources */,
 				41433E7918357F0B007588F7 /* AppDelegate.m in Sources */,
+				410F2C881838462500AF7D2D /* OccurrencesDelegate.m in Sources */,
 				41433EB91835DAC9007588F7 /* SummaryNavigationController.m in Sources */,
 				41433E7518357F0B007588F7 /* main.m in Sources */,
 				41433EB31835CD2E007588F7 /* SymptomsTableView.m in Sources */,
 				41433EB01835AC95007588F7 /* AddSymptomController.m in Sources */,
+				410F2C8B183846C100AF7D2D /* TreatmentDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

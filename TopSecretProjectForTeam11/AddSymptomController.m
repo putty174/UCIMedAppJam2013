@@ -8,6 +8,8 @@
 
 #import "AddSymptomController.h"
 #import "SymptomObject.h"
+#import "OccurrencesDelegate.h"
+#import "TreatmentDelegate.h"
 
 @interface AddSymptomController ()
 
@@ -29,10 +31,18 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.occurrencesDelegate = [[OccurencesDelegate alloc] init];
+    self.treatmentDelegate = [[TreatmentDelegate alloc] init];
     self.symptom = [[SymptomObject alloc] init];
+    self.notes = [[NSString alloc] initWithFormat:@""];
     [[self symptomsEditText] setText: @""];
+    self.symptomsEditText.placeholder = @"Enter a symptom name.";
     [[self painValue] setValue:0];
     [[self painNumber] setText: @"0"];
+    self.currentDynamicView = [self createOccurrancesView];
+    self.currentSegment = 0;
+    self.dynamicView.backgroundColor = [UIColor whiteColor];
+    [self.dynamicView addSubview:self.currentDynamicView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,6 +52,35 @@
 }
 
 - (IBAction)symptomsEditText:(UITextField *)sender {
+}
+
+/* Swap between views to add attributes for the symptom being added*/
+- (IBAction)segmentedControl:(UISegmentedControl *)sender {
+    
+    if (self.currentSegment == 2) { //if changing segments from the text view, save the text in it
+        self.notes = [((UITextField*)self.currentDynamicView) text];
+    }
+    self.currentSegment = sender.selectedSegmentIndex;
+    switch (self.currentSegment) {
+        case 0:
+            [self.currentDynamicView removeFromSuperview];
+            self.currentDynamicView = [self createOccurrancesView];
+            [self.dynamicView addSubview:self.currentDynamicView];
+            break;
+            
+        case 1:
+            [self.currentDynamicView removeFromSuperview];
+            self.currentDynamicView = [self createTreatmentView];
+            [self.dynamicView addSubview:self.currentDynamicView];
+            break;
+        case 2:
+            [self.currentDynamicView removeFromSuperview];
+            self.currentDynamicView = [self createNotesField];
+            [self.dynamicView addSubview:self.currentDynamicView];
+        default:
+            break;
+    }
+    
 }
 
 - (IBAction)painSlider:(UISlider *)sender {
@@ -65,5 +104,25 @@
 {
     //[self.view endEditing:YES];
     [self.symptomsEditText endEditing:YES];
+}
+
+- (UITableView*) createOccurrancesView {
+    UITableView *view = [[UITableView alloc] initWithFrame:self.dynamicView.bounds];
+    view.delegate = self.occurrencesDelegate;
+    view.dataSource = self.occurrencesDelegate;
+    return view;
+}
+
+- (UITableView*) createTreatmentView {
+    UITableView *view = [[UITableView alloc] initWithFrame:self.dynamicView.bounds];
+    view.delegate = self.treatmentDelegate;
+    view.dataSource = self.treatmentDelegate;
+    return view;
+}
+
+- (UITextField*) createNotesField {
+    UITextField *notesField = [[UITextField alloc] initWithFrame:self.dynamicView.bounds];
+    notesField.text = self.notes;
+    return notesField;
 }
 @end
