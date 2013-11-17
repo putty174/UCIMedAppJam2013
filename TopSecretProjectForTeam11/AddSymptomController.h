@@ -28,6 +28,8 @@
 @property (strong, nonatomic) TreatmentDelegate *treatmentDelegate; //used for the treatment table view
 @property (strong, nonatomic) NSString *notes; //used for holding text displayed in the notes view
 
+@property EKEventStore *symptomEventStore;
+
 
 - (IBAction)segmentedControl:(UISegmentedControl *)sender; //used for changing views in the dynamic view portion of the screen
 - (IBAction)painSlider:(UISlider *)sender;
