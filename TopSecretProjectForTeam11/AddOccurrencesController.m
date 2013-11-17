@@ -1,18 +1,18 @@
 //
-//  CalendarCollectionViewController.m
+//  AddOccurrencesController.m
 //  TopSecretProjectForTeam11
 //
-//  Created by Mary Nguyen on 11/16/13.
+//  Created by Brandon Lim on 11/17/13.
 //  Copyright (c) 2013 App Jam. All rights reserved.
 //
 
-#import "CalendarCollectionViewController.h"
+#import "AddOccurrencesController.h"
 
-@interface CalendarCollectionViewController ()
+@interface AddOccurrencesController ()
 
 @end
 
-@implementation CalendarCollectionViewController
+@implementation AddOccurrencesController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,7 +27,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.header = [[UICollectionViewCell alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,4 +35,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)resetButton:(UIButton *)sender {
+}
+
+- (IBAction)saveButton:(UIButton *)sender {
+}
 @end

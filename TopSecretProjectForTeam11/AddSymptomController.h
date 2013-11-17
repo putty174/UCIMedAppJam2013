@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 #import "SymptomObject.h"
 #import "OccurrencesDelegate.h"
 #import "TreatmentDelegate.h"

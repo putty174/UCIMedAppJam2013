@@ -7,7 +7,6 @@
 //
 
 #import "AddSymptomController.h"
-#import "SymptomObject.h"
 
 @interface AddSymptomController ()
 
@@ -191,6 +190,10 @@
 - (UITextView*) createNotesField {
     UITextView *notesField = [[UITextView alloc] initWithFrame:self.dynamicView.bounds];
     notesField.text = self.notes;
+    [notesField.layer setBorderColor:[[[UIColor blackColor] colorWithAlphaComponent:0.5] CGColor]];
+    [notesField.layer setBorderWidth:4.0];
+    //notesField.layer.cornerRadius = 5;
+    notesField.clipsToBounds = YES;
     return notesField;
 }
 @end
