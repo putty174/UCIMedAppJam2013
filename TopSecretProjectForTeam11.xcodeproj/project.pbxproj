@@ -33,6 +33,8 @@
 		5DE630CA1837F8E80005795D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630C91837F8E80005795D /* HomeViewController.m */; };
 		5DE630CD1837F9460005795D /* HomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630CC1837F9460005795D /* HomeNavigationController.m */; };
 		5DE630D11838236C0005795D /* SymptomsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630D01838236C0005795D /* SymptomsTableViewController.m */; };
+		5DE630D4183839FD0005795D /* CalendarCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630D3183839FD0005795D /* CalendarCollectionViewController.m */; };
+		5DE630D7183841F20005795D /* dayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630D6183841F20005795D /* dayCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,10 @@
 		5DE630CC1837F9460005795D /* HomeNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeNavigationController.m; sourceTree = "<group>"; };
 		5DE630CF1838236C0005795D /* SymptomsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymptomsTableViewController.h; sourceTree = "<group>"; };
 		5DE630D01838236C0005795D /* SymptomsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomsTableViewController.m; sourceTree = "<group>"; };
+		5DE630D2183839FD0005795D /* CalendarCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarCollectionViewController.h; sourceTree = "<group>"; };
+		5DE630D3183839FD0005795D /* CalendarCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarCollectionViewController.m; sourceTree = "<group>"; };
+		5DE630D5183841F20005795D /* dayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dayCell.h; sourceTree = "<group>"; };
+		5DE630D6183841F20005795D /* dayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dayCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +219,10 @@
 				41433EB51835DAA7007588F7 /* CalendarNavigationController.m */,
 				41433EBD1835DDEF007588F7 /* CalendarViewController.h */,
 				41433EBE1835DDEF007588F7 /* CalendarViewController.m */,
+				5DE630D2183839FD0005795D /* CalendarCollectionViewController.h */,
+				5DE630D3183839FD0005795D /* CalendarCollectionViewController.m */,
+				5DE630D5183841F20005795D /* dayCell.h */,
+				5DE630D6183841F20005795D /* dayCell.m */,
 			);
 			name = Calendar;
 			sourceTree = "<group>";
@@ -344,6 +354,7 @@
 				41433EB61835DAA7007588F7 /* CalendarNavigationController.m in Sources */,
 				5DE630CD1837F9460005795D /* HomeNavigationController.m in Sources */,
 				41433EBF1835DDEF007588F7 /* CalendarViewController.m in Sources */,
+				5DE630D7183841F20005795D /* dayCell.m in Sources */,
 				41433EAD1835AB6D007588F7 /* SymptomsNavigationController.m in Sources */,
 				41433EC21835DE11007588F7 /* SummaryViewController.m in Sources */,
 				41433E7918357F0B007588F7 /* AppDelegate.m in Sources */,
@@ -352,6 +363,7 @@
 				41433EB91835DAC9007588F7 /* SummaryNavigationController.m in Sources */,
 				41433E7518357F0B007588F7 /* main.m in Sources */,
 				41433EB31835CD2E007588F7 /* SymptomsTableView.m in Sources */,
+				5DE630D4183839FD0005795D /* CalendarCollectionViewController.m in Sources */,
 				41433EB01835AC95007588F7 /* AddSymptomController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
