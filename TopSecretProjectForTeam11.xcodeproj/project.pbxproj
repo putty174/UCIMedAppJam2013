@@ -30,6 +30,8 @@
 		41433EC21835DE11007588F7 /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41433EC11835DE11007588F7 /* SummaryViewController.m */; };
 		41433EC51835EB2B007588F7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 41433EC31835EB2B007588F7 /* LICENSE */; };
 		41433EC61835EB2B007588F7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 41433EC41835EB2B007588F7 /* README.md */; };
+		418B64E418387A70005A668D /* OccurrencesDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B64E118387A70005A668D /* OccurrencesDelegate.m */; };
+		418B64E518387A70005A668D /* TreatmentDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B64E318387A70005A668D /* TreatmentDelegate.m */; };
 		5DE630CA1837F8E80005795D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630C91837F8E80005795D /* HomeViewController.m */; };
 		5DE630CD1837F9460005795D /* HomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630CC1837F9460005795D /* HomeNavigationController.m */; };
 		5DE630D11838236C0005795D /* SymptomsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630D01838236C0005795D /* SymptomsTableViewController.m */; };
@@ -83,6 +85,10 @@
 		41433EC11835DE11007588F7 /* SummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryViewController.m; sourceTree = "<group>"; };
 		41433EC31835EB2B007588F7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		41433EC41835EB2B007588F7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		418B64E018387A70005A668D /* OccurrencesDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OccurrencesDelegate.h; sourceTree = "<group>"; };
+		418B64E118387A70005A668D /* OccurrencesDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OccurrencesDelegate.m; sourceTree = "<group>"; };
+		418B64E218387A70005A668D /* TreatmentDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreatmentDelegate.h; sourceTree = "<group>"; };
+		418B64E318387A70005A668D /* TreatmentDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreatmentDelegate.m; sourceTree = "<group>"; };
 		5DE630C81837F8E80005795D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = Home/HomeViewController.h; sourceTree = "<group>"; };
 		5DE630C91837F8E80005795D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = Home/HomeViewController.m; sourceTree = "<group>"; };
 		5DE630CB1837F9460005795D /* HomeNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeNavigationController.h; sourceTree = "<group>"; };
@@ -202,6 +208,7 @@
 		41433EBA1835DAD7007588F7 /* Symptoms */ = {
 			isa = PBXGroup;
 			children = (
+				418B64DF18387A42005A668D /* CustomTableViewClasses */,
 				41433EAB1835AB6D007588F7 /* SymptomsNavigationController.h */,
 				41433EAC1835AB6D007588F7 /* SymptomsNavigationController.m */,
 				41433EAE1835AC95007588F7 /* AddSymptomController.h */,
@@ -236,6 +243,17 @@
 				41433EC11835DE11007588F7 /* SummaryViewController.m */,
 			);
 			name = Summary;
+			sourceTree = "<group>";
+		};
+		418B64DF18387A42005A668D /* CustomTableViewClasses */ = {
+			isa = PBXGroup;
+			children = (
+				418B64E018387A70005A668D /* OccurrencesDelegate.h */,
+				418B64E118387A70005A668D /* OccurrencesDelegate.m */,
+				418B64E218387A70005A668D /* TreatmentDelegate.h */,
+				418B64E318387A70005A668D /* TreatmentDelegate.m */,
+			);
+			name = CustomTableViewClasses;
 			sourceTree = "<group>";
 		};
 		5DE630CE1837F9640005795D /* Home */ = {
@@ -357,6 +375,8 @@
 				5DE630D7183841F20005795D /* dayCell.m in Sources */,
 				41433EAD1835AB6D007588F7 /* SymptomsNavigationController.m in Sources */,
 				41433EC21835DE11007588F7 /* SummaryViewController.m in Sources */,
+				418B64E518387A70005A668D /* TreatmentDelegate.m in Sources */,
+				418B64E418387A70005A668D /* OccurrencesDelegate.m in Sources */,
 				41433E7918357F0B007588F7 /* AppDelegate.m in Sources */,
 				5DE630CA1837F8E80005795D /* HomeViewController.m in Sources */,
 				5DE630D11838236C0005795D /* SymptomsTableViewController.m in Sources */,
