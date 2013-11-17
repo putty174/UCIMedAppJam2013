@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DC2EB5218398C9300C83558 /* SymptomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC2EB5118398C9300C83558 /* SymptomViewController.m */; };
 		0DD94D73183745940086C009 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD94D72183745940086C009 /* EventKit.framework */; };
 		0DD94D76183746050086C009 /* SymptomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD94D75183746050086C009 /* SymptomObject.m */; };
 		41433E6918357F0B007588F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41433E6818357F0B007588F7 /* Foundation.framework */; };
@@ -50,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DC2EB5018398C9300C83558 /* SymptomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymptomViewController.h; sourceTree = "<group>"; };
+		0DC2EB5118398C9300C83558 /* SymptomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomViewController.m; sourceTree = "<group>"; };
 		0DD94D72183745940086C009 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		0DD94D74183746050086C009 /* SymptomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymptomObject.h; sourceTree = "<group>"; };
 		0DD94D75183746050086C009 /* SymptomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomObject.m; sourceTree = "<group>"; };
@@ -131,6 +134,8 @@
 			children = (
 				0DD94D74183746050086C009 /* SymptomObject.h */,
 				0DD94D75183746050086C009 /* SymptomObject.m */,
+				0DC2EB5018398C9300C83558 /* SymptomViewController.h */,
+				0DC2EB5118398C9300C83558 /* SymptomViewController.m */,
 			);
 			name = SymptomObject;
 			sourceTree = "<group>";
@@ -378,6 +383,7 @@
 				418B64E518387A70005A668D /* TreatmentDelegate.m in Sources */,
 				418B64E418387A70005A668D /* OccurrencesDelegate.m in Sources */,
 				41433E7918357F0B007588F7 /* AppDelegate.m in Sources */,
+				0DC2EB5218398C9300C83558 /* SymptomViewController.m in Sources */,
 				5DE630CA1837F8E80005795D /* HomeViewController.m in Sources */,
 				5DE630D11838236C0005795D /* SymptomsTableViewController.m in Sources */,
 				41433EB91835DAC9007588F7 /* SummaryNavigationController.m in Sources */,
