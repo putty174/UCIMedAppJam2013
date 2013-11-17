@@ -11,13 +11,13 @@
 #import "OccurrencesDelegate.h"
 #import "TreatmentDelegate.h"
 
-@interface AddSymptomController : UIViewController
+@interface AddSymptomController : UIViewController <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *painNumber;
 @property (weak, nonatomic) IBOutlet UISlider *painValue;
 
 @property SymptomObject *symptom;
-@property (strong, nonatomic) IBOutlet UITextField *symptomsEditText;
+@property (strong, nonatomic) IBOutlet UITextField *symptomsEditText; //where to put symptom name
 
 @property EKEventStore *symptomEventStore;
 
