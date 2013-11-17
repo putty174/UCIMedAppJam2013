@@ -92,6 +92,7 @@
                         <outlet property="dynamicView" destination="AEk-RK-0Pw" id="t9x-Pv-Zo3"/>
                         <outlet property="painNumber" destination="pti-i0-zQv" id="GlX-9g-Itq"/>
                         <outlet property="painValue" destination="TR2-Fl-zTJ" id="StZ-5I-jRj"/>
+                        <outlet property="segmentValue" destination="pqa-WQ-XYt" id="GsK-uD-pL7"/>
                         <outlet property="symptomsEditText" destination="ESI-Oy-drH" id="xpF-K0-cwJ"/>
                     </connections>
                 </viewController>

@@ -100,21 +100,23 @@
             [symptomAlert show];
         }
         
+        if (self.currentSegment == 2) { //if changing segments from the text view, save the text in it
+            self.notes = [((UITextField*)self.currentDynamicView) text];
+        }
+        _symptom.notes = self.notes;
+        
         [self.navigationController popViewControllerAnimated:YES];
     }
 }
 
 - (IBAction)symptomsReset:(UIButton *)sender {
-    if (![self.symptomsEditText.text isEqualToString:@""] || self.painValue.value != 0)
+    if (self.currentSegment == 2) { //if changing segments from the text view, save the text in it
+        self.notes = [((UITextField*)self.currentDynamicView) text];
+    }
+    if (![self.symptomsEditText.text isEqualToString:@""] || self.painValue.value != 0 || ![self.notes isEqualToString:@""])
     {
         UIAlertView *filledFields = [[UIAlertView alloc] initWithTitle:@"Reset Fields" message:@"Are you sure?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Reset", nil];
         [filledFields show];
-    }
-    else
-    {
-        [[self symptomsEditText] setText: @""];
-        [[self painValue] setValue:0];
-        [[self painNumber] setText: @"0"];
     }
 }
 
@@ -125,6 +127,12 @@
         [[self symptomsEditText] setText: @""];
         [[self painValue] setValue:0];
         [[self painNumber] setText: @"0"];
+        _notes = @"";
+        self.currentSegment = 0;
+        self.segmentValue.selectedSegmentIndex = 0;
+        [self.currentDynamicView removeFromSuperview];
+        self.currentDynamicView = [self createOccurrancesView];
+        [self.dynamicView addSubview:self.currentDynamicView];
     }
 }
 

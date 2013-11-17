@@ -16,4 +16,6 @@
 @property int pain;
 @property EKEvent *event;
 
+@property NSString *notes;
+
 @end
