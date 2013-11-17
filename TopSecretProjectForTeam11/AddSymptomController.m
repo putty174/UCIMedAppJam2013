@@ -185,8 +185,8 @@
     return view;
 }
 
-- (UITextField*) createNotesField {
-    UITextField *notesField = [[UITextField alloc] initWithFrame:self.dynamicView.bounds];
+- (UITextView*) createNotesField {
+    UITextView *notesField = [[UITextView alloc] initWithFrame:self.dynamicView.bounds];
     notesField.text = self.notes;
     return notesField;
 }
