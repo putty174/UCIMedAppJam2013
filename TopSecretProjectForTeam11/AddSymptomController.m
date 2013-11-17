@@ -101,7 +101,7 @@
         }
         
         if (self.currentSegment == 2) { //if changing segments from the text view, save the text in it
-            self.notes = [((UITextField*)self.currentDynamicView) text];
+            self.notes = [((UITextView*)self.currentDynamicView) text];
         }
         _symptom.notes = self.notes;
         
@@ -111,7 +111,7 @@
 
 - (IBAction)symptomsReset:(UIButton *)sender {
     if (self.currentSegment == 2) { //if changing segments from the text view, save the text in it
-        self.notes = [((UITextField*)self.currentDynamicView) text];
+        self.notes = [((UITextView*)self.currentDynamicView) text];
     }
     if (![self.symptomsEditText.text isEqualToString:@""] || self.painValue.value != 0 || ![self.notes isEqualToString:@""])
     {
@@ -149,7 +149,7 @@
 - (IBAction)segmentedControl:(UISegmentedControl *)sender {
     
     if (self.currentSegment == 2) { //if changing segments from the text view, save the text in it
-        self.notes = [((UITextField*)self.currentDynamicView) text];
+        self.notes = [((UITextView*)self.currentDynamicView) text];
     }
     self.currentSegment = sender.selectedSegmentIndex;
     switch (self.currentSegment) {
