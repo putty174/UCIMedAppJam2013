@@ -67,11 +67,29 @@
                                     <action selector="symptomsReset:" destination="6f3-HQ-P7M" eventType="touchUpInside" id="J3V-MB-iG7"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pqa-WQ-XYt">
+                                <rect key="frame" x="20" y="171" width="280" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Occurances"/>
+                                    <segment title="Your Treatment"/>
+                                    <segment title="Other Notes"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControl:" destination="6f3-HQ-P7M" eventType="valueChanged" id="evB-NU-bwU"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AEk-RK-0Pw">
+                                <rect key="frame" x="20" y="207" width="280" height="157"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="vaU-UW-7Pg"/>
                     <connections>
+                        <outlet property="dynamicView" destination="AEk-RK-0Pw" id="t9x-Pv-Zo3"/>
                         <outlet property="painNumber" destination="pti-i0-zQv" id="GlX-9g-Itq"/>
                         <outlet property="painValue" destination="TR2-Fl-zTJ" id="StZ-5I-jRj"/>
                         <outlet property="symptomsEditText" destination="ESI-Oy-drH" id="xpF-K0-cwJ"/>
