@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <EventKit/EventKit.h>
 
 @interface SymptomsTableView : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
+@property EKEventStore *symptomEventStore;
 
 @property (strong, nonatomic) IBOutlet UITableView *symptomsTable;
 @property (nonatomic, strong) NSMutableArray *array;

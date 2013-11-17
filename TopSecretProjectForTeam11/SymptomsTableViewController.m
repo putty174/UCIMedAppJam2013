@@ -1,36 +1,45 @@
 //
-//  SymptomsTableView.m
-//  KevinTest
+//  SymptomsTableViewController.m
+//  TopSecretProjectForTeam11
 //
-//  Created by App Jam on 11/14/13.
+//  Created by Mary Nguyen on 11/16/13.
 //  Copyright (c) 2013 App Jam. All rights reserved.
 //
 
-#import "SymptomsTableView.h"
-#import "AddSymptomController.h"
+#import "SymptomsTableViewController.h"
 
-@interface SymptomsTableView ()
+@interface SymptomsTableViewController ()
 
 @end
 
-@implementation SymptomsTableView
+@implementation SymptomsTableViewController
 
-//@synthesize symptomsTable;
-//@synthesize array;
+- (id)initWithStyle:(UITableViewStyle)style
+{
+    self = [super initWithStyle:style];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    self.symptomsTable = [[UITableView alloc] init];
-    self.symptomsTable.delegate = self;
-    self.symptomsTable.dataSource = self;
-    [self.symptomsTable setAllowsSelection:YES];
-    [self.view addSubview:self.symptomsTable];
+
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+ 
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.symptoms = [[UITableView alloc] init];
+    self.symptoms.delegate = self;
+    self.symptoms.dataSource = self;
+    [self.symptoms setAllowsSelection:YES];
+    [self.view addSubview:self.symptoms];
+    [self.symptoms reloadData];
     
-    _symptomEventStore = [[EKEventStore alloc] init];
-    
-    self.array = [[NSMutableArray alloc] initWithObjects:@"Add New", @"recent symptom", nil];
+    self.array = [[NSMutableArray alloc] initWithObjects:@"sample symptom 1", @"recent symptom blah", nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -54,53 +63,22 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     cell.textLabel.text = self.array[indexPath.row];
+    cell.accessoryType = UITableViewCellAccessoryCheckmark;
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSInteger pos = indexPath.row;
-    if (pos == 0) {
-        //AddSymptomController *created = [[AddSymptomController alloc] init];
-        //[[self navigationController] pushViewController:created animated:YES];
-        //set up permissions for Calender use
-        float version = [[UIDevice currentDevice].systemVersion floatValue];
-        if(version >= 6.0)
-        {
-            UIAlertView *accessAlert = [[UIAlertView alloc] initWithTitle:@"Permission Denied" message:@"Permission has not been granted to track new symptoms." delegate:Nil cancelButtonTitle:@"Done" otherButtonTitles:nil, nil];
-            
-            EKAuthorizationStatus status = [EKEventStore authorizationStatusForEntityType:EKEntityTypeEvent];
-            if(status == EKAuthorizationStatusNotDetermined)
-            {
-                [_symptomEventStore requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error)
-                 {
-                     if(!granted)
-                     {
-                         [accessAlert show];
-                     }
-                     else
-                     {
-                         [self performSegueWithIdentifier: @"AddSymptomsSegue" sender: self];
-                     }
-                 }];
-                if (status == EKAuthorizationStatusAuthorized)
-                {
-                    [self performSegueWithIdentifier: @"AddSymptomsSegue" sender: self];
-                }
-                
-            }
-            else if (status == EKAuthorizationStatusDenied)
-            {
-                [accessAlert show];
-            }
-            if (status == EKAuthorizationStatusAuthorized)
-            {
-                [self performSegueWithIdentifier: @"AddSymptomsSegue" sender: self];
-            }
-        }
+    UITableViewCell *clicked = [tableView cellForRowAtIndexPath:indexPath];
+    //clicked.accessoryType = UITableViewCellAccessoryNone;
+    if(clicked.accessoryType == UITableViewCellAccessoryNone)
+    {
+        clicked.accessoryType = UITableViewCellAccessoryCheckmark;
+    }else
+    {
+        clicked.accessoryType = UITableViewCellAccessoryNone;
     }
 }
-
 
 /*
 // Override to support conditional editing of the table view.

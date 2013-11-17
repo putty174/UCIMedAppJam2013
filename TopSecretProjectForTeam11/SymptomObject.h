@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <EventKit/EKEvent.h>
+#import <EventKit/EKEventStore.h>
 
 @interface SymptomObject : NSObject 
 

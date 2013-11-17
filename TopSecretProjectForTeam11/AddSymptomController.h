@@ -34,6 +34,6 @@
 - (IBAction)symptomsSave:(UIButton *)sender;
 - (IBAction)symptomsReset:(UIButton *)sender;
 
-
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
 
 @end
