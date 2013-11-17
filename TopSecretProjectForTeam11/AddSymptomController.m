@@ -42,6 +42,11 @@
     self.dynamicView.backgroundColor = [UIColor whiteColor];
     [self.dynamicView addSubview:self.currentDynamicView];
     
+    _symptomsEditText.returnKeyType = UIReturnKeyDone;
+    [_symptomsEditText setDelegate:self];
+    // above 2 lines are setting symptomsEditText to delegate and for the return key
+    
+    
     //set up event property for SymptomObject
     _symptomEventStore = [[EKEventStore alloc] init];
     _symptom.event = [EKEvent eventWithEventStore:_symptomEventStore];
@@ -58,6 +63,13 @@
 }
 
 - (IBAction)symptomsEditText:(UITextField *)sender {
+}
+
+// method so that upon selecting DONE in keyboard, the keyboard disappears
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
 }
 
 - (IBAction)painSlider:(UISlider *)sender {
