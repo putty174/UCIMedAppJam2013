@@ -10,10 +10,11 @@
 
 @implementation OccurencesDelegate
 
-- (id)init {
+- (id)initWithController:(UIViewController *)viewController {
     self = [super init];
     if (self) {
-        self.array = [[NSMutableArray alloc] initWithObjects:@"Add New Time", @"test", @"test", @"test", @"test", nil];
+        self.array = [[NSMutableArray alloc] initWithObjects:@"Add New Time", nil];
+        self.controller = viewController;
     }
     return self;
 }
@@ -40,9 +41,7 @@
 {
     NSInteger pos = indexPath.row;
     if (pos == 0) {
-        //AddSymptomController *created = [[AddSymptomController alloc] init];
-        //[[self navigationController] pushViewController:created animated:YES];
-        //[self performSegueWithIdentifier: @"AddSymptomsSegue" sender: self];
+        [self.controller performSegueWithIdentifier: @"AddOccurrenceSegue" sender:self.controller];
     }
 }
 @end

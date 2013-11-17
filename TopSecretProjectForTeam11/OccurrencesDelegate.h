@@ -10,4 +10,6 @@
 
 @interface OccurencesDelegate : NSObject <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) NSMutableArray *array;
+@property (weak, nonatomic) UIViewController *controller;
+- (id) initWithController:(UIViewController*) viewController;
 @end

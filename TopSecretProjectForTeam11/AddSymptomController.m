@@ -29,8 +29,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.occurrencesDelegate = [[OccurencesDelegate alloc] init];
-    self.treatmentDelegate = [[TreatmentDelegate alloc] init];
+    self.occurrencesDelegate = [[OccurencesDelegate alloc] initWithController:self];
+    self.treatmentDelegate = [[TreatmentDelegate alloc] initWithController:self];
     self.symptom = [[SymptomObject alloc] init];
     self.notes = [[NSString alloc] initWithFormat:@""];
     [[self symptomsEditText] setText: @""];
