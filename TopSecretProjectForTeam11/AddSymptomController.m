@@ -58,28 +58,59 @@
 }
 
 - (IBAction)symptomsSave:(UIButton *)sender {
-    _symptom.symptom = self.symptomsEditText.text;
-    _symptom.pain = roundf(self.painValue.value);
-    
-    _symptom.event.title = _symptom.symptom;
-    _symptom.event.startDate = [NSDate date];
-    _symptom.event.endDate = [NSDate date];
-    
-    NSError *symptomErr;
-    [_symptomEventStore saveEvent:_symptom.event span:EKSpanThisEvent error:&symptomErr];
-    if([symptomErr code] == 0)
+    if ([self.symptomsEditText.text isEqualToString:@""])
     {
-        UIAlertView *symptomAlert = [[UIAlertView alloc] initWithTitle:@"Symptom Saved" message:@"Your symptom has been saved." delegate:Nil cancelButtonTitle:@"Done" otherButtonTitles:nil, nil];
-        [symptomAlert show];
+        UIAlertView *blankSymptom = [[UIAlertView alloc] initWithTitle:@"Blank Symptom" message:@"Please enter a symptom name" delegate:nil cancelButtonTitle:@"Back" otherButtonTitles:nil, nil];
+        [blankSymptom show];
     }
-    
-    [self.navigationController popViewControllerAnimated:YES];
+    else if(self.painValue.value == 0)
+    {
+        UIAlertView *zeroPain = [[UIAlertView alloc] initWithTitle:@"0 Pain Level" message:@"Please specify pain level" delegate:nil cancelButtonTitle:@"Back" otherButtonTitles:nil, nil];
+        [zeroPain show];
+    }
+    else
+    {
+        _symptom.symptom = self.symptomsEditText.text;
+        _symptom.pain = roundf(self.painValue.value);
+        
+        _symptom.event.title = _symptom.symptom;
+        _symptom.event.startDate = [NSDate date];
+        _symptom.event.endDate = [NSDate date];
+        
+        NSError *symptomErr;
+        [_symptomEventStore saveEvent:_symptom.event span:EKSpanThisEvent error:&symptomErr];
+        if([symptomErr code] == 0)
+        {
+            UIAlertView *symptomAlert = [[UIAlertView alloc] initWithTitle:@"Symptom Saved" message:@"Your symptom has been saved." delegate:nil cancelButtonTitle:@"Done" otherButtonTitles:nil, nil];
+            [symptomAlert show];
+        }
+        
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 - (IBAction)symptomsReset:(UIButton *)sender {
-    [[self symptomsEditText] setText: @""];
-    [[self painValue] setValue:0];
-    [[self painNumber] setText: @"0"];
+    if (![self.symptomsEditText.text isEqualToString:@""] || !self.painValue.value == 0)
+    {
+        UIAlertView *filledFields = [[UIAlertView alloc] initWithTitle:@"Reset Fields" message:@"Are you sure?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Reset", nil];
+        [filledFields show];
+    }
+    else
+    {
+        [[self symptomsEditText] setText: @""];
+        [[self painValue] setValue:0];
+        [[self painNumber] setText: @"0"];
+    }
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1)
+    {
+        [[self symptomsEditText] setText: @""];
+        [[self painValue] setValue:0];
+        [[self painNumber] setText: @"0"];
+    }
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
