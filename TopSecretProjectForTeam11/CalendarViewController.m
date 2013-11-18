@@ -7,6 +7,7 @@
 //
 
 #import "CalendarViewController.h"
+#import "DayViewController.h"
 #import <TimesSquare/TimesSquare.h>
 
 @interface CalendarViewController ()
@@ -30,6 +31,7 @@
 	// Do any additional setup after loading the view.
     
     self.myCalendar = [[TSQCalendarView alloc] initWithFrame:self.view.bounds];
+    self.myCalendar.delegate = self;
     NSDateFormatter *mmddccyy = [[NSDateFormatter alloc] init];
     mmddccyy.timeStyle = NSDateFormatterNoStyle;
     mmddccyy.dateFormat = @"MM/dd/yyyy";
@@ -37,7 +39,7 @@
     [self.myCalendar setFirstDate:begin];
     NSDate *end = [mmddccyy dateFromString:@"12/11/2006"];
     [self.myCalendar setLastDate:end];
-    [self.theCalendar addSubview:self.myCalendar];
+    [self.view addSubview:self.myCalendar];
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,9 +48,16 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*- (void)calendarView:(TSQCalendarView *)calendarView didSelectDate:(NSDate *)date
+- (void)calendarView:(TSQCalendarView *)calendarView didSelectDate:(NSDate *)date
 {
-    
-}*/
+    [self performSegueWithIdentifier:@"showDayDetail" sender:self];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSDate *selectedDate = self.myCalendar.selectedDate;
+    DayViewController *destViewController = segue.destinationViewController;
+    destViewController.theDate = selectedDate;
+}
 
 @end
