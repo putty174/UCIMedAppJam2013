@@ -112,6 +112,7 @@
     {
         SymptomViewController *SVController = segue.destinationViewController;
         SVController.symptomName = @"yah";
+        SVController.painValue = 5;
         
     }
 }

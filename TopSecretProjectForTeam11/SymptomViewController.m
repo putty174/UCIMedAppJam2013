@@ -12,6 +12,8 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIView *ContentView;
 @property (weak, nonatomic) IBOutlet UITextField *SymptomText;
+@property (weak, nonatomic) IBOutlet UISlider *PainSlider;
+@property (weak, nonatomic) IBOutlet UILabel *PainNumber;
 
 @end
 
@@ -31,6 +33,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     _SymptomText.text = _symptomName;
+    _PainSlider.value = _painValue;
+    _PainNumber.text = [NSString stringWithFormat:@"%d", (int)roundf(_PainSlider.value)];
 }
 
 - (void)didReceiveMemoryWarning
