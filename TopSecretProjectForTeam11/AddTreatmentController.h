@@ -12,5 +12,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *treatmentText;
 @property (weak, nonatomic) IBOutlet UITextField *frequencyText;
 @property (weak, nonatomic) IBOutlet UITextView *notesText;
+- (IBAction)saveButton:(UIButton *)sender;
+- (IBAction)resetButton:(UIButton *)sender;
 
 @end

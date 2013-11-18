@@ -36,6 +36,8 @@
 		41433EC61835EB2B007588F7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 41433EC41835EB2B007588F7 /* README.md */; };
 		418B64E418387A70005A668D /* OccurrencesDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B64E118387A70005A668D /* OccurrencesDelegate.m */; };
 		418B64E518387A70005A668D /* TreatmentDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B64E318387A70005A668D /* TreatmentDelegate.m */; };
+		418B64E81839B5F6005A668D /* TreatmentObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B64E71839B5F6005A668D /* TreatmentObject.m */; };
+		418B64EB1839B81F005A668D /* OccurrencesObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B64EA1839B81F005A668D /* OccurrencesObject.m */; };
 		5DE630CA1837F8E80005795D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630C91837F8E80005795D /* HomeViewController.m */; };
 		5DE630CD1837F9460005795D /* HomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630CC1837F9460005795D /* HomeNavigationController.m */; };
 		5DE630D11838236C0005795D /* SymptomsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630D01838236C0005795D /* SymptomsTableViewController.m */; };
@@ -99,6 +101,10 @@
 		418B64E118387A70005A668D /* OccurrencesDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OccurrencesDelegate.m; sourceTree = "<group>"; };
 		418B64E218387A70005A668D /* TreatmentDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreatmentDelegate.h; sourceTree = "<group>"; };
 		418B64E318387A70005A668D /* TreatmentDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreatmentDelegate.m; sourceTree = "<group>"; };
+		418B64E61839B5F6005A668D /* TreatmentObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreatmentObject.h; sourceTree = "<group>"; };
+		418B64E71839B5F6005A668D /* TreatmentObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreatmentObject.m; sourceTree = "<group>"; };
+		418B64E91839B81F005A668D /* OccurrencesObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OccurrencesObject.h; sourceTree = "<group>"; };
+		418B64EA1839B81F005A668D /* OccurrencesObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OccurrencesObject.m; sourceTree = "<group>"; };
 		5DE630C81837F8E80005795D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = Home/HomeViewController.h; sourceTree = "<group>"; };
 		5DE630C91837F8E80005795D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = Home/HomeViewController.m; sourceTree = "<group>"; };
 		5DE630CB1837F9460005795D /* HomeNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeNavigationController.h; sourceTree = "<group>"; };
@@ -141,6 +147,10 @@
 				0DD94D75183746050086C009 /* SymptomObject.m */,
 				0DC2EB5018398C9300C83558 /* SymptomViewController.h */,
 				0DC2EB5118398C9300C83558 /* SymptomViewController.m */,
+				418B64E61839B5F6005A668D /* TreatmentObject.h */,
+				418B64E71839B5F6005A668D /* TreatmentObject.m */,
+				418B64E91839B81F005A668D /* OccurrencesObject.h */,
+				418B64EA1839B81F005A668D /* OccurrencesObject.m */,
 			);
 			name = SymptomObject;
 			sourceTree = "<group>";
@@ -397,6 +407,8 @@
 				418B64E518387A70005A668D /* TreatmentDelegate.m in Sources */,
 				1B631F531838B99F00B637A6 /* AddOccurrencesController.m in Sources */,
 				418B64E418387A70005A668D /* OccurrencesDelegate.m in Sources */,
+				418B64EB1839B81F005A668D /* OccurrencesObject.m in Sources */,
+				418B64E81839B5F6005A668D /* TreatmentObject.m in Sources */,
 				41433E7918357F0B007588F7 /* AppDelegate.m in Sources */,
 				0DC2EB5218398C9300C83558 /* SymptomViewController.m in Sources */,
 				5DE630CA1837F8E80005795D /* HomeViewController.m in Sources */,

@@ -160,6 +160,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="saveButton:" destination="eLn-ZE-Svq" eventType="touchUpInside" id="ekm-ZL-SiY"/>
                                     <action selector="saveButton:" destination="QC4-gK-Upx" eventType="touchUpInside" id="fMK-y7-68p"/>
                                     <action selector="symptomsSave:" destination="6f3-HQ-P7M" eventType="touchUpInside" id="Elb-st-uDX"/>
                                 </connections>
@@ -171,6 +172,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="resetButton:" destination="eLn-ZE-Svq" eventType="touchUpInside" id="ABd-m6-3oD"/>
                                     <action selector="resetButton:" destination="QC4-gK-Upx" eventType="touchUpInside" id="QaC-j2-iJP"/>
                                     <action selector="symptomsReset:" destination="6f3-HQ-P7M" eventType="touchUpInside" id="mPP-4D-Lfl"/>
                                 </connections>
@@ -727,31 +729,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ozt-f4-ci8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3098" y="342"/>
-        </scene>
-        <!--Table View Controller-->
-        <scene sceneID="CuH-fe-q8x">
-            <objects>
-                <tableViewController id="TBE-2g-IXk" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="pkQ-gR-xAW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="CNr-Co-Bqr">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CNr-Co-Bqr" id="gat-tV-Oj1">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1Sj-BV-cae" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="522" y="1418"/>
+            <point key="canvasLocation" x="3006" y="238"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="bkV-FE-yf3">
@@ -779,7 +757,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WRw-82-10G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3432" y="571"/>
+            <point key="canvasLocation" x="3006" y="509"/>
         </scene>
         <!--Symptoms Table View Controller-->
         <scene sceneID="tEa-Fy-E5Z">

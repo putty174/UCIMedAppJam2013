@@ -68,4 +68,9 @@
 }
 
 
+- (IBAction)saveButton:(UIButton *)sender {
+}
+
+- (IBAction)resetButton:(UIButton *)sender {
+}
 @end
