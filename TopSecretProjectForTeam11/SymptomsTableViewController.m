@@ -28,6 +28,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    _symdic = [SymptomDictionary symptomDictionary];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -46,12 +48,10 @@
 
 - (void) viewDidAppear:(BOOL)animated
 {
-    SymptomDictionary *symdic = [SymptomDictionary symptomDictionary];
-    
     [self.array removeAllObjects];
     [self.array addObject:@"Symptom1"];
     [self.array addObject:@"recent symptoms"];
-    for (NSString *key in [symdic symDictionary])
+    for (NSString *key in [_symdic symDictionary])
     {
         [self.array addObject:key];
     }
@@ -86,7 +86,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSInteger pos = indexPath.row;
+    _index = indexPath.row;
     UITableViewCell *clicked = [tableView cellForRowAtIndexPath:indexPath];
     //clicked.accessoryType = UITableViewCellAccessoryNone;
     if(clicked.accessoryType == UITableViewCellAccessoryNone)
@@ -96,7 +96,7 @@
     {
         clicked.accessoryType = UITableViewCellAccessoryNone;
     }
-    if (pos == 2)
+    if (_index >= 2)
     {
         [self performSegueWithIdentifier:@"HomeTabletoDetailsSegue" sender:self];
     }
@@ -107,12 +107,11 @@
     if ([[segue identifier] isEqualToString:@"HomeTabletoDetailsSegue"])
     {
         SymptomObject *so = [[SymptomObject alloc] init];
-        so.symptom = @"yisss";
-        so.pain = 7;
-        so.notes = @"we got text";
+        so = [_symdic findSymptom:[_array objectAtIndex:_index]];
         
         SymptomViewController *SVController = segue.destinationViewController;
         SVController.symptom = so;
+        
     }
 }
 

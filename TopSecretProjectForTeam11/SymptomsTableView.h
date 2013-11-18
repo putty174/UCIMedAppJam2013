@@ -8,10 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import <EventKit/EventKit.h>
+#import "SymptomDictionary.h"
 
 @interface SymptomsTableView : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property EKEventStore *symptomEventStore;
+
+@property (strong, nonatomic) SymptomDictionary *symdic;
+@property int index;
 
 @property (strong, nonatomic) IBOutlet UITableView *symptomsTable;
 @property (nonatomic, strong) NSMutableArray *array;

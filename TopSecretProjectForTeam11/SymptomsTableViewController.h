@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SymptomDictionary.h"
 
 @interface SymptomsTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (strong, nonatomic) SymptomDictionary *symdic;
+@property int index;
 
 @property (strong, nonatomic) IBOutlet UITableView *symptoms;
 @property (strong, nonatomic) NSMutableArray *array;
