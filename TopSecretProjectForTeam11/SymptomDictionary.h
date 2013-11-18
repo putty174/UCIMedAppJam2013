@@ -12,6 +12,7 @@
 
 @interface SymptomDictionary : NSObject
 
++ (SymptomDictionary *) symptomDictionary;
 
 @property (strong, nonatomic) NSMutableDictionary *symDictionary;
 

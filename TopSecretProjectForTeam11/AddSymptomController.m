@@ -7,6 +7,7 @@
 //
 
 #import "AddSymptomController.h"
+#import "SymptomDictionary.h"
 
 @interface AddSymptomController ()
 
@@ -103,6 +104,9 @@
             self.notes = [((UITextView*)self.currentDynamicView) text];
         }
         _symptom.notes = self.notes;
+        
+        SymptomDictionary *symdic = [SymptomDictionary symptomDictionary];
+        [symdic addSymptom:(_symptom)];
         
         [self.navigationController popViewControllerAnimated:YES];
     }

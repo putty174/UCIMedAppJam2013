@@ -9,6 +9,7 @@
 #import "SymptomsTableView.h"
 #import "AddSymptomController.h"
 #import "SymptomViewController.h"
+#import "SymptomDictionary.h"
 
 @interface SymptomsTableView ()
 
@@ -32,6 +33,20 @@
     _symptomEventStore = [[EKEventStore alloc] init];
     
     self.array = [[NSMutableArray alloc] initWithObjects:@"Add New", @"Recent Symptoms", @"test", nil];
+}
+
+- (void) viewDidAppear:(BOOL)animated
+{
+    SymptomDictionary *symdic = [SymptomDictionary symptomDictionary];
+    
+    [self.array removeAllObjects];
+    [self.array addObject:@"Add New"];
+    [self.array addObject:@"Recent Symptoms"];
+    for (NSString *key in [symdic symDictionary])
+    {
+        [self.array addObject:key];
+    }
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
