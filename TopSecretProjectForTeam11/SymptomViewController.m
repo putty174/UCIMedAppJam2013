@@ -11,6 +11,7 @@
 @interface SymptomViewController ()
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIView *ContentView;
+@property (weak, nonatomic) IBOutlet UITextField *SymptomText;
 
 @end
 
@@ -29,6 +30,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    _SymptomText.text = _symptomName;
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,5 +45,4 @@
     [self.scrollView layoutIfNeeded];
     self.scrollView.contentSize = self.ContentView.bounds.size;
 }
-
 @end
