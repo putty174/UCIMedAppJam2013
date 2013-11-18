@@ -32,6 +32,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.notesView.editable = NO;
     _SymptomText.text = _symptomName;
     _PainSlider.value = _painValue;
     _PainNumber.text = [NSString stringWithFormat:@"%d", (int)roundf(_PainSlider.value)];

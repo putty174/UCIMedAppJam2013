@@ -13,5 +13,6 @@
 
 @property (strong, nonatomic) NSString *symptomName;
 @property int painValue;
+@property (strong, nonatomic) IBOutlet UITextView *notesView;
 
 @end
