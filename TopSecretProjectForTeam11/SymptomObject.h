@@ -14,8 +14,9 @@
 
 @property NSString *symptom;
 @property int pain;
-@property EKEvent *event;
-
+@property NSArray *occurrences;
+@property NSArray *treatments;
 @property NSString *notes;
+@property EKEvent *event;
 
 @end

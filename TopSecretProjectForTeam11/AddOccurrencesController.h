@@ -9,8 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface AddOccurrencesController : UIViewController
-@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 - (IBAction)resetButton:(UIButton *)sender;
 - (IBAction)saveButton:(UIButton *)sender;
+- (IBAction)segmentedControl:(UISegmentedControl *)sender;
+@property (weak, nonatomic) IBOutlet UILabel *startLabel;
+@property (weak, nonatomic) IBOutlet UILabel *endLabel;
+@property int currentSegment;
+@property NSDate *startDate;
+@property NSDate *endDate;
+- (IBAction)datePicker:(UIDatePicker *)sender;
+@property (strong, nonatomic) IBOutlet UIDatePicker *datePickerProperty;
 
 @end
