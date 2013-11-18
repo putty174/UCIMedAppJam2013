@@ -10,6 +10,7 @@
 		0DC2EB5218398C9300C83558 /* SymptomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC2EB5118398C9300C83558 /* SymptomViewController.m */; };
 		0DD94D73183745940086C009 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD94D72183745940086C009 /* EventKit.framework */; };
 		0DD94D76183746050086C009 /* SymptomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD94D75183746050086C009 /* SymptomObject.m */; };
+		1B34D10F183993DD003E6049 /* SymptomDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B34D10E183993DD003E6049 /* SymptomDictionary.m */; };
 		1B631F531838B99F00B637A6 /* AddOccurrencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B631F521838B99F00B637A6 /* AddOccurrencesController.m */; };
 		1B631F561838BB1A00B637A6 /* AddTreatmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B631F551838BB1A00B637A6 /* AddTreatmentController.m */; };
 		41433E6918357F0B007588F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41433E6818357F0B007588F7 /* Foundation.framework */; };
@@ -56,6 +57,8 @@
 		0DD94D72183745940086C009 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		0DD94D74183746050086C009 /* SymptomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymptomObject.h; sourceTree = "<group>"; };
 		0DD94D75183746050086C009 /* SymptomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomObject.m; sourceTree = "<group>"; };
+		1B34D10D183993DD003E6049 /* SymptomDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymptomDictionary.h; sourceTree = "<group>"; };
+		1B34D10E183993DD003E6049 /* SymptomDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomDictionary.m; sourceTree = "<group>"; };
 		1B631F511838B99F00B637A6 /* AddOccurrencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddOccurrencesController.h; sourceTree = "<group>"; };
 		1B631F521838B99F00B637A6 /* AddOccurrencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddOccurrencesController.m; sourceTree = "<group>"; };
 		1B631F541838BB1A00B637A6 /* AddTreatmentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTreatmentController.h; sourceTree = "<group>"; };
@@ -132,6 +135,8 @@
 		0DD94D6E1837432C0086C009 /* SymptomObject */ = {
 			isa = PBXGroup;
 			children = (
+				1B34D10D183993DD003E6049 /* SymptomDictionary.h */,
+				1B34D10E183993DD003E6049 /* SymptomDictionary.m */,
 				0DD94D74183746050086C009 /* SymptomObject.h */,
 				0DD94D75183746050086C009 /* SymptomObject.m */,
 				0DC2EB5018398C9300C83558 /* SymptomViewController.h */,
@@ -385,6 +390,7 @@
 				41433EB61835DAA7007588F7 /* CalendarNavigationController.m in Sources */,
 				5DE630CD1837F9460005795D /* HomeNavigationController.m in Sources */,
 				1B631F561838BB1A00B637A6 /* AddTreatmentController.m in Sources */,
+				1B34D10F183993DD003E6049 /* SymptomDictionary.m in Sources */,
 				41433EBF1835DDEF007588F7 /* CalendarViewController.m in Sources */,
 				41433EAD1835AB6D007588F7 /* SymptomsNavigationController.m in Sources */,
 				41433EC21835DE11007588F7 /* SummaryViewController.m in Sources */,
