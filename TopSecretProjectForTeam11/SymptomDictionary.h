@@ -12,13 +12,12 @@
 
 @interface SymptomDictionary : NSObject
 
-
 @property (strong, nonatomic) NSMutableDictionary *symDictionary;
 
++(SymptomDictionary *) symDic;
+
 - (void)addSymptom:(SymptomObject *)symObject;
-
 - (void)removeSymptom:(SymptomObject *)symObject;
-
 - (SymptomObject *) findSymptom:(NSString *)symptom;
 
 @end
