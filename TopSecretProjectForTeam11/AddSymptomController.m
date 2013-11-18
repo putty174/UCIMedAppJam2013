@@ -45,6 +45,7 @@
     [_symptomsEditText setDelegate:self];
     // above 2 lines are setting symptomsEditText to delegate and for the return key
     
+    
     //set up event property for SymptomObject
     _symptomEventStore = [[EKEventStore alloc] init];
     _symptom.event = [EKEvent eventWithEventStore:_symptomEventStore];
@@ -52,8 +53,6 @@
     _symptom.event.startDate = [[NSDate alloc] init];
     _symptom.event.endDate = [[NSDate alloc] init];
     [_symptom.event setCalendar:[_symptomEventStore defaultCalendarForNewEvents]];
-    
-    _symDic = [SymptomDictionary symDic];
 }
 
 - (void)didReceiveMemoryWarning
@@ -80,7 +79,7 @@
 - (IBAction)symptomsSave:(UIButton *)sender {
     if ([self.symptomsEditText.text isEqualToString:@""])
     {
-        UIAlertView *blankSymptom = [[UIAlertView alloc] initWithTitle:@"No Symptom Name" message:@"Please enter a symptom name" delegate:nil cancelButtonTitle:@"Back" otherButtonTitles:nil, nil];
+        UIAlertView *blankSymptom = [[UIAlertView alloc] initWithTitle:@"No Symptom" message:@"Please enter a symptom name" delegate:nil cancelButtonTitle:@"Back" otherButtonTitles:nil, nil];
         [blankSymptom show];
     }
     else
@@ -104,8 +103,6 @@
             self.notes = [((UITextView*)self.currentDynamicView) text];
         }
         _symptom.notes = self.notes;
-        
-        [_symDic addSymptom: (_symptom)];
         
         [self.navigationController popViewControllerAnimated:YES];
     }

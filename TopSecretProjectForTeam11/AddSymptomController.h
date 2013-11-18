@@ -11,11 +11,8 @@
 #import "SymptomObject.h"
 #import "OccurrencesDelegate.h"
 #import "TreatmentDelegate.h"
-#import "SymptomDictionary.h"
 
 @interface AddSymptomController : UIViewController <UITextFieldDelegate>
-
-@property SymptomDictionary *symDic;
 
 @property (weak, nonatomic) IBOutlet UILabel *painNumber;
 @property (weak, nonatomic) IBOutlet UISlider *painValue;
