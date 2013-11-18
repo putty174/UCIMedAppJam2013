@@ -9,6 +9,7 @@
 #import "SymptomsTableView.h"
 #import "AddSymptomController.h"
 #import "SymptomViewController.h"
+#import "SymptomDictionary.h"
 
 @interface SymptomsTableView ()
 
@@ -31,13 +32,42 @@
     
     _symptomEventStore = [[EKEventStore alloc] init];
     
-    self.array = [[NSMutableArray alloc] initWithObjects:@"Add New", @"Recent Symptoms", @"test", nil];
+    self.array = [[NSMutableArray alloc] init];
+    
+    SymptomDictionary *symdic = [SymptomDictionary symDic];
+    
+    [self.array addObject:@"Add New"];
+    [self.array addObject:@"Recent Symptoms"];
+    for (NSString *key in [symdic symDictionary])
+    {
+        [self.array addObject:key];
+    }
+    
+    //self.array = [[NSMutableArray alloc] initWithObjects:@"Add New", @"Recent Symptoms", @"test", nil];
+    
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:@"hahahaha" action:@selector(viewDidLoad) forControlEvents:(UIControlEventValueChanged)];
+    self.refreshControl = refreshControl;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) viewDidAppear:(BOOL)animated
+{
+    SymptomDictionary *symdic = [SymptomDictionary symDic];
+    
+    [self.array removeAllObjects];
+    [self.array addObject:@"Add New"];
+    [self.array addObject:@"Recent Symptoms"];
+    for (NSString *key in [symdic symDictionary])
+    {
+        [self.array addObject:key];
+    }
+    [self.tableView reloadData];
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
