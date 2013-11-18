@@ -806,6 +806,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     </tableView>
                     <connections>
                         <outlet property="symptoms" destination="rgK-XD-tyL" id="ktS-n8-CR1"/>
+                        <segue destination="fvi-jg-9Bz" kind="push" identifier="HomeTabletoDetailsSegue" id="5wL-uF-1cr"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3xr-XM-4Lz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -824,5 +825,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="w32-30-lhn"/>
+        <segue reference="5wL-uF-1cr"/>
     </inferredMetricsTieBreakers>
 </document>
