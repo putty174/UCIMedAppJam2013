@@ -69,6 +69,15 @@
 
 
 - (IBAction)saveButton:(UIButton *)sender {
+    NSString *treatment = self.treatmentText.text;
+    if (![treatment isEqualToString:@""]) {
+        TreatmentObject *o = [[TreatmentObject alloc] initWithTreatment:treatment
+                                                         WithFrequency:self.frequencyText.text
+                                                             WithNotes:self.notesText.text];
+        [self.treatments addObject:o];
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+    //else throw error?
 }
 
 - (IBAction)resetButton:(UIButton *)sender {

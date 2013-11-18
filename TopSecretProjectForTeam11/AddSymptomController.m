@@ -7,7 +7,6 @@
 //
 
 #import "AddSymptomController.h"
-#import "SymptomDictionary.h"
 
 @interface AddSymptomController ()
 
@@ -54,6 +53,31 @@
     _symptom.event.startDate = [[NSDate alloc] init];
     _symptom.event.endDate = [[NSDate alloc] init];
     [_symptom.event setCalendar:[_symptomEventStore defaultCalendarForNewEvents]];
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    if (self.currentSegment == 0) {
+        if (self.symptom.occurrences.count + 1 != self.occurrencesDelegate.array.count) {
+            OccurrencesObject *o = [self.symptom.occurrences objectAtIndex:self.symptom.occurrences.count-1];
+            NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+            [formatter setDateStyle:NSDateFormatterMediumStyle];
+            [formatter setDateFormat:@"hh:mm a"];
+            NSString *time = [formatter stringFromDate:o.startDate];
+            time = [time stringByAppendingString:@" - "];
+            time = [time stringByAppendingString:[formatter stringFromDate:o.endDate]];
+            [self.occurrencesDelegate.array addObject:time];
+            [((UITableView*)self.currentDynamicView) reloadData];
+        }
+    }
+    else {
+        if (self.currentSegment == 1) {
+            if (self.symptom.treatments.count + 1 != self.treatmentDelegate.array.count) {
+                TreatmentObject *o = [self.symptom.treatments objectAtIndex:self.symptom.treatments.count-1];
+                [self.treatmentDelegate.array addObject:o.treatment];
+                [((UITableView*)self.currentDynamicView) reloadData];
+            }
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -175,6 +199,18 @@
             break;
     }
     
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"AddOccurrenceSegue"]) {
+        AddOccurrencesController *ctrlr = [segue destinationViewController];
+        ctrlr.occurrences = self.symptom.occurrences;
+    }
+    else
+        if ([[segue identifier] isEqualToString:@"AddTreatmentSegue"]) {
+            AddTreatmentController *ctrlr = [segue destinationViewController];
+            ctrlr.treatments = self.symptom.treatments;
+        }
 }
 
 - (UITableView*) createOccurrancesView {

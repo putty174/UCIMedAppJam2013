@@ -9,5 +9,12 @@
 #import "SymptomObject.h"
 
 @implementation SymptomObject
-
+-(id)init {
+    self = [super init];
+    if (self) {
+        self.occurrences = [[NSMutableArray alloc] init];
+        self.treatments = [[NSMutableArray alloc] init];
+    }
+    return self;
+}
 @end

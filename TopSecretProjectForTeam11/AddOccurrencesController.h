@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OccurrencesObject.h"
 
 @interface AddOccurrencesController : UIViewController
 - (IBAction)resetButton:(UIButton *)sender;
@@ -17,6 +18,7 @@
 @property int currentSegment;
 @property NSDate *startDate;
 @property NSDate *endDate;
+@property NSMutableArray *occurrences;
 - (IBAction)datePicker:(UIDatePicker *)sender;
 @property (strong, nonatomic) IBOutlet UIDatePicker *datePickerProperty;
 

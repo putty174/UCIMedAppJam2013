@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TreatmentObject.h"
 
 @interface AddTreatmentController : UIViewController <UITextFieldDelegate, UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *treatmentText;
 @property (weak, nonatomic) IBOutlet UITextField *frequencyText;
 @property (weak, nonatomic) IBOutlet UITextView *notesText;
+@property NSMutableArray *treatments;
 - (IBAction)saveButton:(UIButton *)sender;
 - (IBAction)resetButton:(UIButton *)sender;
 

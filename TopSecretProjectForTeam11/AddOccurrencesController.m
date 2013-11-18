@@ -45,6 +45,11 @@
 }
 
 - (IBAction)saveButton:(UIButton *)sender {
+    if (self.startDate && self.endDate){
+        [self.occurrences addObject:[[OccurrencesObject alloc] initWithStartDate:self.startDate WithEndDate:self.endDate]];
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+    //else throw error?
 }
 
 - (IBAction)segmentedControl:(UISegmentedControl *)sender {

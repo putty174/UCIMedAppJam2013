@@ -11,6 +11,11 @@
 #import "SymptomObject.h"
 #import "OccurrencesDelegate.h"
 #import "TreatmentDelegate.h"
+#import "SymptomDictionary.h"
+#import "TreatmentObject.h"
+#import "OccurrencesObject.h"
+#import "AddTreatmentController.h"
+#import "AddOccurrencesController.h"
 
 @interface AddSymptomController : UIViewController <UITextFieldDelegate>
 
