@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "SymptomsTableViewController.h"
 
 @interface HomeViewController ()
 
@@ -50,6 +51,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+/*-(IBAction)mark:(id)sender
+{
+    NSArray *cells = [self.recentSymptoms.symptoms visibleCells];
+}*/
 
 /*-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
