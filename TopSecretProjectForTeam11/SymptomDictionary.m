@@ -28,7 +28,6 @@
 
 - (id) init
 {
-    NSLog(@"initialized");
     self = [super init];
     if (self)
     {

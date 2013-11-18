@@ -32,7 +32,7 @@
     
     _symptomEventStore = [[EKEventStore alloc] init];
     
-    self.array = [[NSMutableArray alloc] initWithObjects:@"Add New", @"Recent Symptoms", @"test", nil];
+    self.array = [[NSMutableArray alloc] init];
 }
 
 - (void) viewDidAppear:(BOOL)animated

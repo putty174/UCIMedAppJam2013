@@ -8,6 +8,7 @@
 
 #import "SymptomsTableViewController.h"
 #import "SymptomViewController.h"
+#import "SymptomDictionary.h"
 
 @interface SymptomsTableViewController ()
 
@@ -40,8 +41,23 @@
     [self.view addSubview:self.symptoms];
     [self.symptoms reloadData];
     
-    self.array = [[NSMutableArray alloc] initWithObjects:@"sample symptom 1", @"recent symptom blah", @"test", nil];
+    self.array = [[NSMutableArray alloc] init];
 }
+
+- (void) viewDidAppear:(BOOL)animated
+{
+    SymptomDictionary *symdic = [SymptomDictionary symptomDictionary];
+    
+    [self.array removeAllObjects];
+    [self.array addObject:@"Symptom1"];
+    [self.array addObject:@"recent symptoms"];
+    for (NSString *key in [symdic symDictionary])
+    {
+        [self.array addObject:key];
+    }
+    [self.tableView reloadData];
+}
+
 
 - (void)didReceiveMemoryWarning
 {
