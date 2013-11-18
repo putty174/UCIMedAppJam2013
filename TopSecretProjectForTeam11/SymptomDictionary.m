@@ -11,6 +11,32 @@
 
 @implementation SymptomDictionary
 
++ (SymptomDictionary *) symDic
+{
+    static SymptomDictionary *symDic = nil;
+    if (!symDic)
+    {
+        symDic = [[super allocWithZone:nil] init];
+    }
+    return symDic;
+}
+
++ (id) allocWithZone:(struct _NSZone *)zone
+{
+    return [self symDic];
+}
+
+-(id) init
+{
+    self = [super init];
+    if (self)
+    {
+        _symDictionary = [[NSMutableDictionary alloc] init];
+    }
+    NSLog(@"Hahaha");
+    return self;
+}
+
 // Initialize the NSMutableDictionary called symDictionary
 - (NSMutableDictionary *) symDictionary {
     if (!_symDictionary) _symDictionary = [[NSMutableDictionary alloc] init];

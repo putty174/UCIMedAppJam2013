@@ -375,6 +375,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     <navigationItem key="navigationItem" id="C8i-WO-4Jf"/>
                     <connections>
                         <outlet property="dateDisplay" destination="bto-9j-z4v" id="afj-Ct-4My"/>
+                        <outlet property="mark" destination="fh2-16-Nyf" id="4si-hT-SBh"/>
                         <outlet property="recentSymptoms" destination="dDp-jG-IPe" id="neO-YL-pPr"/>
                     </connections>
                 </viewController>
@@ -459,13 +460,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     <view key="view" contentMode="scaleToFill" id="RyV-7N-xlZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8mh-CO-lgD">
-                                <rect key="frame" x="0.0" y="105" width="320" height="375"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </containerView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="zOE-gN-cUa">
@@ -475,10 +469,44 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="lcI-CX-2DY" kind="push" identifier="showDayDetail" id="Id0-T6-Lal"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jdt-UE-aei" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1449" y="169"/>
+            <point key="canvasLocation" x="1449" y="156"/>
+        </scene>
+        <!--Day View Controller-->
+        <scene sceneID="kf7-1c-sEH">
+            <objects>
+                <viewController id="lcI-CX-2DY" customClass="DayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bmE-bZ-Nhx"/>
+                        <viewControllerLayoutGuide type="bottom" id="9lT-PL-xxC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="al7-Wg-bJT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ppg-nN-u5n">
+                                <rect key="frame" x="0.0" y="166" width="320" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HAU-4Z-71L"/>
+                    <connections>
+                        <outlet property="dateDisplay" destination="Ppg-nN-u5n" id="Fms-4u-dbr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kHF-L2-WYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1979" y="114"/>
         </scene>
         <!--Symptoms Navigation Controller - Symptoms-->
         <scene sceneID="rED-pc-XwP">
@@ -753,6 +781,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="w32-30-lhn"/>
+<<<<<<< HEAD
+=======
         <segue reference="5wL-uF-1cr"/>
+>>>>>>> ca20d62c85a88ba52a9f3ec58d2b28066319f6e6
     </inferredMetricsTieBreakers>
 </document>
