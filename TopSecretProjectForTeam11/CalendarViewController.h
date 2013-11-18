@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <TimesSquare/TimesSquare.h>
 
 @interface CalendarViewController : UIViewController
+
+@property TSQCalendarView *myCalendar;
+@property (strong, nonatomic) IBOutlet UIView *theCalendar;
 
 @end

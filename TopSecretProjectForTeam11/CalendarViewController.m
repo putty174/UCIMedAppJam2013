@@ -7,6 +7,7 @@
 //
 
 #import "CalendarViewController.h"
+#import <TimesSquare/TimesSquare.h>
 
 @interface CalendarViewController ()
 
@@ -27,6 +28,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    self.myCalendar = [[TSQCalendarView alloc] initWithFrame:self.view.bounds];
+    NSDateFormatter *mmddccyy = [[NSDateFormatter alloc] init];
+    mmddccyy.timeStyle = NSDateFormatterNoStyle;
+    mmddccyy.dateFormat = @"MM/dd/yyyy";
+    NSDate *begin = [mmddccyy dateFromString:@"12/11/2005"];
+    [self.myCalendar setFirstDate:begin];
+    NSDate *end = [mmddccyy dateFromString:@"12/11/2006"];
+    [self.myCalendar setLastDate:end];
+    [self.theCalendar addSubview:self.myCalendar];
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,5 +45,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+/*- (void)calendarView:(TSQCalendarView *)calendarView didSelectDate:(NSDate *)date
+{
+    
+}*/
 
 @end

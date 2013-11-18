@@ -38,6 +38,7 @@
 		418B64E518387A70005A668D /* TreatmentDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B64E318387A70005A668D /* TreatmentDelegate.m */; };
 		418B64E81839B5F6005A668D /* TreatmentObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B64E71839B5F6005A668D /* TreatmentObject.m */; };
 		418B64EB1839B81F005A668D /* OccurrencesObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B64EA1839B81F005A668D /* OccurrencesObject.m */; };
+		5D4C2212183A0DDA00D05EB0 /* libTimesSquare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4C2211183A0D8E00D05EB0 /* libTimesSquare.a */; };
 		5DE630CA1837F8E80005795D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630C91837F8E80005795D /* HomeViewController.m */; };
 		5DE630CD1837F9460005795D /* HomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630CC1837F9460005795D /* HomeNavigationController.m */; };
 		5DE630D11838236C0005795D /* SymptomsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630D01838236C0005795D /* SymptomsTableViewController.m */; };
@@ -50,6 +51,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 41433E6418357F0B007588F7;
 			remoteInfo = TopSecretProjectForTeam11;
+		};
+		5D4C2210183A0D8E00D05EB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D4C220B183A0D8E00D05EB0 /* TimesSquare.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A806805B16700FD70071C71E;
+			remoteInfo = TimesSquare;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -105,6 +113,7 @@
 		418B64E71839B5F6005A668D /* TreatmentObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreatmentObject.m; sourceTree = "<group>"; };
 		418B64E91839B81F005A668D /* OccurrencesObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OccurrencesObject.h; sourceTree = "<group>"; };
 		418B64EA1839B81F005A668D /* OccurrencesObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OccurrencesObject.m; sourceTree = "<group>"; };
+		5D4C220B183A0D8E00D05EB0 /* TimesSquare.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TimesSquare.xcodeproj; path = "../../objc-TimesSquare/TimesSquare.xcodeproj"; sourceTree = "<group>"; };
 		5DE630C81837F8E80005795D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = Home/HomeViewController.h; sourceTree = "<group>"; };
 		5DE630C91837F8E80005795D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = Home/HomeViewController.m; sourceTree = "<group>"; };
 		5DE630CB1837F9460005795D /* HomeNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeNavigationController.h; sourceTree = "<group>"; };
@@ -118,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D4C2212183A0DDA00D05EB0 /* libTimesSquare.a in Frameworks */,
 				0DD94D73183745940086C009 /* EventKit.framework in Frameworks */,
 				41433E6B18357F0B007588F7 /* CoreGraphics.framework in Frameworks */,
 				41433E6D18357F0B007588F7 /* UIKit.framework in Frameworks */,
@@ -181,6 +191,7 @@
 		41433E6E18357F0B007588F7 /* TopSecretProjectForTeam11 */ = {
 			isa = PBXGroup;
 			children = (
+				5D4C220B183A0D8E00D05EB0 /* TimesSquare.xcodeproj */,
 				5DE630D81838D0FD0005795D /* calLib */,
 				0DD94D6E1837432C0086C009 /* SymptomObject */,
 				41433EBC1835DB43007588F7 /* Summary */,
@@ -277,6 +288,14 @@
 			name = CustomTableViewClasses;
 			sourceTree = "<group>";
 		};
+		5D4C220C183A0D8E00D05EB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D4C2211183A0D8E00D05EB0 /* libTimesSquare.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		5DE630CE1837F9640005795D /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -360,6 +379,12 @@
 			mainGroup = 41433E5C18357F0B007588F7;
 			productRefGroup = 41433E5C18357F0B007588F7;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5D4C220C183A0D8E00D05EB0 /* Products */;
+					ProjectRef = 5D4C220B183A0D8E00D05EB0 /* TimesSquare.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				41433E6418357F0B007588F7 /* TopSecretProjectForTeam11 */,
@@ -367,6 +392,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5D4C2211183A0D8E00D05EB0 /* libTimesSquare.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTimesSquare.a;
+			remoteRef = 5D4C2210183A0D8E00D05EB0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		41433E6318357F0B007588F7 /* Resources */ = {
