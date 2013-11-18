@@ -7,6 +7,7 @@
 //
 
 #import "SymptomsTableViewController.h"
+#import "SymptomViewController.h"
 
 @interface SymptomsTableViewController ()
 
@@ -39,7 +40,7 @@
     [self.view addSubview:self.symptoms];
     [self.symptoms reloadData];
     
-    self.array = [[NSMutableArray alloc] initWithObjects:@"sample symptom 1", @"recent symptom blah", nil];
+    self.array = [[NSMutableArray alloc] initWithObjects:@"sample symptom 1", @"recent symptom blah", @"test", nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -69,6 +70,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSInteger pos = indexPath.row;
     UITableViewCell *clicked = [tableView cellForRowAtIndexPath:indexPath];
     //clicked.accessoryType = UITableViewCellAccessoryNone;
     if(clicked.accessoryType == UITableViewCellAccessoryNone)
@@ -77,6 +79,21 @@
     }else
     {
         clicked.accessoryType = UITableViewCellAccessoryNone;
+    }
+    if (pos == 2)
+    {
+        [self performSegueWithIdentifier:@"HomeTabletoDetailsSegue" sender:self];
+    }
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"HomeTabletoDetailsSegue"])
+    {
+        SymptomViewController *SVController = segue.destinationViewController;
+        SVController.symptomName = @"yisss";
+        SVController.painValue = 7;
+        
     }
 }
 

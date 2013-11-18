@@ -723,31 +723,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ozt-f4-ci8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="522" y="1206"/>
-        </scene>
-        <!--Table View Controller-->
-        <scene sceneID="CuH-fe-q8x">
-            <objects>
-                <tableViewController id="TBE-2g-IXk" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="pkQ-gR-xAW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="CNr-Co-Bqr">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CNr-Co-Bqr" id="gat-tV-Oj1">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1Sj-BV-cae" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="522" y="1418"/>
+            <point key="canvasLocation" x="3006" y="238"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="bkV-FE-yf3">
@@ -775,7 +751,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WRw-82-10G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="522" y="1629"/>
+            <point key="canvasLocation" x="3006" y="509"/>
         </scene>
         <!--Symptoms Table View Controller-->
         <scene sceneID="tEa-Fy-E5Z">
@@ -802,30 +778,12 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     </tableView>
                     <connections>
                         <outlet property="symptoms" destination="rgK-XD-tyL" id="ktS-n8-CR1"/>
+                        <segue destination="fvi-jg-9Bz" kind="push" identifier="HomeTabletoDetailsSegue" id="5wL-uF-1cr"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3xr-XM-4Lz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2009" y="1698"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Lfo-9m-189">
-            <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="dOs-fy-R7a" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="waO-0j-ghB"/>
-                        <viewControllerLayoutGuide type="bottom" id="qJT-4Y-ODJ"/>
-                    </layoutGuides>
-                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="x89-pv-Zea">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <toolbarItems/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WKZ-33-4ST" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2955" y="723"/>
         </scene>
     </scenes>
     <resources>
@@ -839,5 +797,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="w32-30-lhn"/>
+        <segue reference="5wL-uF-1cr"/>
     </inferredMetricsTieBreakers>
 </document>
