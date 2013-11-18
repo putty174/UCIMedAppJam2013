@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SymptomObject.h"
 
 @interface SymptomViewController : UIViewController
+
+@property (strong, nonatomic) NSString *symptomName;
+@property int painValue;
 
 @end

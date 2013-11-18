@@ -8,6 +8,7 @@
 
 #import "SymptomsTableView.h"
 #import "AddSymptomController.h"
+#import "SymptomViewController.h"
 
 @interface SymptomsTableView ()
 
@@ -30,7 +31,7 @@
     
     _symptomEventStore = [[EKEventStore alloc] init];
     
-    self.array = [[NSMutableArray alloc] initWithObjects:@"Add New", @"Recent Symptoms", nil];
+    self.array = [[NSMutableArray alloc] initWithObjects:@"Add New", @"Recent Symptoms", @"test", nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -98,6 +99,21 @@
                 [self performSegueWithIdentifier: @"AddSymptomsSegue" sender: self];
             }
         }
+    }
+    if (pos == 2)
+    {
+        [self performSegueWithIdentifier:@"TabletoDetailSegue" sender:self];
+    }
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"TabletoDetailSegue"])
+    {
+        SymptomViewController *SVController = segue.destinationViewController;
+        SVController.symptomName = @"yah";
+        SVController.painValue = 5;
+        
     }
 }
 
