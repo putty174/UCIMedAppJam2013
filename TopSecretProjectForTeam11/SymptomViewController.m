@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *SymptomText;
 @property (weak, nonatomic) IBOutlet UISlider *PainSlider;
 @property (weak, nonatomic) IBOutlet UILabel *PainNumber;
+@property (strong, nonatomic) IBOutlet UITextView *notesView;
 
 @end
 
@@ -32,10 +33,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.notesView.editable = NO;
-    _SymptomText.text = _symptomName;
-    _PainSlider.value = _painValue;
+    _SymptomText.text = _symptom.symptom;
+    _PainSlider.value = _symptom.pain;
     _PainNumber.text = [NSString stringWithFormat:@"%d", (int)roundf(_PainSlider.value)];
+    _notesView.text = _symptom.notes;
 }
 
 - (void)didReceiveMemoryWarning

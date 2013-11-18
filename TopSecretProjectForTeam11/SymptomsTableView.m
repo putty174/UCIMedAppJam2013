@@ -110,9 +110,13 @@
 {
     if ([[segue identifier] isEqualToString:@"TabletoDetailSegue"])
     {
+        SymptomObject *so = [[SymptomObject alloc] init];
+        so.symptom = @"Reading";
+        so.pain = 5;
+        so.notes = @"Properly";
+        
         SymptomViewController *SVController = segue.destinationViewController;
-        SVController.symptomName = @"yah";
-        SVController.painValue = 5;
+        SVController.symptom = so;
         
     }
 }
