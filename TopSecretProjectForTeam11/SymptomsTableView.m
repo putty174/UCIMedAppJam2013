@@ -33,16 +33,18 @@
     _symptomEventStore = [[EKEventStore alloc] init];
     
     self.array = [[NSMutableArray alloc] init];
+    
+    _symdic = [SymptomDictionary symptomDictionary];
 }
 
 - (void) viewDidAppear:(BOOL)animated
 {
-    SymptomDictionary *symdic = [SymptomDictionary symptomDictionary];
+    
     
     [self.array removeAllObjects];
     [self.array addObject:@"Add New"];
     [self.array addObject:@"Recent Symptoms"];
-    for (NSString *key in [symdic symDictionary])
+    for (NSString *key in [_symdic symDictionary])
     {
         [self.array addObject:key];
     }
@@ -75,8 +77,8 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSInteger pos = indexPath.row;
-    if (pos == 0) {
+    _index = indexPath.row;
+    if (_index == 0) {
         //AddSymptomController *created = [[AddSymptomController alloc] init];
         //[[self navigationController] pushViewController:created animated:YES];
         //set up permissions for Calender use
@@ -115,7 +117,7 @@
             }
         }
     }
-    if (pos == 2)
+    if (_index >= 2)
     {
         [self performSegueWithIdentifier:@"TabletoDetailSegue" sender:self];
     }
@@ -126,9 +128,7 @@
     if ([[segue identifier] isEqualToString:@"TabletoDetailSegue"])
     {
         SymptomObject *so = [[SymptomObject alloc] init];
-        so.symptom = @"Reading";
-        so.pain = 5;
-        so.notes = @"Properly";
+        so = [_symdic findSymptom:[_array objectAtIndex:_index]];
         
         SymptomViewController *SVController = segue.destinationViewController;
         SVController.symptom = so;
