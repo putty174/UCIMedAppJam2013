@@ -16,6 +16,5 @@
 @property (strong, nonatomic) NSMutableArray *symptomsArray;
  */
 @property (strong, nonatomic) IBOutlet UIView *recentSymptoms;
-@property (strong, nonatomic) IBOutlet UIButton *mark;
 
 @end
