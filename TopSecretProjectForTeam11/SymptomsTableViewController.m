@@ -90,10 +90,13 @@
 {
     if ([[segue identifier] isEqualToString:@"HomeTabletoDetailsSegue"])
     {
-        SymptomViewController *SVController = segue.destinationViewController;
-        SVController.symptomName = @"yisss";
-        SVController.painValue = 7;
+        SymptomObject *so = [[SymptomObject alloc] init];
+        so.symptom = @"yisss";
+        so.pain = 7;
+        so.notes = @"we got text";
         
+        SymptomViewController *SVController = segue.destinationViewController;
+        SVController.symptom = so;
     }
 }
 

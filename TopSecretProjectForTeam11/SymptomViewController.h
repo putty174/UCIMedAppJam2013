@@ -11,8 +11,7 @@
 
 @interface SymptomViewController : UIViewController
 
-@property (strong, nonatomic) NSString *symptomName;
-@property int painValue;
-@property (strong, nonatomic) IBOutlet UITextView *notesView;
+@property (strong, nonatomic) SymptomObject *symptom;
+
 
 @end
