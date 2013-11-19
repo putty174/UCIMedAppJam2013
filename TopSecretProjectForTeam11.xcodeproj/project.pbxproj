@@ -386,6 +386,8 @@
 				5DE630CB1837F9460005795D /* HomeNavigationController.h */,
 				5DE630CF1838236C0005795D /* SymptomsTableViewController.h */,
 				5DE630D01838236C0005795D /* SymptomsTableViewController.m */,
+				5DC14A87183AF8FB003A1797 /* SymptomsTableViewObject.h */,
+				5DC14A88183AF8FB003A1797 /* SymptomsTableViewObject.m */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -531,6 +533,7 @@
 				418B64E518387A70005A668D /* TreatmentDelegate.m in Sources */,
 				418B64F9183AD20F005A668D /* SummaryOccurrencesDelegate.m in Sources */,
 				1B631F531838B99F00B637A6 /* AddOccurrencesController.m in Sources */,
+				5DC14A89183AF8FB003A1797 /* SymptomsTableViewObject.m in Sources */,
 				418B64E418387A70005A668D /* OccurrencesDelegate.m in Sources */,
 				418B64EB1839B81F005A668D /* OccurrencesObject.m in Sources */,
 				418B64E81839B5F6005A668D /* TreatmentObject.m in Sources */,
