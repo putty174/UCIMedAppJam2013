@@ -54,6 +54,9 @@
 		5DE630CA1837F8E80005795D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630C91837F8E80005795D /* HomeViewController.m */; };
 		5DE630CD1837F9460005795D /* HomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630CC1837F9460005795D /* HomeNavigationController.m */; };
 		5DE630D11838236C0005795D /* SymptomsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630D01838236C0005795D /* SymptomsTableViewController.m */; };
+		CBF4A097183B3A52005B38AE /* UpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF4A096183B3A52005B38AE /* UpdateViewController.m */; };
+		CBF4A09D183B3E22005B38AE /* RecentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF4A09C183B3E22005B38AE /* RecentViewController.m */; };
+		CBF4A0A6183B41BE005B38AE /* RecentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF4A0A5183B41BE005B38AE /* RecentTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +156,12 @@
 		5DE630CC1837F9460005795D /* HomeNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeNavigationController.m; sourceTree = "<group>"; };
 		5DE630CF1838236C0005795D /* SymptomsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymptomsTableViewController.h; sourceTree = "<group>"; };
 		5DE630D01838236C0005795D /* SymptomsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomsTableViewController.m; sourceTree = "<group>"; };
+		CBF4A095183B3A52005B38AE /* UpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateViewController.h; sourceTree = "<group>"; };
+		CBF4A096183B3A52005B38AE /* UpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateViewController.m; sourceTree = "<group>"; };
+		CBF4A09B183B3E22005B38AE /* RecentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentViewController.h; sourceTree = "<group>"; };
+		CBF4A09C183B3E22005B38AE /* RecentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentViewController.m; sourceTree = "<group>"; };
+		CBF4A0A4183B41BE005B38AE /* RecentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentTableViewController.h; sourceTree = "<group>"; };
+		CBF4A0A5183B41BE005B38AE /* RecentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +236,7 @@
 		41433E6E18357F0B007588F7 /* TopSecretProjectForTeam11 */ = {
 			isa = PBXGroup;
 			children = (
+				CBF4A092183B3A47005B38AE /* Update */,
 				418B64FF183B0509005A668D /* TSQ */,
 				5DE630D81838D0FD0005795D /* calLib */,
 				0DD94D6E1837432C0086C009 /* SymptomObject */,
@@ -402,6 +412,19 @@
 			name = calLib;
 			sourceTree = "<group>";
 		};
+		CBF4A092183B3A47005B38AE /* Update */ = {
+			isa = PBXGroup;
+			children = (
+				CBF4A095183B3A52005B38AE /* UpdateViewController.h */,
+				CBF4A096183B3A52005B38AE /* UpdateViewController.m */,
+				CBF4A09B183B3E22005B38AE /* RecentViewController.h */,
+				CBF4A09C183B3E22005B38AE /* RecentViewController.m */,
+				CBF4A0A4183B41BE005B38AE /* RecentTableViewController.h */,
+				CBF4A0A5183B41BE005B38AE /* RecentTableViewController.m */,
+			);
+			name = Update;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -525,17 +548,20 @@
 				0DD94D76183746050086C009 /* SymptomObject.m in Sources */,
 				41433EB61835DAA7007588F7 /* CalendarNavigationController.m in Sources */,
 				418B653E183B0509005A668D /* TSQCalendarView.m in Sources */,
+				CBF4A097183B3A52005B38AE /* UpdateViewController.m in Sources */,
 				5DE630CD1837F9460005795D /* HomeNavigationController.m in Sources */,
 				418B653D183B0509005A668D /* TSQCalendarRowCell.m in Sources */,
 				1B631F561838BB1A00B637A6 /* AddTreatmentController.m in Sources */,
 				418B653C183B0509005A668D /* TSQCalendarMonthHeaderCell.m in Sources */,
 				1B34D10F183993DD003E6049 /* SymptomDictionary.m in Sources */,
 				41433EBF1835DDEF007588F7 /* CalendarViewController.m in Sources */,
+				CBF4A09D183B3E22005B38AE /* RecentViewController.m in Sources */,
 				41433EAD1835AB6D007588F7 /* SymptomsNavigationController.m in Sources */,
 				41433EC21835DE11007588F7 /* SummaryViewController.m in Sources */,
 				418B64E518387A70005A668D /* TreatmentDelegate.m in Sources */,
 				418B64F9183AD20F005A668D /* SummaryOccurrencesDelegate.m in Sources */,
 				1B631F531838B99F00B637A6 /* AddOccurrencesController.m in Sources */,
+				CBF4A0A6183B41BE005B38AE /* RecentTableViewController.m in Sources */,
 				418B64E418387A70005A668D /* OccurrencesDelegate.m in Sources */,
 				418B64EB1839B81F005A668D /* OccurrencesObject.m in Sources */,
 				418B64E81839B5F6005A668D /* TreatmentObject.m in Sources */,
