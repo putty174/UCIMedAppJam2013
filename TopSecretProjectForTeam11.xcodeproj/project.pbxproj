@@ -40,6 +40,16 @@
 		418B64EB1839B81F005A668D /* OccurrencesObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B64EA1839B81F005A668D /* OccurrencesObject.m */; };
 		418B64F9183AD20F005A668D /* SummaryOccurrencesDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B64F7183AD20F005A668D /* SummaryOccurrencesDelegate.m */; };
 		418B64FC183AD23D005A668D /* SummaryTreatmentDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B64FB183AD23D005A668D /* SummaryTreatmentDelegate.m */; };
+		418B6537183B0509005A668D /* gregorian.png in Resources */ = {isa = PBXBuildFile; fileRef = 418B6501183B0509005A668D /* gregorian.png */; };
+		418B6538183B0509005A668D /* hebrew.png in Resources */ = {isa = PBXBuildFile; fileRef = 418B6502183B0509005A668D /* hebrew.png */; };
+		418B6539183B0509005A668D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 418B6503183B0509005A668D /* LICENSE */; };
+		418B653A183B0509005A668D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 418B6504183B0509005A668D /* README.md */; };
+		418B653B183B0509005A668D /* TSQCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B6509183B0509005A668D /* TSQCalendarCell.m */; };
+		418B653C183B0509005A668D /* TSQCalendarMonthHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B650B183B0509005A668D /* TSQCalendarMonthHeaderCell.m */; };
+		418B653D183B0509005A668D /* TSQCalendarRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B650D183B0509005A668D /* TSQCalendarRowCell.m */; };
+		418B653E183B0509005A668D /* TSQCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B650F183B0509005A668D /* TSQCalendarView.m */; };
+		418B653F183B0509005A668D /* TimesSquare.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 418B6510183B0509005A668D /* TimesSquare.podspec */; };
+		418B6560183B05EC005A668D /* libTimesSquare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 418B6559183B050A005A668D /* libTimesSquare.a */; };
 		5DE630CA1837F8E80005795D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630C91837F8E80005795D /* HomeViewController.m */; };
 		5DE630CD1837F9460005795D /* HomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630CC1837F9460005795D /* HomeNavigationController.m */; };
 		5DE630D11838236C0005795D /* SymptomsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630D01838236C0005795D /* SymptomsTableViewController.m */; };
@@ -53,9 +63,9 @@
 			remoteGlobalIDString = 41433E6418357F0B007588F7;
 			remoteInfo = TopSecretProjectForTeam11;
 		};
-		5D4C2210183A0D8E00D05EB0 /* PBXContainerItemProxy */ = {
+		418B6558183B050A005A668D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5D4C220B183A0D8E00D05EB0 /* TimesSquare.xcodeproj */;
+			containerPortal = 418B6511183B0509005A668D /* TimesSquare.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = A806805B16700FD70071C71E;
 			remoteInfo = TimesSquare;
@@ -118,6 +128,22 @@
 		418B64F7183AD20F005A668D /* SummaryOccurrencesDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryOccurrencesDelegate.m; sourceTree = "<group>"; };
 		418B64FA183AD23D005A668D /* SummaryTreatmentDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryTreatmentDelegate.h; sourceTree = "<group>"; };
 		418B64FB183AD23D005A668D /* SummaryTreatmentDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryTreatmentDelegate.m; sourceTree = "<group>"; };
+		418B6501183B0509005A668D /* gregorian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gregorian.png; sourceTree = "<group>"; };
+		418B6502183B0509005A668D /* hebrew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hebrew.png; sourceTree = "<group>"; };
+		418B6503183B0509005A668D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		418B6504183B0509005A668D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		418B6506183B0509005A668D /* TimesSquare-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TimesSquare-Prefix.pch"; sourceTree = "<group>"; };
+		418B6507183B0509005A668D /* TimesSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimesSquare.h; sourceTree = "<group>"; };
+		418B6508183B0509005A668D /* TSQCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSQCalendarCell.h; sourceTree = "<group>"; };
+		418B6509183B0509005A668D /* TSQCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSQCalendarCell.m; sourceTree = "<group>"; };
+		418B650A183B0509005A668D /* TSQCalendarMonthHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSQCalendarMonthHeaderCell.h; sourceTree = "<group>"; };
+		418B650B183B0509005A668D /* TSQCalendarMonthHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSQCalendarMonthHeaderCell.m; sourceTree = "<group>"; };
+		418B650C183B0509005A668D /* TSQCalendarRowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSQCalendarRowCell.h; sourceTree = "<group>"; };
+		418B650D183B0509005A668D /* TSQCalendarRowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSQCalendarRowCell.m; sourceTree = "<group>"; };
+		418B650E183B0509005A668D /* TSQCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSQCalendarView.h; sourceTree = "<group>"; };
+		418B650F183B0509005A668D /* TSQCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSQCalendarView.m; sourceTree = "<group>"; };
+		418B6510183B0509005A668D /* TimesSquare.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TimesSquare.podspec; sourceTree = "<group>"; };
+		418B6511183B0509005A668D /* TimesSquare.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TimesSquare.xcodeproj; sourceTree = "<group>"; };
 		5DE630C81837F8E80005795D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = Home/HomeViewController.h; sourceTree = "<group>"; };
 		5DE630C91837F8E80005795D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = Home/HomeViewController.m; sourceTree = "<group>"; };
 		5DE630CB1837F9460005795D /* HomeNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeNavigationController.h; sourceTree = "<group>"; };
@@ -131,7 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D4C2212183A0DDA00D05EB0 /* libTimesSquare.a in Frameworks */,
+				418B6560183B05EC005A668D /* libTimesSquare.a in Frameworks */,
 				0DD94D73183745940086C009 /* EventKit.framework in Frameworks */,
 				41433E6B18357F0B007588F7 /* CoreGraphics.framework in Frameworks */,
 				41433E6D18357F0B007588F7 /* UIKit.framework in Frameworks */,
@@ -196,7 +222,7 @@
 		41433E6E18357F0B007588F7 /* TopSecretProjectForTeam11 */ = {
 			isa = PBXGroup;
 			children = (
-				5D4C220B183A0D8E00D05EB0 /* TimesSquare.xcodeproj */,
+				418B64FF183B0509005A668D /* TSQ */,
 				5DE630D81838D0FD0005795D /* calLib */,
 				0DD94D6E1837432C0086C009 /* SymptomObject */,
 				41433EBC1835DB43007588F7 /* Summary */,
@@ -267,8 +293,6 @@
 				41433EB51835DAA7007588F7 /* CalendarNavigationController.m */,
 				41433EBD1835DDEF007588F7 /* CalendarViewController.h */,
 				41433EBE1835DDEF007588F7 /* CalendarViewController.m */,
-				5DC14A81183A1973003A1797 /* DayViewController.h */,
-				5DC14A82183A1973003A1797 /* DayViewController.m */,
 			);
 			name = Calendar;
 			sourceTree = "<group>";
@@ -304,6 +328,53 @@
 				418B64F7183AD20F005A668D /* SummaryOccurrencesDelegate.m */,
 			);
 			name = CustomTableViewClasses;
+			sourceTree = "<group>";
+		};
+		418B64FF183B0509005A668D /* TSQ */ = {
+			isa = PBXGroup;
+			children = (
+				418B6500183B0509005A668D /* Documentation */,
+				418B6503183B0509005A668D /* LICENSE */,
+				418B6504183B0509005A668D /* README.md */,
+				418B6505183B0509005A668D /* TimesSquare */,
+				418B6510183B0509005A668D /* TimesSquare.podspec */,
+				418B6511183B0509005A668D /* TimesSquare.xcodeproj */,
+			);
+			path = TSQ;
+			sourceTree = "<group>";
+		};
+		418B6500183B0509005A668D /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				418B6501183B0509005A668D /* gregorian.png */,
+				418B6502183B0509005A668D /* hebrew.png */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+		418B6505183B0509005A668D /* TimesSquare */ = {
+			isa = PBXGroup;
+			children = (
+				418B6506183B0509005A668D /* TimesSquare-Prefix.pch */,
+				418B6507183B0509005A668D /* TimesSquare.h */,
+				418B6508183B0509005A668D /* TSQCalendarCell.h */,
+				418B6509183B0509005A668D /* TSQCalendarCell.m */,
+				418B650A183B0509005A668D /* TSQCalendarMonthHeaderCell.h */,
+				418B650B183B0509005A668D /* TSQCalendarMonthHeaderCell.m */,
+				418B650C183B0509005A668D /* TSQCalendarRowCell.h */,
+				418B650D183B0509005A668D /* TSQCalendarRowCell.m */,
+				418B650E183B0509005A668D /* TSQCalendarView.h */,
+				418B650F183B0509005A668D /* TSQCalendarView.m */,
+			);
+			path = TimesSquare;
+			sourceTree = "<group>";
+		};
+		418B6512183B0509005A668D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				418B6559183B050A005A668D /* libTimesSquare.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		5DE630CE1837F9640005795D /* Home */ = {
@@ -391,8 +462,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 5D4C220C183A0D8E00D05EB0 /* Products */;
-					ProjectRef = 5D4C220B183A0D8E00D05EB0 /* TimesSquare.xcodeproj */;
+					ProductGroup = 418B6512183B0509005A668D /* Products */;
+					ProjectRef = 418B6511183B0509005A668D /* TimesSquare.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -404,11 +475,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		5D4C2211183A0D8E00D05EB0 /* libTimesSquare.a */ = {
+		418B6559183B050A005A668D /* libTimesSquare.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libTimesSquare.a;
-			remoteRef = 5D4C2210183A0D8E00D05EB0 /* PBXContainerItemProxy */;
+			remoteRef = 418B6558183B050A005A668D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -420,8 +491,13 @@
 			files = (
 				41433E8418357F0B007588F7 /* Images.xcassets in Resources */,
 				41433E7318357F0B007588F7 /* InfoPlist.strings in Resources */,
+				418B653F183B0509005A668D /* TimesSquare.podspec in Resources */,
+				418B6539183B0509005A668D /* LICENSE in Resources */,
+				418B6538183B0509005A668D /* hebrew.png in Resources */,
 				41433EC61835EB2B007588F7 /* README.md in Resources */,
 				41433EC51835EB2B007588F7 /* LICENSE in Resources */,
+				418B653A183B0509005A668D /* README.md in Resources */,
+				418B6537183B0509005A668D /* gregorian.png in Resources */,
 				41433E7C18357F0B007588F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,8 +519,11 @@
 			files = (
 				0DD94D76183746050086C009 /* SymptomObject.m in Sources */,
 				41433EB61835DAA7007588F7 /* CalendarNavigationController.m in Sources */,
+				418B653E183B0509005A668D /* TSQCalendarView.m in Sources */,
 				5DE630CD1837F9460005795D /* HomeNavigationController.m in Sources */,
+				418B653D183B0509005A668D /* TSQCalendarRowCell.m in Sources */,
 				1B631F561838BB1A00B637A6 /* AddTreatmentController.m in Sources */,
+				418B653C183B0509005A668D /* TSQCalendarMonthHeaderCell.m in Sources */,
 				1B34D10F183993DD003E6049 /* SymptomDictionary.m in Sources */,
 				41433EBF1835DDEF007588F7 /* CalendarViewController.m in Sources */,
 				41433EAD1835AB6D007588F7 /* SymptomsNavigationController.m in Sources */,
@@ -455,7 +534,7 @@
 				418B64E418387A70005A668D /* OccurrencesDelegate.m in Sources */,
 				418B64EB1839B81F005A668D /* OccurrencesObject.m in Sources */,
 				418B64E81839B5F6005A668D /* TreatmentObject.m in Sources */,
-				5DC14A83183A1973003A1797 /* DayViewController.m in Sources */,
+				418B653B183B0509005A668D /* TSQCalendarCell.m in Sources */,
 				41433E7918357F0B007588F7 /* AppDelegate.m in Sources */,
 				0DC2EB5218398C9300C83558 /* SymptomViewController.m in Sources */,
 				5DE630CA1837F8E80005795D /* HomeViewController.m in Sources */,
