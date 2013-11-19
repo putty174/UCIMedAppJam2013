@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TreatmentObject : NSObject
+@interface TreatmentObject : NSObject <NSCoding>
 @property NSString *treatment;
 @property NSString *frequency;
 @property NSString *notes;

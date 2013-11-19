@@ -20,4 +20,22 @@
     }
     return self;
 }
+
+- (id) initWithCoder:(NSCoder *)aDecoder
+{
+    if (self = [super init])
+    {
+        [self setTreatment:[aDecoder decodeObjectForKey:@"treat"]];
+        [self setFrequency:[aDecoder decodeObjectForKey:@"freq"]];
+        [self setNotes:[aDecoder decodeObjectForKey:@"treatNotes"]];
+    }
+    return self;
+}
+
+- (void) encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeObject:_treatment forKey:@"treat"];
+    [aCoder encodeObject:_frequency forKey:@"freq"];
+    [aCoder encodeObject:_notes forKey:@"treatNotes"];
+}
 @end

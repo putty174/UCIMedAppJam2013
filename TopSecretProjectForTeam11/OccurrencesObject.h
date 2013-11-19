@@ -8,9 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface OccurrencesObject : NSObject
+@interface OccurrencesObject : NSObject <NSCoding>
+
 @property NSDate *startDate;
 @property NSDate *endDate;
+
 -(id) initWithStartDate:(NSDate *) startDate
             WithEndDate:(NSDate *) endDate;
 @end

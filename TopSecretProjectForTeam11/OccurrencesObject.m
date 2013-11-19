@@ -19,4 +19,20 @@
     return self;
 }
 
+- (id) initWithCoder:(NSCoder *)aDecoder
+{
+    if (self = [super init])
+    {
+        [self setStartDate:[aDecoder decodeObjectForKey:@"start"]];
+        [self setEndDate:[aDecoder decodeObjectForKey:@"end"]];
+    }
+    return self;
+}
+
+- (void) encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeObject:_startDate forKey:@"start"];
+    [aCoder encodeObject:_endDate forKey:@"end"];
+    
+}
 @end

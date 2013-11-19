@@ -32,10 +32,10 @@
     if (self)
     {
         _symDictionary = [[NSMutableDictionary alloc] init];
-        _paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-        _path = [_paths objectAtIndex:0];
-        _filepath = [_path stringByAppendingPathComponent:@"symdic.plist"];
     }
+    _paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    _path = [_paths objectAtIndex:0];
+    _filepath = [_path stringByAppendingPathComponent:@"symdic.plist"];
     return self;
 }
 
