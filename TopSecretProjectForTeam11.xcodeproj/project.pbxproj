@@ -40,6 +40,7 @@
 		418B64EB1839B81F005A668D /* OccurrencesObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B64EA1839B81F005A668D /* OccurrencesObject.m */; };
 		5D4C2212183A0DDA00D05EB0 /* libTimesSquare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4C2211183A0D8E00D05EB0 /* libTimesSquare.a */; };
 		5DC14A83183A1973003A1797 /* DayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC14A82183A1973003A1797 /* DayViewController.m */; };
+		5DC14A89183AF8FB003A1797 /* SymptomsTableViewObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC14A88183AF8FB003A1797 /* SymptomsTableViewObject.m */; };
 		5DE630CA1837F8E80005795D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630C91837F8E80005795D /* HomeViewController.m */; };
 		5DE630CD1837F9460005795D /* HomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630CC1837F9460005795D /* HomeNavigationController.m */; };
 		5DE630D11838236C0005795D /* SymptomsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630D01838236C0005795D /* SymptomsTableViewController.m */; };
@@ -117,6 +118,8 @@
 		5D4C220B183A0D8E00D05EB0 /* TimesSquare.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TimesSquare.xcodeproj; path = "../../objc-TimesSquare/TimesSquare.xcodeproj"; sourceTree = "<group>"; };
 		5DC14A81183A1973003A1797 /* DayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayViewController.h; sourceTree = "<group>"; };
 		5DC14A82183A1973003A1797 /* DayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayViewController.m; sourceTree = "<group>"; };
+		5DC14A87183AF8FB003A1797 /* SymptomsTableViewObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymptomsTableViewObject.h; sourceTree = "<group>"; };
+		5DC14A88183AF8FB003A1797 /* SymptomsTableViewObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomsTableViewObject.m; sourceTree = "<group>"; };
 		5DE630C81837F8E80005795D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = Home/HomeViewController.h; sourceTree = "<group>"; };
 		5DE630C91837F8E80005795D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = Home/HomeViewController.m; sourceTree = "<group>"; };
 		5DE630CB1837F9460005795D /* HomeNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeNavigationController.h; sourceTree = "<group>"; };
@@ -310,6 +313,8 @@
 				5DE630CB1837F9460005795D /* HomeNavigationController.h */,
 				5DE630CF1838236C0005795D /* SymptomsTableViewController.h */,
 				5DE630D01838236C0005795D /* SymptomsTableViewController.m */,
+				5DC14A87183AF8FB003A1797 /* SymptomsTableViewObject.h */,
+				5DC14A88183AF8FB003A1797 /* SymptomsTableViewObject.m */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -446,6 +451,7 @@
 				41433EC21835DE11007588F7 /* SummaryViewController.m in Sources */,
 				418B64E518387A70005A668D /* TreatmentDelegate.m in Sources */,
 				1B631F531838B99F00B637A6 /* AddOccurrencesController.m in Sources */,
+				5DC14A89183AF8FB003A1797 /* SymptomsTableViewObject.m in Sources */,
 				418B64E418387A70005A668D /* OccurrencesDelegate.m in Sources */,
 				418B64EB1839B81F005A668D /* OccurrencesObject.m in Sources */,
 				418B64E81839B5F6005A668D /* TreatmentObject.m in Sources */,
