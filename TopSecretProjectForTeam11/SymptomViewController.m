@@ -64,4 +64,13 @@
     [self.scrollView layoutIfNeeded];
     self.scrollView.contentSize = self.ContentView.bounds.size;
 }
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+
+    TreatmentDetailsViewController *ctrlr = (TreatmentDetailsViewController*) segue.destinationViewController;
+    TreatmentObject *obj = [self.symptom.treatments objectAtIndex:self.selectedRow];
+    ctrlr.treatment = obj;
+    
+    
+}
 @end

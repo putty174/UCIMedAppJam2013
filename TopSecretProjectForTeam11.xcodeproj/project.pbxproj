@@ -50,6 +50,7 @@
 		418B653E183B0509005A668D /* TSQCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B650F183B0509005A668D /* TSQCalendarView.m */; };
 		418B653F183B0509005A668D /* TimesSquare.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 418B6510183B0509005A668D /* TimesSquare.podspec */; };
 		418B6560183B05EC005A668D /* libTimesSquare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 418B6559183B050A005A668D /* libTimesSquare.a */; };
+		418B672F183B3BE3005A668D /* TreatmentDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B672E183B3BE3005A668D /* TreatmentDetailsViewController.m */; };
 		5DE630CA1837F8E80005795D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630C91837F8E80005795D /* HomeViewController.m */; };
 		5DE630CD1837F9460005795D /* HomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630CC1837F9460005795D /* HomeNavigationController.m */; };
 		5DE630D11838236C0005795D /* SymptomsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630D01838236C0005795D /* SymptomsTableViewController.m */; };
@@ -144,6 +145,8 @@
 		418B650F183B0509005A668D /* TSQCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSQCalendarView.m; sourceTree = "<group>"; };
 		418B6510183B0509005A668D /* TimesSquare.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TimesSquare.podspec; sourceTree = "<group>"; };
 		418B6511183B0509005A668D /* TimesSquare.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TimesSquare.xcodeproj; sourceTree = "<group>"; };
+		418B672D183B3BE3005A668D /* TreatmentDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreatmentDetailsViewController.h; sourceTree = "<group>"; };
+		418B672E183B3BE3005A668D /* TreatmentDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreatmentDetailsViewController.m; sourceTree = "<group>"; };
 		5DE630C81837F8E80005795D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = Home/HomeViewController.h; sourceTree = "<group>"; };
 		5DE630C91837F8E80005795D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = Home/HomeViewController.m; sourceTree = "<group>"; };
 		5DE630CB1837F9460005795D /* HomeNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeNavigationController.h; sourceTree = "<group>"; };
@@ -192,6 +195,8 @@
 				418B64E71839B5F6005A668D /* TreatmentObject.m */,
 				418B64E91839B81F005A668D /* OccurrencesObject.h */,
 				418B64EA1839B81F005A668D /* OccurrencesObject.m */,
+				418B672D183B3BE3005A668D /* TreatmentDetailsViewController.h */,
+				418B672E183B3BE3005A668D /* TreatmentDetailsViewController.m */,
 			);
 			name = SymptomObject;
 			sourceTree = "<group>";
@@ -537,6 +542,7 @@
 				418B653B183B0509005A668D /* TSQCalendarCell.m in Sources */,
 				41433E7918357F0B007588F7 /* AppDelegate.m in Sources */,
 				0DC2EB5218398C9300C83558 /* SymptomViewController.m in Sources */,
+				418B672F183B3BE3005A668D /* TreatmentDetailsViewController.m in Sources */,
 				5DE630CA1837F8E80005795D /* HomeViewController.m in Sources */,
 				5DE630D11838236C0005795D /* SymptomsTableViewController.m in Sources */,
 				41433EB91835DAC9007588F7 /* SummaryNavigationController.m in Sources */,
