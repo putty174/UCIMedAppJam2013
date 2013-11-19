@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "SymptomObject.h"
+#import "SummaryTreatmentDelegate.h"
+#import "SummaryOccurrencesDelegate.h"
 
 @interface SymptomViewController : UIViewController
 

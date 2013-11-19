@@ -38,6 +38,8 @@
 		418B64E518387A70005A668D /* TreatmentDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B64E318387A70005A668D /* TreatmentDelegate.m */; };
 		418B64E81839B5F6005A668D /* TreatmentObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B64E71839B5F6005A668D /* TreatmentObject.m */; };
 		418B64EB1839B81F005A668D /* OccurrencesObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B64EA1839B81F005A668D /* OccurrencesObject.m */; };
+		418B64F9183AD20F005A668D /* SummaryOccurrencesDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B64F7183AD20F005A668D /* SummaryOccurrencesDelegate.m */; };
+		418B64FC183AD23D005A668D /* SummaryTreatmentDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B64FB183AD23D005A668D /* SummaryTreatmentDelegate.m */; };
 		5DE630CA1837F8E80005795D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630C91837F8E80005795D /* HomeViewController.m */; };
 		5DE630CD1837F9460005795D /* HomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630CC1837F9460005795D /* HomeNavigationController.m */; };
 		5DE630D11838236C0005795D /* SymptomsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630D01838236C0005795D /* SymptomsTableViewController.m */; };
@@ -105,6 +107,10 @@
 		418B64E71839B5F6005A668D /* TreatmentObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreatmentObject.m; sourceTree = "<group>"; };
 		418B64E91839B81F005A668D /* OccurrencesObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OccurrencesObject.h; sourceTree = "<group>"; };
 		418B64EA1839B81F005A668D /* OccurrencesObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OccurrencesObject.m; sourceTree = "<group>"; };
+		418B64F6183AD20F005A668D /* SummaryOccurrencesDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryOccurrencesDelegate.h; sourceTree = "<group>"; };
+		418B64F7183AD20F005A668D /* SummaryOccurrencesDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryOccurrencesDelegate.m; sourceTree = "<group>"; };
+		418B64FA183AD23D005A668D /* SummaryTreatmentDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryTreatmentDelegate.h; sourceTree = "<group>"; };
+		418B64FB183AD23D005A668D /* SummaryTreatmentDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryTreatmentDelegate.m; sourceTree = "<group>"; };
 		5DE630C81837F8E80005795D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = Home/HomeViewController.h; sourceTree = "<group>"; };
 		5DE630C91837F8E80005795D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = Home/HomeViewController.m; sourceTree = "<group>"; };
 		5DE630CB1837F9460005795D /* HomeNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeNavigationController.h; sourceTree = "<group>"; };
@@ -141,6 +147,7 @@
 		0DD94D6E1837432C0086C009 /* SymptomObject */ = {
 			isa = PBXGroup;
 			children = (
+				418B64F3183AD1EE005A668D /* CustomTableViewClasses */,
 				1B34D10D183993DD003E6049 /* SymptomDictionary.h */,
 				1B34D10E183993DD003E6049 /* SymptomDictionary.m */,
 				0DD94D74183746050086C009 /* SymptomObject.h */,
@@ -277,6 +284,17 @@
 			name = CustomTableViewClasses;
 			sourceTree = "<group>";
 		};
+		418B64F3183AD1EE005A668D /* CustomTableViewClasses */ = {
+			isa = PBXGroup;
+			children = (
+				418B64FA183AD23D005A668D /* SummaryTreatmentDelegate.h */,
+				418B64FB183AD23D005A668D /* SummaryTreatmentDelegate.m */,
+				418B64F6183AD20F005A668D /* SummaryOccurrencesDelegate.h */,
+				418B64F7183AD20F005A668D /* SummaryOccurrencesDelegate.m */,
+			);
+			name = CustomTableViewClasses;
+			sourceTree = "<group>";
+		};
 		5DE630CE1837F9640005795D /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,6 +423,7 @@
 				41433EAD1835AB6D007588F7 /* SymptomsNavigationController.m in Sources */,
 				41433EC21835DE11007588F7 /* SummaryViewController.m in Sources */,
 				418B64E518387A70005A668D /* TreatmentDelegate.m in Sources */,
+				418B64F9183AD20F005A668D /* SummaryOccurrencesDelegate.m in Sources */,
 				1B631F531838B99F00B637A6 /* AddOccurrencesController.m in Sources */,
 				418B64E418387A70005A668D /* OccurrencesDelegate.m in Sources */,
 				418B64EB1839B81F005A668D /* OccurrencesObject.m in Sources */,
@@ -414,6 +433,7 @@
 				5DE630CA1837F8E80005795D /* HomeViewController.m in Sources */,
 				5DE630D11838236C0005795D /* SymptomsTableViewController.m in Sources */,
 				41433EB91835DAC9007588F7 /* SummaryNavigationController.m in Sources */,
+				418B64FC183AD23D005A668D /* SummaryTreatmentDelegate.m in Sources */,
 				41433E7518357F0B007588F7 /* main.m in Sources */,
 				41433EB31835CD2E007588F7 /* SymptomsTableView.m in Sources */,
 				41433EB01835AC95007588F7 /* AddSymptomController.m in Sources */,

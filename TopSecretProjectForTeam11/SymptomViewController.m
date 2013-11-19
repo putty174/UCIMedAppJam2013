@@ -15,6 +15,11 @@
 @property (weak, nonatomic) IBOutlet UISlider *PainSlider;
 @property (weak, nonatomic) IBOutlet UILabel *PainNumber;
 @property (strong, nonatomic) IBOutlet UITextView *notesView;
+@property (weak, nonatomic) IBOutlet UITableView *occurrencesTable;
+@property (weak, nonatomic) IBOutlet UITableView *treatmentsTable;
+@property SummaryOccurrencesDelegate *occurrencesDelegate;
+@property SummaryTreatmentDelegate *treatmentDelegate;
+
 
 @end
 
@@ -37,6 +42,14 @@
     _PainSlider.value = _symptom.pain;
     _PainNumber.text = [NSString stringWithFormat:@"%d", (int)roundf(_PainSlider.value)];
     _notesView.text = _symptom.notes;
+    
+    self.treatmentDelegate = [[SummaryTreatmentDelegate alloc] initWithController:self AndWithArray:self.symptom.treatments];
+    self.occurrencesDelegate = [[SummaryOccurrencesDelegate alloc] initWithController:self AndWithArray:self.symptom.occurrences];
+    
+    self.occurrencesTable.delegate = self.occurrencesDelegate;
+    self.occurrencesTable.dataSource = self.occurrencesDelegate;
+    self.treatmentsTable.delegate = self.treatmentDelegate;
+    self.treatmentsTable.dataSource = self.treatmentDelegate;
 }
 
 - (void)didReceiveMemoryWarning
