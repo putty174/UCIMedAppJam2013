@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <EventKit/EventKit.h>
+#import "SymptomDictionary.h"
+#import "RecentSymViewController.h"
 
-@interface RecentTableViewController : UITableViewController
+@interface RecentTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property EKEventStore *recentSymEventStore;
+
+@property (strong, nonatomic) SymptomDictionary *symdic;
+
+@property int index;
+
+@property (strong, nonatomic) IBOutlet UITableView *recentTable;
+@property (nonatomic, strong) NSMutableArray *symArray;
 
 @end
