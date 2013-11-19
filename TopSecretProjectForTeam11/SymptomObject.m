@@ -9,6 +9,7 @@
 #import "SymptomObject.h"
 
 @implementation SymptomObject
+
 -(id)init {
     self = [super init];
     if (self) {
@@ -16,5 +17,28 @@
         self.treatments = [[NSMutableArray alloc] init];
     }
     return self;
+}
+
+- (id) initWithCoder:(NSCoder *)aDecoder
+{
+    if (self = [super init])
+    {
+        [self setSymptom:[aDecoder decodeObjectForKey:@"symptom"]];
+        [self setPain:[aDecoder decodeIntForKey:@"pain"]];
+        [self setOccurrences:[aDecoder decodeObjectForKey:@"occurrences"]];
+        [self setTreatments:[aDecoder decodeObjectForKey:@"treatments"]];
+        [self setNotes:[aDecoder decodeObjectForKey:@"notes"]];
+    }
+    return self;
+}
+
+- (void) encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeObject:_symptom forKey:@"symptom"];
+    [aCoder encodeInt:_pain forKey:@"pain"];
+    [aCoder encodeObject:_occurrences forKey:@"occurrences"];
+    [aCoder encodeObject:_treatments forKey:@"treatments"];
+    [aCoder encodeObject:_notes forKey:@"notes"];
+    
 }
 @end

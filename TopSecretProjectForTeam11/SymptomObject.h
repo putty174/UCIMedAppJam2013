@@ -10,13 +10,12 @@
 #import <EventKit/EKEvent.h>
 #import <EventKit/EKEventStore.h>
 
-@interface SymptomObject : NSObject 
+@interface SymptomObject : NSObject <NSCoding>
 
 @property NSString *symptom;
-@property int pain;
+@property NSInteger pain;
 @property NSMutableArray *occurrences;
 @property NSMutableArray *treatments;
 @property NSString *notes;
-@property EKEvent *event;
 
 @end

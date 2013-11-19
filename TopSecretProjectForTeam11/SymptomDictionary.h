@@ -17,9 +17,11 @@
 @property (strong, nonatomic) NSMutableDictionary *symDictionary;
 
 - (void)addSymptom:(SymptomObject *)symObject;
-
 - (void)removeSymptom:(SymptomObject *)symObject;
-
 - (SymptomObject *) findSymptom:(NSString *)symptom;
+
+@property (strong, nonatomic) NSArray *paths;
+@property (strong, nonatomic) NSString *path;
+@property (strong, nonatomic) NSString *filepath;
 
 @end

@@ -32,24 +32,49 @@
     if (self)
     {
         _symDictionary = [[NSMutableDictionary alloc] init];
+        _paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        _path = [_paths objectAtIndex:0];
+        _filepath = [_path stringByAppendingPathComponent:@"symdic.plist"];
     }
     return self;
-}
-
-// Initialize the NSMutableDictionary called symDictionary
-- (NSMutableDictionary *) symDictionary {
-    if (!_symDictionary) _symDictionary = [[NSMutableDictionary alloc] init];
-    return _symDictionary;
 }
 
 // Add Symptom Objects to the symDictionary
 - (void)addSymptom:(SymptomObject *)symObject{
     [self.symDictionary setObject:symObject forKey:symObject.symptom];
+    
+    NSData *symptomDict = [NSKeyedArchiver archivedDataWithRootObject:_symDictionary];
+    BOOL save = [symptomDict writeToFile:_filepath atomically:YES];
+    
+    if(save)
+    {
+        UIAlertView *symptomAlert = [[UIAlertView alloc] initWithTitle:@"Symptom Saved" message:@"Your symptom has been saved." delegate:nil cancelButtonTitle:@"Done" otherButtonTitles:nil, nil];
+        [symptomAlert show];
+    }
+    else
+    {
+        UIAlertView *symptomAlert = [[UIAlertView alloc] initWithTitle:@"Save Failed" message:@"Your symptom failed to save." delegate:nil cancelButtonTitle:@"Done" otherButtonTitles:nil, nil];
+        [symptomAlert show];
+    }
 }
 
 // Remove Symptom Objects to the symDictionary
 - (void)removeSymptom:(SymptomObject *)symObject{
     [self.symDictionary removeObjectForKey:symObject.symptom];
+    
+    NSData *symptomDict = [NSKeyedArchiver archivedDataWithRootObject:_symDictionary];
+    BOOL save = [symptomDict writeToFile:_filepath atomically:YES];
+    
+    if(save)
+    {
+        UIAlertView *symptomAlert = [[UIAlertView alloc] initWithTitle:@"Symptom Removed" message:@"Your symptom has been removed." delegate:nil cancelButtonTitle:@"Done" otherButtonTitles:nil, nil];
+        [symptomAlert show];
+    }
+    else
+    {
+        UIAlertView *symptomAlert = [[UIAlertView alloc] initWithTitle:@"Remove Failed" message:@"Your symptom failed to remove." delegate:nil cancelButtonTitle:@"Done" otherButtonTitles:nil, nil];
+        [symptomAlert show];
+    }
 }
 
 // Find Symptom Objects in the symDictionary

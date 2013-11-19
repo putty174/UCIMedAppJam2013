@@ -48,11 +48,6 @@
     
     //set up event property for SymptomObject
     _symptomEventStore = [[EKEventStore alloc] init];
-    _symptom.event = [EKEvent eventWithEventStore:_symptomEventStore];
-    _symptom.event.title = _symptom.symptom;
-    _symptom.event.startDate = [[NSDate alloc] init];
-    _symptom.event.endDate = [[NSDate alloc] init];
-    [_symptom.event setCalendar:[_symptomEventStore defaultCalendarForNewEvents]];
 }
 
 -(void)viewDidAppear:(BOOL)animated {
@@ -111,18 +106,6 @@
     {
         _symptom.symptom = self.symptomsEditText.text;
         _symptom.pain = roundf(self.painValue.value);
-        
-        _symptom.event.title = _symptom.symptom;
-        _symptom.event.startDate = [NSDate date];
-        _symptom.event.endDate = [_symptom.event.startDate dateByAddingTimeInterval:1];
-        
-        NSError *symptomErr;
-        [_symptomEventStore saveEvent:_symptom.event span:EKSpanThisEvent error:&symptomErr];
-        if([symptomErr code] == 0)
-        {
-            UIAlertView *symptomAlert = [[UIAlertView alloc] initWithTitle:@"Symptom Saved" message:@"Your symptom has been saved." delegate:nil cancelButtonTitle:@"Done" otherButtonTitles:nil, nil];
-            [symptomAlert show];
-        }
         
         if (self.currentSegment == 2) { //if changing segments from the text view, save the text in it
             self.notes = [((UITextView*)self.currentDynamicView) text];
