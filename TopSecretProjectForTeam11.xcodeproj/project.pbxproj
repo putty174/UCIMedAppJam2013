@@ -42,8 +42,8 @@
 		418B64FC183AD23D005A668D /* SummaryTreatmentDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B64FB183AD23D005A668D /* SummaryTreatmentDelegate.m */; };
 		418B6537183B0509005A668D /* gregorian.png in Resources */ = {isa = PBXBuildFile; fileRef = 418B6501183B0509005A668D /* gregorian.png */; };
 		418B6538183B0509005A668D /* hebrew.png in Resources */ = {isa = PBXBuildFile; fileRef = 418B6502183B0509005A668D /* hebrew.png */; };
-		418B6539183B0509005A668D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 418B6503183B0509005A668D /* LICENSE */; };
-		418B653A183B0509005A668D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 418B6504183B0509005A668D /* README.md */; };
+		418B6539183B0509005A668D /* TSQLICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 418B6503183B0509005A668D /* TSQLICENSE */; };
+		418B653A183B0509005A668D /* TSQREADME.md in Resources */ = {isa = PBXBuildFile; fileRef = 418B6504183B0509005A668D /* TSQREADME.md */; };
 		418B653B183B0509005A668D /* TSQCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B6509183B0509005A668D /* TSQCalendarCell.m */; };
 		418B653C183B0509005A668D /* TSQCalendarMonthHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B650B183B0509005A668D /* TSQCalendarMonthHeaderCell.m */; };
 		418B653D183B0509005A668D /* TSQCalendarRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B650D183B0509005A668D /* TSQCalendarRowCell.m */; };
@@ -130,8 +130,8 @@
 		418B64FB183AD23D005A668D /* SummaryTreatmentDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryTreatmentDelegate.m; sourceTree = "<group>"; };
 		418B6501183B0509005A668D /* gregorian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gregorian.png; sourceTree = "<group>"; };
 		418B6502183B0509005A668D /* hebrew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hebrew.png; sourceTree = "<group>"; };
-		418B6503183B0509005A668D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		418B6504183B0509005A668D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		418B6503183B0509005A668D /* TSQLICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TSQLICENSE; sourceTree = "<group>"; };
+		418B6504183B0509005A668D /* TSQREADME.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TSQREADME.md; sourceTree = "<group>"; };
 		418B6506183B0509005A668D /* TimesSquare-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TimesSquare-Prefix.pch"; sourceTree = "<group>"; };
 		418B6507183B0509005A668D /* TimesSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimesSquare.h; sourceTree = "<group>"; };
 		418B6508183B0509005A668D /* TSQCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSQCalendarCell.h; sourceTree = "<group>"; };
@@ -334,8 +334,8 @@
 			isa = PBXGroup;
 			children = (
 				418B6500183B0509005A668D /* Documentation */,
-				418B6503183B0509005A668D /* LICENSE */,
-				418B6504183B0509005A668D /* README.md */,
+				418B6503183B0509005A668D /* TSQLICENSE */,
+				418B6504183B0509005A668D /* TSQREADME.md */,
 				418B6505183B0509005A668D /* TimesSquare */,
 				418B6510183B0509005A668D /* TimesSquare.podspec */,
 				418B6511183B0509005A668D /* TimesSquare.xcodeproj */,
@@ -386,8 +386,6 @@
 				5DE630CB1837F9460005795D /* HomeNavigationController.h */,
 				5DE630CF1838236C0005795D /* SymptomsTableViewController.h */,
 				5DE630D01838236C0005795D /* SymptomsTableViewController.m */,
-				5DC14A87183AF8FB003A1797 /* SymptomsTableViewObject.h */,
-				5DC14A88183AF8FB003A1797 /* SymptomsTableViewObject.m */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -494,11 +492,11 @@
 				41433E8418357F0B007588F7 /* Images.xcassets in Resources */,
 				41433E7318357F0B007588F7 /* InfoPlist.strings in Resources */,
 				418B653F183B0509005A668D /* TimesSquare.podspec in Resources */,
-				418B6539183B0509005A668D /* LICENSE in Resources */,
+				418B6539183B0509005A668D /* TSQLICENSE in Resources */,
 				418B6538183B0509005A668D /* hebrew.png in Resources */,
 				41433EC61835EB2B007588F7 /* README.md in Resources */,
 				41433EC51835EB2B007588F7 /* LICENSE in Resources */,
-				418B653A183B0509005A668D /* README.md in Resources */,
+				418B653A183B0509005A668D /* TSQREADME.md in Resources */,
 				418B6537183B0509005A668D /* gregorian.png in Resources */,
 				41433E7C18357F0B007588F7 /* Main.storyboard in Resources */,
 			);
@@ -533,7 +531,6 @@
 				418B64E518387A70005A668D /* TreatmentDelegate.m in Sources */,
 				418B64F9183AD20F005A668D /* SummaryOccurrencesDelegate.m in Sources */,
 				1B631F531838B99F00B637A6 /* AddOccurrencesController.m in Sources */,
-				5DC14A89183AF8FB003A1797 /* SymptomsTableViewObject.m in Sources */,
 				418B64E418387A70005A668D /* OccurrencesDelegate.m in Sources */,
 				418B64EB1839B81F005A668D /* OccurrencesObject.m in Sources */,
 				418B64E81839B5F6005A668D /* TreatmentObject.m in Sources */,
@@ -599,7 +596,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -638,7 +634,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -696,7 +691,6 @@
 		41433E9E18357F0B007588F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TopSecretProjectForTeam11.app/TopSecretProjectForTeam11";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -719,7 +713,6 @@
 		41433E9F18357F0B007588F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TopSecretProjectForTeam11.app/TopSecretProjectForTeam11";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
