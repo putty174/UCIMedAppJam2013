@@ -7,6 +7,7 @@
 //
 
 #import "SymptomDictionary.h"
+#import <UIKit/UIKit.h>
 
 
 @implementation SymptomDictionary
@@ -29,13 +30,20 @@
 - (id) init
 {
     self = [super init];
-    if (self)
-    {
-        _symDictionary = [[NSMutableDictionary alloc] init];
-    }
     _paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     _path = [_paths objectAtIndex:0];
     _filepath = [_path stringByAppendingPathComponent:@"symdic.plist"];
+    if (self)
+    {
+        if ([[NSFileManager defaultManager] fileExistsAtPath:_filepath])
+        {
+            _symDictionary = [NSKeyedUnarchiver unarchiveObjectWithData:[NSData dataWithContentsOfFile:_filepath]];
+        }
+        else
+        {
+            _symDictionary = [[NSMutableDictionary alloc] init];
+        }
+    }
     return self;
 }
 
