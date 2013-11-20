@@ -219,4 +219,5 @@
     notesField.clipsToBounds = YES;
     return notesField;
 }
+
 @end
