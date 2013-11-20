@@ -75,11 +75,13 @@
     
     if(save)
     {
+        NSLog(@"remove symptom here");
         UIAlertView *symptomAlert = [[UIAlertView alloc] initWithTitle:@"Symptom Removed" message:@"Your symptom has been removed." delegate:nil cancelButtonTitle:@"Done" otherButtonTitles:nil, nil];
         [symptomAlert show];
     }
     else
     {
+        NSLog(@"remove symptom failed");
         UIAlertView *symptomAlert = [[UIAlertView alloc] initWithTitle:@"Remove Failed" message:@"Your symptom failed to remove." delegate:nil cancelButtonTitle:@"Done" otherButtonTitles:nil, nil];
         [symptomAlert show];
     }

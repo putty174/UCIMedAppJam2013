@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <EventKit/EventKit.h>
 #import "SymptomDictionary.h"
-#import "RecentSymViewController.h"
+#import "EditRecSymViewController.h"
 #import "UpdateSymViewController.h"
+
 
 @interface RecentTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
@@ -19,6 +20,9 @@
 @property (strong, nonatomic) SymptomDictionary *symdic;
 
 @property int index;
+
+@property NSString *stringSymptomToRemove;
+@property SymptomObject *symptomToRemove;
 
 @property (strong, nonatomic) IBOutlet UITableView *recentTable;
 @property (nonatomic, strong) NSMutableArray *symArray;

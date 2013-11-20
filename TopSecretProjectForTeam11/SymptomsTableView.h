@@ -19,5 +19,7 @@
 
 @property (strong, nonatomic) IBOutlet UITableView *symptomsTable;
 @property (nonatomic, strong) NSMutableArray *array;
+@property NSString *stringSymptomToRemove;
+@property SymptomObject *symptomToRemove;
 
 @end

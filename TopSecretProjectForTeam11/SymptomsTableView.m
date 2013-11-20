@@ -24,6 +24,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
     self.symptomsTable = [[UITableView alloc] init];
     self.symptomsTable.delegate = self;
     self.symptomsTable.dataSource = self;
@@ -137,28 +138,47 @@
 }
 
 
-/*
-// Override to support conditional editing of the table view.
+// determines which rows able to edit
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
+    // don't want to be able to edit recent symptoms or add symptom section
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0 || indexPath.row == 1) {
+            return NO;
+        }
+    }
     return YES;
+    
 }
-*/
 
-/*
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        //find string of object to remove
+        _stringSymptomToRemove = [_array objectAtIndex:indexPath.row];
+        
+        SymptomDictionary *symdic = [SymptomDictionary symptomDictionary];
+        
         // Delete the row from the data source
+        [_array removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
+        
+        //find actual symptom in dictionary with string
+        _symptomToRemove = [symdic findSymptom:_stringSymptomToRemove];
+        //remove from dictionary
+        [symdic removeSymptom:_symptomToRemove];
+        
+        
+    }
+    else if (editingStyle == UITableViewCellEditingStyleInsert)
+    {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    }
 }
-*/
+
 
 /*
 // Override to support rearranging the table view.

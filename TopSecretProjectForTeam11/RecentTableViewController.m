@@ -21,6 +21,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    //edit button
+    
     self.recentTable = [[UITableView alloc] init];
     self.recentTable.delegate = self;
     self.recentTable.dataSource = self;
@@ -124,35 +127,56 @@
         SymptomObject *so = [[SymptomObject alloc] init];
         so = [_symdic findSymptom:[_symArray objectAtIndex:_index]];
         
-        UpdateSymViewController *updateSymVC = segue.destinationViewController;
-        updateSymVC.symptom = so;
+        EditRecSymViewController *editSymVC = segue.destinationViewController;
+        editSymVC.symptom = so;
         
     }
 }
 
 
-/*
- // Override to support conditional editing of the table view.
- - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
- {
- // Return NO if you do not want the specified item to be editable.
- return YES;
- }
- */
 
-/*
- // Override to support editing the table view.
- - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
- {
- if (editingStyle == UITableViewCellEditingStyleDelete) {
- // Delete the row from the data source
- [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
- }
- else if (editingStyle == UITableViewCellEditingStyleInsert) {
- // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
- }
- }
- */
+ // Override to support conditional editing of the table view.
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Return NO if you do not want the specified item to be editable.
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+            return NO;
+        }
+    }
+    return YES;
+    
+}
+
+
+
+// Override to support editing the table view.
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        //find string of object to remove
+        _stringSymptomToRemove = [_symArray objectAtIndex:indexPath.row];
+        
+        SymptomDictionary *symdic = [SymptomDictionary symptomDictionary];
+        
+        // Delete the row from the data source
+        [_symArray removeObjectAtIndex:indexPath.row];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        
+        //find actual symptom in dictionary with string
+        _symptomToRemove = [symdic findSymptom:_stringSymptomToRemove];
+        //remove from dictionary
+        [symdic removeSymptom:_symptomToRemove];
+        
+        
+    }
+    else if (editingStyle == UITableViewCellEditingStyleInsert)
+    {
+        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+    }
+}
+
 
 /*
  // Override to support rearranging the table view.
