@@ -49,8 +49,6 @@
 - (void) viewDidAppear:(BOOL)animated
 {
     [self.array removeAllObjects];
-    [self.array addObject:@"Symptom1"];
-    [self.array addObject:@"recent symptoms"];
     for (NSString *key in [_symdic symDictionary])
     {
         [self.array addObject:key];
@@ -80,31 +78,35 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     cell.textLabel.text = self.array[indexPath.row];
-    cell.accessoryType = UITableViewCellAccessoryCheckmark;
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    _index = indexPath.row;
-    UITableViewCell *clicked = [tableView cellForRowAtIndexPath:indexPath];
-    //clicked.accessoryType = UITableViewCellAccessoryNone;
-    if(clicked.accessoryType == UITableViewCellAccessoryNone)
+    UITableViewCell *selected = [tableView cellForRowAtIndexPath:indexPath];
+    NSString *name = selected.textLabel.text;
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:name message:@"Would you like to update this symptom?  Pressing no will remove the symptom from recent." delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Yes", @"No", nil];
+    
+    alert.tag = indexPath.row;
+    [alert show];
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if(buttonIndex == 0)
     {
-        clicked.accessoryType = UITableViewCellAccessoryCheckmark;
-    }else
-    {
-        clicked.accessoryType = UITableViewCellAccessoryNone;
-    }
-    if (_index >= 2)
+        // do nothing
+    }else if(buttonIndex == 1)
     {
         [self performSegueWithIdentifier:@"HomeTabletoDetailsSegue" sender:self];
+    }else
+    {
+        // deletion to be editted once recent symptoms are found
     }
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"HomeTabletoDetailsSegue"])
     {
         SymptomObject *so = [[SymptomObject alloc] init];
         so = [_symdic findSymptom:[_array objectAtIndex:_index]];
@@ -114,6 +116,9 @@
         
     }
 }
+
+
+
 
 /*
 // Override to support conditional editing of the table view.
