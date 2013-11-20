@@ -10,6 +10,7 @@
 #import <EventKit/EventKit.h>
 #import "SymptomDictionary.h"
 #import "RecentSymViewController.h"
+#import "UpdateSymViewController.h"
 
 @interface RecentTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 

@@ -92,12 +92,12 @@
                      }
                      else
                      {
-                         [self performSegueWithIdentifier: @"AddSymptomsSegue" sender: self];
+                         [self performSegueWithIdentifier: @"addRecSymSegue" sender: self];
                      }
                  }];
                 if (status == EKAuthorizationStatusAuthorized)
                 {
-                    [self performSegueWithIdentifier: @"AddSymptomsSegue" sender: self];
+                    [self performSegueWithIdentifier: @"addRecSymSegue" sender: self];
                 }
                 
             }
@@ -107,25 +107,25 @@
             }
             if (status == EKAuthorizationStatusAuthorized)
             {
-                [self performSegueWithIdentifier: @"AddSymptomsSegue" sender: self];
+                [self performSegueWithIdentifier: @"addRecSymSegue" sender: self];
             }
         }
     }
-    if (_index >= 2)
+    if (_index >= 1)
     {
-        [self performSegueWithIdentifier:@"TabletoDetailSegue" sender:self];
+        [self performSegueWithIdentifier:@"RecentToDetailSegue" sender:self];
     }
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"TabletoDetailSegue"])
+    if ([[segue identifier] isEqualToString:@"RecentToDetailSegue"])
     {
         SymptomObject *so = [[SymptomObject alloc] init];
         so = [_symdic findSymptom:[_symArray objectAtIndex:_index]];
         
-        //SymptomViewController *SVController = segue.destinationViewController;
-        //SVController.symptom = so;
+        UpdateSymViewController *updateSymVC = segue.destinationViewController;
+        updateSymVC.symptom = so;
         
     }
 }
