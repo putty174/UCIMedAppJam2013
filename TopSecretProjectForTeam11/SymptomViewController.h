@@ -10,10 +10,12 @@
 #import "SymptomObject.h"
 #import "SummaryTreatmentDelegate.h"
 #import "SummaryOccurrencesDelegate.h"
+#import "TreatmentDetailsViewController.h"
 
 @interface SymptomViewController : UIViewController
 
 @property (strong, nonatomic) SymptomObject *symptom;
+@property int selectedRow;
 
 
 @end

@@ -8,11 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "TreatmentObject.h"
+@class SymptomViewController;
 
 @interface SummaryTreatmentDelegate : NSObject <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) NSMutableArray *array;
-@property (weak, nonatomic) UIViewController *controller;
+@property SymptomViewController *controller;
 
-- (id) initWithController:(UIViewController*) viewController AndWithArray:(NSMutableArray*) array;
+- (id) initWithController:(SymptomViewController*) viewController AndWithArray:(NSMutableArray*) array;
 
 @end

@@ -7,10 +7,11 @@
 //
 
 #import "SummaryTreatmentDelegate.h"
+#import "SymptomViewController.h"
 
 @implementation SummaryTreatmentDelegate
 
-- (id)initWithController:(UIViewController *)viewController AndWithArray:(NSMutableArray*) array {
+- (id)initWithController:(SymptomViewController *)viewController AndWithArray:(NSMutableArray*) array {
     self = [super init];
     if (self) {
         self.array = array;
@@ -40,7 +41,9 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-   //do something with self.controller ?
+   //do something with self.controll
+    self.controller.selectedRow = indexPath.row;
+    [self.controller performSegueWithIdentifier:@"SummaryToTreatmentDetailsSegue" sender:self.controller];
 }
 
 @end
