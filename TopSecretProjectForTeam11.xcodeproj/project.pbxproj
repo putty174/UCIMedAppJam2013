@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0DC2EB5218398C9300C83558 /* SymptomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC2EB5118398C9300C83558 /* SymptomViewController.m */; };
+		0DD9114D183DC04B006271CF /* calendarbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD91145183DC04B006271CF /* calendarbutton.png */; };
+		0DD9114E183DC04B006271CF /* calendarbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD91146183DC04B006271CF /* calendarbutton@2x.png */; };
+		0DD9114F183DC04B006271CF /* homebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD91147183DC04B006271CF /* homebutton.png */; };
+		0DD91150183DC04B006271CF /* homebutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD91148183DC04B006271CF /* homebutton@2x.png */; };
+		0DD91151183DC04B006271CF /* summarybutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD91149183DC04B006271CF /* summarybutton.png */; };
+		0DD91152183DC04B006271CF /* summarybutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9114A183DC04B006271CF /* summarybutton@2x.png */; };
+		0DD91153183DC04B006271CF /* symptombutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9114B183DC04B006271CF /* symptombutton.png */; };
+		0DD91154183DC04B006271CF /* symptombutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD9114C183DC04B006271CF /* symptombutton@2x.png */; };
 		0DD94D73183745940086C009 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD94D72183745940086C009 /* EventKit.framework */; };
 		0DD94D76183746050086C009 /* SymptomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD94D75183746050086C009 /* SymptomObject.m */; };
 		1B34D10F183993DD003E6049 /* SymptomDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B34D10E183993DD003E6049 /* SymptomDictionary.m */; };
@@ -82,6 +90,14 @@
 /* Begin PBXFileReference section */
 		0DC2EB5018398C9300C83558 /* SymptomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymptomViewController.h; sourceTree = "<group>"; };
 		0DC2EB5118398C9300C83558 /* SymptomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomViewController.m; sourceTree = "<group>"; };
+		0DD91145183DC04B006271CF /* calendarbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendarbutton.png; sourceTree = "<group>"; };
+		0DD91146183DC04B006271CF /* calendarbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendarbutton@2x.png"; sourceTree = "<group>"; };
+		0DD91147183DC04B006271CF /* homebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homebutton.png; sourceTree = "<group>"; };
+		0DD91148183DC04B006271CF /* homebutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homebutton@2x.png"; sourceTree = "<group>"; };
+		0DD91149183DC04B006271CF /* summarybutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = summarybutton.png; sourceTree = "<group>"; };
+		0DD9114A183DC04B006271CF /* summarybutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "summarybutton@2x.png"; sourceTree = "<group>"; };
+		0DD9114B183DC04B006271CF /* symptombutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = symptombutton.png; sourceTree = "<group>"; };
+		0DD9114C183DC04B006271CF /* symptombutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "symptombutton@2x.png"; sourceTree = "<group>"; };
 		0DD94D72183745940086C009 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		0DD94D74183746050086C009 /* SymptomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymptomObject.h; sourceTree = "<group>"; };
 		0DD94D75183746050086C009 /* SymptomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomObject.m; sourceTree = "<group>"; };
@@ -245,6 +261,14 @@
 		41433E6E18357F0B007588F7 /* TopSecretProjectForTeam11 */ = {
 			isa = PBXGroup;
 			children = (
+				0DD91145183DC04B006271CF /* calendarbutton.png */,
+				0DD91146183DC04B006271CF /* calendarbutton@2x.png */,
+				0DD91147183DC04B006271CF /* homebutton.png */,
+				0DD91148183DC04B006271CF /* homebutton@2x.png */,
+				0DD91149183DC04B006271CF /* summarybutton.png */,
+				0DD9114A183DC04B006271CF /* summarybutton@2x.png */,
+				0DD9114B183DC04B006271CF /* symptombutton.png */,
+				0DD9114C183DC04B006271CF /* symptombutton@2x.png */,
 				CBF4A092183B3A47005B38AE /* Update */,
 				418B64FF183B0509005A668D /* TSQ */,
 				5DE630D81838D0FD0005795D /* calLib */,
@@ -534,13 +558,21 @@
 			files = (
 				41433E8418357F0B007588F7 /* Images.xcassets in Resources */,
 				41433E7318357F0B007588F7 /* InfoPlist.strings in Resources */,
+				0DD9114D183DC04B006271CF /* calendarbutton.png in Resources */,
 				418B653F183B0509005A668D /* TimesSquare.podspec in Resources */,
+				0DD9114E183DC04B006271CF /* calendarbutton@2x.png in Resources */,
+				0DD91151183DC04B006271CF /* summarybutton.png in Resources */,
 				418B6539183B0509005A668D /* TSQLICENSE in Resources */,
+				0DD9114F183DC04B006271CF /* homebutton.png in Resources */,
 				418B6538183B0509005A668D /* hebrew.png in Resources */,
 				41433EC61835EB2B007588F7 /* README.md in Resources */,
+				0DD91150183DC04B006271CF /* homebutton@2x.png in Resources */,
+				0DD91152183DC04B006271CF /* summarybutton@2x.png in Resources */,
+				0DD91153183DC04B006271CF /* symptombutton.png in Resources */,
 				41433EC51835EB2B007588F7 /* LICENSE in Resources */,
 				418B653A183B0509005A668D /* TSQREADME.md in Resources */,
 				418B6537183B0509005A668D /* gregorian.png in Resources */,
+				0DD91154183DC04B006271CF /* symptombutton@2x.png in Resources */,
 				41433E7C18357F0B007588F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -588,7 +588,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <scene sceneID="Kbj-Br-Dv4">
             <objects>
                 <navigationController definesPresentationContext="YES" id="M8a-5V-9aX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="8q1-qU-AMh"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="homebutton" id="8q1-qU-AMh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="R2x-w5-vJR">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -701,7 +701,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <scene sceneID="rED-pc-XwP">
             <objects>
                 <navigationController definesPresentationContext="YES" id="o8q-Rg-QRk" customClass="SymptomsNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Symptoms" image="first" id="puH-U1-NrE"/>
+                    <tabBarItem key="tabBarItem" title="Symptoms" image="symptombutton.png" id="puH-U1-NrE"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qed-aU-pHC">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -990,7 +990,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
+        <image name="homebutton" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
+        <image name="symptombutton.png" width="26" height="26"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
