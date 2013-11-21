@@ -735,7 +735,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <scene sceneID="rED-pc-XwP">
             <objects>
                 <navigationController definesPresentationContext="YES" id="o8q-Rg-QRk" customClass="SymptomsNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Symptoms" image="first" id="puH-U1-NrE"/>
+                    <tabBarItem key="tabBarItem" title="Symptoms" id="puH-U1-NrE"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qed-aU-pHC">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -815,6 +815,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="ISw-SV-owk">
                                                 <rect key="frame" x="61" y="52" width="212" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="painSlider:" destination="fvi-jg-9Bz" eventType="valueChanged" id="Lev-rM-BLM"/>
+                                                </connections>
                                             </slider>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDm-ra-OP4">
                                                 <rect key="frame" x="279" y="58" width="21" height="21"/>
