@@ -38,6 +38,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     _SymptomText.text = _symptom.symptom;
+    [self.SymptomText setUserInteractionEnabled:NO];
     _PainSlider.value = _symptom.pain;
     _PainNumber.text = [NSString stringWithFormat:@"%d", (int)roundf(_PainSlider.value)];
     _notesView.text = _symptom.notes;

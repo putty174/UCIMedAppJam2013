@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SymptomDictionary.h"
 
 @interface DayViewController : UIViewController
 
 @property NSDate *theDate;
+@property NSMutableArray *array;
+
+@property (strong, nonatomic) SymptomDictionary *symdic;
+@property (strong, nonatomic) UITableView *tableView;
 
 @end
