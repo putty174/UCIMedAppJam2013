@@ -11,11 +11,13 @@
 #import "SummaryTreatmentDelegate.h"
 #import "SummaryOccurrencesDelegate.h"
 #import "TreatmentDetailsViewController.h"
+#import "SymptomDictionary.h"
 
 @interface SymptomViewController : UIViewController
 
 @property (strong, nonatomic) SymptomObject *symptom;
 @property int selectedRow;
 
+- (IBAction)painSlider:(UISlider *)sender;
 
 @end

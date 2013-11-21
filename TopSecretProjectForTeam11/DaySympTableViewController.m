@@ -1,20 +1,19 @@
 //
-//  SymptomsTableViewController.m
+//  DaySympTableViewController.m
 //  TopSecretProjectForTeam11
 //
-//  Created by Mary Nguyen on 11/16/13.
+//  Created by Mary Nguyen on 11/21/13.
 //  Copyright (c) 2013 App Jam. All rights reserved.
 //
 
-#import "SymptomsTableViewController.h"
+#import "DaySympTableViewController.h"
 #import "SymptomViewController.h"
-#import "SymptomDictionary.h"
 
-@interface SymptomsTableViewController ()
+@interface DaySympTableViewController ()
 
 @end
 
-@implementation SymptomsTableViewController
+@implementation DaySympTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -28,22 +27,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    _symdic = [SymptomDictionary symptomDictionary];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    self.symptoms = [[UITableView alloc] init];
-    self.symptoms.delegate = self;
-    self.symptoms.dataSource = self;
-    [self.symptoms setAllowsSelection:YES];
-    [self.view addSubview:self.symptoms];
-    [self.symptoms reloadData];
+    
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.symptomsTable = [[UITableView alloc] init];
+    self.symptomsTable.delegate = self;
+    self.symptomsTable.dataSource = self;
+    [self.symptomsTable setAllowsSelection:YES];
+    [self.view addSubview:self.symptomsTable];
+    
+    _symptomEventStore = [[EKEventStore alloc] init];
     
     self.array = [[NSMutableArray alloc] init];
+    
+    _symdic = [SymptomDictionary symptomDictionary];
 }
 
 - (void) viewDidAppear:(BOOL)animated
@@ -52,17 +54,18 @@
     for (NSString *key in [_symdic symDictionary])
     {
         SymptomObject *obgyn = [self.symdic findSymptom:key];
-        NSTimeInterval secondsPerDay = 24 * 60 * 60;
+        //NSTimeInterval secondsPerDay = 24 * 60 * 60;
         
         NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:obgyn.date];
         NSInteger today = [components day];
         NSInteger tomonth = [components month];
         NSInteger toyear = [components year];
         
-        NSDateComponents *compartments = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[[NSDate date] initWithTimeIntervalSinceNow:-secondsPerDay]];
+        NSDateComponents *compartments = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:self.theDate];
         NSInteger day = [compartments day];
         NSInteger month = [compartments month];
         NSInteger year = [compartments year];
+        self.title = [NSString stringWithFormat:@"%d day of the %d month of the %d year", day, month, year];
         
         if((today == day) && (tomonth == month) && (toyear == year))
         {
@@ -79,9 +82,13 @@
     // Dispose of any resources that can be recreated.
 }
 
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+#pragma mark - Table view data source
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.array.count;
+    // Return the number of rows in the section.
+    return [self.array count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -99,30 +106,12 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *selected = [tableView cellForRowAtIndexPath:indexPath];
-    NSString *name = selected.textLabel.text;
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:name message:@"Would you like to update this symptom?  Pressing no will remove the symptom from recent." delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Yes", @"No", nil];
-    
-    alert.tag = indexPath.row;
-    [alert show];
-}
-
--(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    if(buttonIndex == 0)
-    {
-        // do nothing
-    }else if(buttonIndex == 1)
-    {
-        [self performSegueWithIdentifier:@"HomeTabletoDetailsSegue" sender:self];
-    }else
-    {
-        // deletion to be editted once recent symptoms are found
-    }
+    [self performSegueWithIdentifier:@"showSymp" sender:self];
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+  //  if ([[segue identifier] isEqualToString:@"TabletoDetailSegue"])
     {
         SymptomObject *so = [[SymptomObject alloc] init];
         so = [_symdic findSymptom:[_array objectAtIndex:_index]];
@@ -132,9 +121,6 @@
         
     }
 }
-
-
-
 
 /*
 // Override to support conditional editing of the table view.

@@ -44,7 +44,6 @@
     
     [self.array removeAllObjects];
     [self.array addObject:@"Add New"];
-    [self.array addObject:@"Recent Symptoms"];
     for (NSString *key in [_symdic symDictionary])
     {
         [self.array addObject:key];
@@ -118,7 +117,7 @@
             }
         }
     }
-    if (_index >= 2)
+    if (_index >= 1)
     {
         [self performSegueWithIdentifier:@"TabletoDetailSegue" sender:self];
     }
