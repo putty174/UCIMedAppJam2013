@@ -104,6 +104,8 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    self.index = indexPath.row;
+    
     UITableViewCell *selected = [tableView cellForRowAtIndexPath:indexPath];
     NSString *name = selected.textLabel.text;
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:name message:@"Would you like to update this symptom?  Pressing no will remove the symptom from recent." delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Yes", @"No", nil];
@@ -122,7 +124,8 @@
         [self performSegueWithIdentifier:@"HomeTabletoDetailsSegue" sender:self];
     }else
     {
-        // deletion to be editted once recent symptoms are found
+        [self.array removeObjectAtIndex:alertView.tag];
+        [self.tableView reloadData];
     }
 }
 

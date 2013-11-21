@@ -106,6 +106,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    self.index = indexPath.row;
     [self performSegueWithIdentifier:@"showSymp" sender:self];
 }
 
