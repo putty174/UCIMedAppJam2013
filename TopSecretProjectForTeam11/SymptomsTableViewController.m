@@ -51,7 +51,23 @@
     [self.array removeAllObjects];
     for (NSString *key in [_symdic symDictionary])
     {
-        [self.array addObject:key];
+        SymptomObject *obgyn = [self.symdic findSymptom:key];
+        NSTimeInterval secondsPerDay = 24 * 60 * 60;
+        
+        NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:obgyn.date];
+        NSInteger today = [components day];
+        NSInteger tomonth = [components month];
+        NSInteger toyear = [components year];
+        
+        NSDateComponents *compartments = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[[NSDate date] initWithTimeIntervalSinceNow:-secondsPerDay]];
+        NSInteger day = [compartments day];
+        NSInteger month = [compartments month];
+        NSInteger year = [compartments year];
+        
+        if((today == day) && (tomonth == month) && (toyear == year))
+        {
+            [self.array addObject:key];
+        }
     }
     [self.tableView reloadData];
 }
