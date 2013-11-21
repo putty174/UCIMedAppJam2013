@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "SymptomDictionary.h"
 
-@interface DayViewController : UIViewController
+@interface DayViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property NSDate *theDate;
 @property NSMutableArray *array;
 
 @property (strong, nonatomic) SymptomDictionary *symdic;
-@property (strong, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end
