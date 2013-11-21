@@ -50,6 +50,8 @@
     self.occurrencesTable.dataSource = self.occurrencesDelegate;
     self.treatmentsTable.delegate = self.treatmentDelegate;
     self.treatmentsTable.dataSource = self.treatmentDelegate;
+    
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -73,4 +75,37 @@
     
     
 }
+
+- (void)setEditing:(BOOL)flag animated:(BOOL)animated
+{
+    [super setEditing:flag animated:animated];
+    if (flag == YES){
+        // Change views to edit mode.
+        NSLog(@"edit mode");
+        _notesView.editable = YES;
+        _PainSlider.enabled = YES;
+    }
+    else {
+        SymptomDictionary *symdic = [SymptomDictionary symptomDictionary];
+        //find actual symptom in dictionary with string
+        _symptom = [symdic findSymptom:_SymptomText.text];
+        //remove from dictionary
+        [symdic removeSymptom:_symptom];
+        
+        
+        // Save the changes if needed and change the views to noneditable.
+        NSLog(@"NOT in edit mode");
+        // _SymptomText.editing = NO;
+        
+        _notesView.editable = NO;
+        _PainSlider.enabled = NO;
+        
+    }
+}
+
+- (IBAction)painSlider:(UISlider *)sender
+{
+    self.PainNumber.text = [[NSString alloc] initWithFormat:@"%d", (int)sender.value];
+}
+
 @end

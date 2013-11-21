@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SymptomObject.h"
 
 @interface SummaryViewController : UIViewController
+
+@property SymptomObject *symptom;
 
 @end
