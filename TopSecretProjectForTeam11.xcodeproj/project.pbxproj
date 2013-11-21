@@ -51,7 +51,6 @@
 		418B653F183B0509005A668D /* TimesSquare.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 418B6510183B0509005A668D /* TimesSquare.podspec */; };
 		418B6560183B05EC005A668D /* libTimesSquare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 418B6559183B050A005A668D /* libTimesSquare.a */; };
 		418B672F183B3BE3005A668D /* TreatmentDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B672E183B3BE3005A668D /* TreatmentDetailsViewController.m */; };
-		418B6735183C04D7005A668D /* DayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B6734183C04D7005A668D /* DayViewController.m */; };
 		41D94C50183C9969004E62A7 /* SummaryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D94C4F183C9969004E62A7 /* SummaryTableViewController.m */; };
 		41D94C53183C99EF004E62A7 /* SummaryForAllController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D94C52183C99EF004E62A7 /* SummaryForAllController.m */; };
 		41D94C56183C9A0D004E62A7 /* SummaryForSymptomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D94C55183C9A0D004E62A7 /* SummaryForSymptomController.m */; };
@@ -158,8 +157,6 @@
 		418B6511183B0509005A668D /* TimesSquare.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TimesSquare.xcodeproj; sourceTree = "<group>"; };
 		418B672D183B3BE3005A668D /* TreatmentDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreatmentDetailsViewController.h; sourceTree = "<group>"; };
 		418B672E183B3BE3005A668D /* TreatmentDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreatmentDetailsViewController.m; sourceTree = "<group>"; };
-		418B6733183C04D7005A668D /* DayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayViewController.h; sourceTree = "<group>"; };
-		418B6734183C04D7005A668D /* DayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayViewController.m; sourceTree = "<group>"; };
 		41D94C4E183C9969004E62A7 /* SummaryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryTableViewController.h; sourceTree = "<group>"; };
 		41D94C4F183C9969004E62A7 /* SummaryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryTableViewController.m; sourceTree = "<group>"; };
 		41D94C51183C99EF004E62A7 /* SummaryForAllController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryForAllController.h; sourceTree = "<group>"; };
@@ -328,8 +325,6 @@
 		41433EBB1835DB1F007588F7 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
-				418B6733183C04D7005A668D /* DayViewController.h */,
-				418B6734183C04D7005A668D /* DayViewController.m */,
 				41433EB41835DAA7007588F7 /* CalendarNavigationController.h */,
 				41433EB51835DAA7007588F7 /* CalendarNavigationController.m */,
 				41433EBD1835DDEF007588F7 /* CalendarViewController.h */,
@@ -600,7 +595,6 @@
 				5D014142183E9A4500CBEEAB /* DaySympTableViewController.m in Sources */,
 				CBF4A09D183B3E22005B38AE /* RecentViewController.m in Sources */,
 				CBCE5160183C7FCD00C5B198 /* EditRecSymViewController.m in Sources */,
-				418B6735183C04D7005A668D /* DayViewController.m in Sources */,
 				41433EAD1835AB6D007588F7 /* SymptomsNavigationController.m in Sources */,
 				41433EC21835DE11007588F7 /* SummaryViewController.m in Sources */,
 				418B64E518387A70005A668D /* TreatmentDelegate.m in Sources */,

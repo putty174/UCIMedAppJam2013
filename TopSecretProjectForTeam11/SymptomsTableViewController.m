@@ -64,7 +64,12 @@
         NSInteger month = [compartments month];
         NSInteger year = [compartments year];
         
-        if((today == day) && (tomonth == month) && (toyear == year))
+        NSDateComponents *composites = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[[NSDate date] init]];
+        NSInteger soday = [composites day];
+        NSInteger somonth = [composites month];
+        NSInteger soyear = [composites year];
+        
+        if(((today == day) && (tomonth == month) && (toyear == year)) || ((today == soday) && (tomonth == somonth) && (toyear == soyear)))
         {
             [self.array addObject:key];
         }
