@@ -87,6 +87,49 @@
     }
 }
 
+// Remove Symptom Objects to the symDictionary for the CHANGE SYMPTOM Method
+- (void)changeSymptomREMOVE:(SymptomObject *)symObject{
+    [self.symDictionary removeObjectForKey:symObject.symptom];
+    
+    NSData *symptomDict = [NSKeyedArchiver archivedDataWithRootObject:_symDictionary];
+    BOOL save = [symptomDict writeToFile:_filepath atomically:YES];
+    
+    if(save)
+    {
+        NSLog(@"remove symptom here for CHANGE");
+        //UIAlertView *symptomAlert = [[UIAlertView alloc] initWithTitle:@"Symptom Removed for CHANGE" message:@"Your symptom has been removed." delegate:nil cancelButtonTitle:@"Done" otherButtonTitles:nil, nil];
+        //[symptomAlert show];
+    }
+    else
+    {
+        NSLog(@"remove symptom failed for CHANGE");
+        //UIAlertView *symptomAlert = [[UIAlertView alloc] initWithTitle:@"Remove Failed" message:@"Your symptom failed to remove." delegate:nil cancelButtonTitle:@"Done" otherButtonTitles:nil, nil];
+        //[symptomAlert show];
+    }
+}
+
+// Adde Symptom Objects to the symDictionary for the CHANGE SYMPTOM Method
+- (void)changeSymptomADD:(SymptomObject *)symObject{
+    [self.symDictionary setObject:symObject forKey:symObject.symptom];
+    
+    NSData *symptomDict = [NSKeyedArchiver archivedDataWithRootObject:_symDictionary];
+    BOOL save = [symptomDict writeToFile:_filepath atomically:YES];
+    
+    if(save)
+    {
+        UIAlertView *symptomAlert = [[UIAlertView alloc] initWithTitle:@"Symptom Changed" message:@"Your symptom has been updated." delegate:nil cancelButtonTitle:@"Done" otherButtonTitles:nil, nil];
+        [symptomAlert show];
+    }
+    else
+    {
+        UIAlertView *symptomAlert = [[UIAlertView alloc] initWithTitle:@"Save Change Failed" message:@"Your symptom failed to change." delegate:nil cancelButtonTitle:@"Done" otherButtonTitles:nil, nil];
+        [symptomAlert show];
+    }
+}
+
+
+
+
 // Find Symptom Objects in the symDictionary
 - (SymptomObject *) findSymptom:(NSString *)symptom{
     if ([[self.symDictionary allKeys] containsObject:symptom]){

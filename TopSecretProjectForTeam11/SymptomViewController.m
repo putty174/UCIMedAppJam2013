@@ -20,7 +20,6 @@
 @property SummaryOccurrencesDelegate *occurrencesDelegate;
 @property SummaryTreatmentDelegate *treatmentDelegate;
 
-
 @end
 
 @implementation SymptomViewController
@@ -82,6 +81,7 @@
     if (flag == YES){
         // Change views to edit mode.
         NSLog(@"edit mode");
+        [self.SymptomText setUserInteractionEnabled:YES];
         _notesView.editable = YES;
         _PainSlider.enabled = YES;
     }
@@ -90,13 +90,30 @@
         //find actual symptom in dictionary with string
         _symptom = [symdic findSymptom:_SymptomText.text];
         //remove from dictionary
-        [symdic removeSymptom:_symptom];
+        [symdic changeSymptomREMOVE:_symptom];
+        
+        
+        
+        _symptom.symptom = self.SymptomText.text;
+        _symptom.pain = roundf(self.PainSlider.value);
+        
+        /*
+        if (self.currentSegment == 2) { //if changing segments from the text view, save the text in it
+            self.notes = [((UITextView*)self.currentDynamicView) text];
+        }
+         */
+        _symptom.notes = self.notesView.text;
+        
+        [symdic changeSymptomADD:(_symptom)];
+        
+        //[self.navigationController popViewControllerAnimated:YES];
+        
+        
         
         
         // Save the changes if needed and change the views to noneditable.
         NSLog(@"NOT in edit mode");
-        // _SymptomText.editing = NO;
-        
+        [self.SymptomText setUserInteractionEnabled:NO];
         _notesView.editable = NO;
         _PainSlider.enabled = NO;
         
