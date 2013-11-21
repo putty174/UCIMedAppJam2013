@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
         <!--Add Symptom Controller-->
@@ -1028,7 +1028,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <scene sceneID="ggD-dE-eXg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W6j-a5-oH6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Update" image="second" id="6Bn-fq-DRp"/>
+                    <tabBarItem key="tabBarItem" title="Update" image="updatebutton.png" id="6Bn-fq-DRp"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oho-JE-sPV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1047,9 +1047,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
     <resources>
         <image name="calendarbutton.png" width="26" height="26"/>
         <image name="homebutton.png" width="26" height="26"/>
-        <image name="second" width="30" height="30"/>
         <image name="summarybutton.png" width="26" height="26"/>
         <image name="symptombutton.png" width="26" height="26"/>
+        <image name="updatebutton.png" width="26" height="26"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -1058,7 +1058,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="fo7-v2-8U1"/>
-        <segue reference="iRp-BJ-sfT"/>
         <segue reference="s6v-iR-GqC"/>
     </inferredMetricsTieBreakers>
 </document>

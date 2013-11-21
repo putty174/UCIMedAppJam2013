@@ -16,6 +16,8 @@
 		0DD5C273183EA48100456202 /* summarybutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD5C26B183EA48100456202 /* summarybutton@2x.png */; };
 		0DD5C274183EA48100456202 /* symptombutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD5C26C183EA48100456202 /* symptombutton.png */; };
 		0DD5C275183EA48100456202 /* symptombutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD5C26D183EA48100456202 /* symptombutton@2x.png */; };
+		0DD5C279183EA7F100456202 /* updatebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD5C277183EA7F100456202 /* updatebutton.png */; };
+		0DD5C27A183EA7F100456202 /* updatebutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD5C278183EA7F100456202 /* updatebutton@2x.png */; };
 		0DD94D73183745940086C009 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD94D72183745940086C009 /* EventKit.framework */; };
 		0DD94D76183746050086C009 /* SymptomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD94D75183746050086C009 /* SymptomObject.m */; };
 		1B34D10F183993DD003E6049 /* SymptomDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B34D10E183993DD003E6049 /* SymptomDictionary.m */; };
@@ -103,6 +105,8 @@
 		0DD5C26B183EA48100456202 /* summarybutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "summarybutton@2x.png"; sourceTree = "<group>"; };
 		0DD5C26C183EA48100456202 /* symptombutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = symptombutton.png; sourceTree = "<group>"; };
 		0DD5C26D183EA48100456202 /* symptombutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "symptombutton@2x.png"; sourceTree = "<group>"; };
+		0DD5C277183EA7F100456202 /* updatebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = updatebutton.png; sourceTree = "<group>"; };
+		0DD5C278183EA7F100456202 /* updatebutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "updatebutton@2x.png"; sourceTree = "<group>"; };
 		0DD94D72183745940086C009 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		0DD94D74183746050086C009 /* SymptomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymptomObject.h; sourceTree = "<group>"; };
 		0DD94D75183746050086C009 /* SymptomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomObject.m; sourceTree = "<group>"; };
@@ -276,6 +280,8 @@
 		41433E6E18357F0B007588F7 /* TopSecretProjectForTeam11 */ = {
 			isa = PBXGroup;
 			children = (
+				0DD5C277183EA7F100456202 /* updatebutton.png */,
+				0DD5C278183EA7F100456202 /* updatebutton@2x.png */,
 				0DD5C266183EA48100456202 /* calendarbutton.png */,
 				0DD5C267183EA48100456202 /* calendarbutton@2x.png */,
 				0DD5C268183EA48100456202 /* homebutton.png */,
@@ -584,9 +590,11 @@
 				41433E8418357F0B007588F7 /* Images.xcassets in Resources */,
 				41433E7318357F0B007588F7 /* InfoPlist.strings in Resources */,
 				0DD5C26E183EA48100456202 /* calendarbutton.png in Resources */,
+				0DD5C279183EA7F100456202 /* updatebutton.png in Resources */,
 				418B653F183B0509005A668D /* TimesSquare.podspec in Resources */,
 				0DD5C26F183EA48100456202 /* calendarbutton@2x.png in Resources */,
 				0DD5C272183EA48100456202 /* summarybutton.png in Resources */,
+				0DD5C27A183EA7F100456202 /* updatebutton@2x.png in Resources */,
 				418B6539183B0509005A668D /* TSQLICENSE in Resources */,
 				0DD5C270183EA48100456202 /* homebutton.png in Resources */,
 				418B6538183B0509005A668D /* hebrew.png in Resources */,
