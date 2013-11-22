@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D49ADB1183F1AAB00A1D7AF /* calendarbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D49ADA9183F1AAB00A1D7AF /* calendarbutton.png */; };
+		0D49ADB2183F1AAB00A1D7AF /* calendarbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D49ADAA183F1AAB00A1D7AF /* calendarbutton@2x.png */; };
+		0D49ADB3183F1AAB00A1D7AF /* homebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D49ADAB183F1AAB00A1D7AF /* homebutton.png */; };
+		0D49ADB4183F1AAB00A1D7AF /* homebutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D49ADAC183F1AAB00A1D7AF /* homebutton@2x.png */; };
+		0D49ADB5183F1AAB00A1D7AF /* summarybutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D49ADAD183F1AAB00A1D7AF /* summarybutton.png */; };
+		0D49ADB6183F1AAB00A1D7AF /* summarybutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D49ADAE183F1AAB00A1D7AF /* summarybutton@2x.png */; };
+		0D49ADB7183F1AAB00A1D7AF /* symptombutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D49ADAF183F1AAB00A1D7AF /* symptombutton.png */; };
+		0D49ADB8183F1AAB00A1D7AF /* symptombutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D49ADB0183F1AAB00A1D7AF /* symptombutton@2x.png */; };
 		0DC2EB5218398C9300C83558 /* SymptomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC2EB5118398C9300C83558 /* SymptomViewController.m */; };
 		0DD94D73183745940086C009 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD94D72183745940086C009 /* EventKit.framework */; };
 		0DD94D76183746050086C009 /* SymptomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD94D75183746050086C009 /* SymptomObject.m */; };
@@ -80,6 +88,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D49ADA9183F1AAB00A1D7AF /* calendarbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendarbutton.png; sourceTree = "<group>"; };
+		0D49ADAA183F1AAB00A1D7AF /* calendarbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendarbutton@2x.png"; sourceTree = "<group>"; };
+		0D49ADAB183F1AAB00A1D7AF /* homebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homebutton.png; sourceTree = "<group>"; };
+		0D49ADAC183F1AAB00A1D7AF /* homebutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homebutton@2x.png"; sourceTree = "<group>"; };
+		0D49ADAD183F1AAB00A1D7AF /* summarybutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = summarybutton.png; sourceTree = "<group>"; };
+		0D49ADAE183F1AAB00A1D7AF /* summarybutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "summarybutton@2x.png"; sourceTree = "<group>"; };
+		0D49ADAF183F1AAB00A1D7AF /* symptombutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = symptombutton.png; sourceTree = "<group>"; };
+		0D49ADB0183F1AAB00A1D7AF /* symptombutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "symptombutton@2x.png"; sourceTree = "<group>"; };
 		0DC2EB5018398C9300C83558 /* SymptomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymptomViewController.h; sourceTree = "<group>"; };
 		0DC2EB5118398C9300C83558 /* SymptomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomViewController.m; sourceTree = "<group>"; };
 		0DD94D72183745940086C009 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
@@ -245,6 +261,14 @@
 		41433E6E18357F0B007588F7 /* TopSecretProjectForTeam11 */ = {
 			isa = PBXGroup;
 			children = (
+				0D49ADA9183F1AAB00A1D7AF /* calendarbutton.png */,
+				0D49ADAA183F1AAB00A1D7AF /* calendarbutton@2x.png */,
+				0D49ADAB183F1AAB00A1D7AF /* homebutton.png */,
+				0D49ADAC183F1AAB00A1D7AF /* homebutton@2x.png */,
+				0D49ADAD183F1AAB00A1D7AF /* summarybutton.png */,
+				0D49ADAE183F1AAB00A1D7AF /* summarybutton@2x.png */,
+				0D49ADAF183F1AAB00A1D7AF /* symptombutton.png */,
+				0D49ADB0183F1AAB00A1D7AF /* symptombutton@2x.png */,
 				CBF4A092183B3A47005B38AE /* Update */,
 				418B64FF183B0509005A668D /* TSQ */,
 				5DE630D81838D0FD0005795D /* calLib */,
@@ -534,13 +558,21 @@
 			files = (
 				41433E8418357F0B007588F7 /* Images.xcassets in Resources */,
 				41433E7318357F0B007588F7 /* InfoPlist.strings in Resources */,
+				0D49ADB1183F1AAB00A1D7AF /* calendarbutton.png in Resources */,
 				418B653F183B0509005A668D /* TimesSquare.podspec in Resources */,
+				0D49ADB2183F1AAB00A1D7AF /* calendarbutton@2x.png in Resources */,
+				0D49ADB5183F1AAB00A1D7AF /* summarybutton.png in Resources */,
 				418B6539183B0509005A668D /* TSQLICENSE in Resources */,
+				0D49ADB3183F1AAB00A1D7AF /* homebutton.png in Resources */,
 				418B6538183B0509005A668D /* hebrew.png in Resources */,
 				41433EC61835EB2B007588F7 /* README.md in Resources */,
+				0D49ADB4183F1AAB00A1D7AF /* homebutton@2x.png in Resources */,
+				0D49ADB6183F1AAB00A1D7AF /* summarybutton@2x.png in Resources */,
+				0D49ADB7183F1AAB00A1D7AF /* symptombutton.png in Resources */,
 				41433EC51835EB2B007588F7 /* LICENSE in Resources */,
 				418B653A183B0509005A668D /* TSQREADME.md in Resources */,
 				418B6537183B0509005A668D /* gregorian.png in Resources */,
+				0D49ADB8183F1AAB00A1D7AF /* symptombutton@2x.png in Resources */,
 				41433E7C18357F0B007588F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
