@@ -65,7 +65,7 @@
         NSInteger day = [compartments day];
         NSInteger month = [compartments month];
         NSInteger year = [compartments year];
-        self.title = [NSString stringWithFormat:@"%d day of the %d month of the %d year", day, month, year];
+        self.title = [NSString stringWithFormat:@"%d / %d / %d", month, day, year];
         
         if((today == day) && (tomonth == month) && (toyear == year))
         {
