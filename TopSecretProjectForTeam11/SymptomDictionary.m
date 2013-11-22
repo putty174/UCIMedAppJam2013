@@ -48,7 +48,10 @@
 }
 
 // Add Symptom Objects to the symDictionary
-- (void)addSymptom:(SymptomObject *)symObject{
+- (void)addSymptom:(SymptomObject *)symObject
+{
+    symObject.date = [NSDate date];
+    symObject.home = @"YES";
     [self.symDictionary setObject:symObject forKey:symObject.symptom];
     
     NSData *symptomDict = [NSKeyedArchiver archivedDataWithRootObject:_symDictionary];
