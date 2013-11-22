@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Add Symptom Controller-->
@@ -992,8 +992,16 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         </scene>
     </scenes>
     <resources>
+<<<<<<< HEAD
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
+=======
+        <image name="calendarbutton.png" width="26" height="26"/>
+        <image name="homebutton.png" width="26" height="26"/>
+        <image name="second" width="30" height="30"/>
+        <image name="summarybutton.png" width="26" height="26"/>
+        <image name="symptombutton.png" width="26" height="26"/>
+>>>>>>> parent of 94e65be... Icons are put in
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -1003,6 +1011,11 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
     <inferredMetricsTieBreakers>
         <segue reference="iRp-BJ-sfT"/>
         <segue reference="fo7-v2-8U1"/>
+<<<<<<< HEAD
         <segue reference="X83-lt-Q7y"/>
+=======
+        <segue reference="iRp-BJ-sfT"/>
+        <segue reference="s6v-iR-GqC"/>
+>>>>>>> parent of 94e65be... Icons are put in
     </inferredMetricsTieBreakers>
 </document>
