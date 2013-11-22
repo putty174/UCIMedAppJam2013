@@ -297,7 +297,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <scene sceneID="CYM-p0-tQx">
             <objects>
                 <navigationController definesPresentationContext="YES" id="xFJ-ab-3iO" customClass="SummaryNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Summary" image="first" id="d4z-JC-6do"/>
+                    <tabBarItem key="tabBarItem" title="Summary" image="summarybutton.png" id="d4z-JC-6do"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aCa-QJ-fsn">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -370,20 +370,13 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <nil key="highlightedColor"/>
                             </label>
                             <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dDp-jG-IPe">
-                                <rect key="frame" x="0.0" y="156" width="320" height="224"/>
+                                <rect key="frame" x="0.0" y="156" width="320" height="324"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <connections>
                                     <segue destination="IXv-bl-Ewu" kind="embed" id="Y1A-2e-eAP"/>
                                 </connections>
                             </containerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fh2-16-Nyf">
-                                <rect key="frame" x="137" y="393" width="36" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Keep">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -495,7 +488,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="FOr-x9-Odv">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FOr-x9-Odv" id="7RX-cT-pab">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -603,7 +596,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <scene sceneID="Kbj-Br-Dv4">
             <objects>
                 <navigationController definesPresentationContext="YES" id="M8a-5V-9aX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="8q1-qU-AMh"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="homebutton.png" id="8q1-qU-AMh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="R2x-w5-vJR">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -619,7 +612,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <scene sceneID="TcZ-wA-8kd">
             <objects>
                 <navigationController definesPresentationContext="YES" id="XZm-JV-g5R" customClass="CalendarNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Calendar" image="second" id="3kM-h0-AtS"/>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="calendarbutton.png" id="3kM-h0-AtS"/>
                     <navigationItem key="navigationItem" id="ZaG-HF-re1"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="je5-Gi-gcF">
                         <autoresizingMask key="autoresizingMask"/>
@@ -678,39 +671,46 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="zOE-gN-cUa">
-                        <barButtonItem key="rightBarButtonItem" title="Home" id="acR-hH-OZh">
-                            <connections>
-                                <segue destination="WDh-NK-7n1" kind="push" id="w32-30-lhn"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="zOE-gN-cUa"/>
                     <connections>
-                        <segue destination="gyL-pa-b8P" kind="push" identifier="showDayDetail" id="g0X-fR-THh"/>
+                        <segue destination="IVr-Am-LnE" kind="push" identifier="showDayDetail" id="wBl-vD-YRM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jdt-UE-aei" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="968" y="-966"/>
+            <point key="canvasLocation" x="937" y="-1017"/>
         </scene>
-        <!--Day View Controller-->
-        <scene sceneID="Z44-kr-Oq3">
+        <!--Day Symp Table View Controller-->
+        <scene sceneID="E5W-bV-BBW">
             <objects>
-                <viewController id="gyL-pa-b8P" customClass="DayViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="S3h-AB-vBi"/>
-                        <viewControllerLayoutGuide type="bottom" id="PDn-sl-2Wm"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="MJJ-Cr-fXq">
+                <tableViewController id="IVr-Am-LnE" customClass="DaySympTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="IBW-rD-2qW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="qcc-ud-ClL"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dfF-kb-9dn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="9gu-Em-9xx">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9gu-Em-9xx" id="VYH-DN-gWT">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="IVr-Am-LnE" id="t7d-ow-jAo"/>
+                            <outlet property="delegate" destination="IVr-Am-LnE" id="XcR-JT-2S9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Kj7-f6-Q4y"/>
+                    <connections>
+                        <segue destination="fvi-jg-9Bz" kind="push" identifier="showSymp" id="NxL-3m-zte"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jtL-Pf-gnp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1454" y="-920"/>
+            <point key="canvasLocation" x="1411" y="-1000"/>
         </scene>
         <!--Summary For All Controller-->
         <scene sceneID="1RL-nW-UWd">
@@ -735,7 +735,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <scene sceneID="rED-pc-XwP">
             <objects>
                 <navigationController definesPresentationContext="YES" id="o8q-Rg-QRk" customClass="SymptomsNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Symptoms" id="puH-U1-NrE"/>
+                    <tabBarItem key="tabBarItem" title="Symptoms" image="symptombutton.png" id="puH-U1-NrE"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qed-aU-pHC">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -763,7 +763,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <segue destination="o8q-Rg-QRk" kind="relationship" relationship="viewControllers" id="G9B-FW-z7g"/>
                         <segue destination="XZm-JV-g5R" kind="relationship" relationship="viewControllers" id="PoQ-BJ-nH9"/>
                         <segue destination="xFJ-ab-3iO" kind="relationship" relationship="viewControllers" id="poJ-hT-hTC"/>
-                        <segue destination="W6j-a5-oH6" kind="relationship" relationship="viewControllers" id="gwV-ut-h8R"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
@@ -983,9 +982,28 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     <view key="view" contentMode="scaleToFill" id="xcX-bf-OV7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iiW-bK-Mll">
+                                <rect key="frame" x="137" y="388" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button:" destination="KEK-Gj-wMe" eventType="touchUpInside" id="Dhs-gV-5oX"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JbG-49-S1s">
+                                <rect key="frame" x="0.0" y="64" width="320" height="316"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="1zd-Gn-P9n"/>
+                    <connections>
+                        <outlet property="graph" destination="JbG-49-S1s" id="fmS-RV-UBi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NJX-Tu-ze6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -996,7 +1014,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <objects>
                 <tableViewController id="IXv-bl-Ewu" customClass="SymptomsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="rgK-XD-tyL">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="224"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="324"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -1027,7 +1045,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <scene sceneID="ggD-dE-eXg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W6j-a5-oH6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Update" image="second" id="6Bn-fq-DRp"/>
+                    <tabBarItem key="tabBarItem" title="Update" image="updatebutton.png" id="6Bn-fq-DRp"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oho-JE-sPV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -1044,8 +1062,11 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="calendarbutton.png" width="26" height="26"/>
+        <image name="homebutton.png" width="26" height="26"/>
+        <image name="summarybutton.png" width="26" height="26"/>
+        <image name="symptombutton.png" width="26" height="26"/>
+        <image name="updatebutton.png" width="26" height="26"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
