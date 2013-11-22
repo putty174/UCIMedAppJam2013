@@ -69,7 +69,9 @@
         NSInteger somonth = [composites month];
         NSInteger soyear = [composites year];
         
-        if(((today == day) && (tomonth == month) && (toyear == year)) || ((today == soday) && (tomonth == somonth) && (toyear == soyear)))
+        NSString *check = @"YES";
+        
+        if((((today == day) && (tomonth == month) && (toyear == year)) || ((today == soday) && (tomonth == somonth) && (toyear == soyear))) && (obgyn.home == check))
         {
             [self.array addObject:key];
         }
@@ -124,6 +126,8 @@
         [self performSegueWithIdentifier:@"HomeTabletoDetailsSegue" sender:self];
     }else
     {
+        SymptomObject *obg = [self.symdic findSymptom:[self.array objectAtIndex:alertView.tag]];
+        obg.home = @"NO";
         [self.array removeObjectAtIndex:alertView.tag];
         [self.tableView reloadData];
     }
