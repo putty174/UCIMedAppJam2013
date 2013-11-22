@@ -297,7 +297,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <scene sceneID="CYM-p0-tQx">
             <objects>
                 <navigationController definesPresentationContext="YES" id="xFJ-ab-3iO" customClass="SummaryNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Summary" image="summarybutton.png" id="d4z-JC-6do"/>
+                    <tabBarItem key="tabBarItem" title="Summary" image="first" id="d4z-JC-6do"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aCa-QJ-fsn">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -588,7 +588,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <scene sceneID="Kbj-Br-Dv4">
             <objects>
                 <navigationController definesPresentationContext="YES" id="M8a-5V-9aX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="homebutton.png" id="8q1-qU-AMh"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="8q1-qU-AMh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="R2x-w5-vJR">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -604,7 +604,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <scene sceneID="TcZ-wA-8kd">
             <objects>
                 <navigationController definesPresentationContext="YES" id="XZm-JV-g5R" customClass="CalendarNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Calendar" image="calendarbutton.png" id="3kM-h0-AtS"/>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="second" id="3kM-h0-AtS"/>
                     <navigationItem key="navigationItem" id="ZaG-HF-re1"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="je5-Gi-gcF">
                         <autoresizingMask key="autoresizingMask"/>
@@ -701,7 +701,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <scene sceneID="rED-pc-XwP">
             <objects>
                 <navigationController definesPresentationContext="YES" id="o8q-Rg-QRk" customClass="SymptomsNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Symptoms" image="symptombutton.png" id="puH-U1-NrE"/>
+                    <tabBarItem key="tabBarItem" title="Symptoms" id="puH-U1-NrE"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qed-aU-pHC">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -729,6 +729,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <segue destination="o8q-Rg-QRk" kind="relationship" relationship="viewControllers" id="G9B-FW-z7g"/>
                         <segue destination="XZm-JV-g5R" kind="relationship" relationship="viewControllers" id="PoQ-BJ-nH9"/>
                         <segue destination="xFJ-ab-3iO" kind="relationship" relationship="viewControllers" id="poJ-hT-hTC"/>
+                        <segue destination="W6j-a5-oH6" kind="relationship" relationship="viewControllers" id="gwV-ut-h8R"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
@@ -991,11 +992,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         </scene>
     </scenes>
     <resources>
-        <image name="calendarbutton.png" width="26" height="26"/>
-        <image name="homebutton.png" width="26" height="26"/>
+        <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
-        <image name="summarybutton.png" width="26" height="26"/>
-        <image name="symptombutton.png" width="26" height="26"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
