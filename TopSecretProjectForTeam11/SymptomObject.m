@@ -28,6 +28,7 @@
         [self setOccurrences:[aDecoder decodeObjectForKey:@"occurrences"]];
         [self setTreatments:[aDecoder decodeObjectForKey:@"treatments"]];
         [self setNotes:[aDecoder decodeObjectForKey:@"notes"]];
+        [self setDate:[aDecoder decodeObjectForKey:@"date"]];
     }
     return self;
 }
@@ -39,6 +40,7 @@
     [aCoder encodeObject:_occurrences forKey:@"occurrences"];
     [aCoder encodeObject:_treatments forKey:@"treatments"];
     [aCoder encodeObject:_notes forKey:@"notes"];
+    [aCoder encodeObject:self.date forKey:@"date"];
     
 }
 @end
