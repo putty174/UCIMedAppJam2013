@@ -52,6 +52,8 @@
     self.treatmentsTable.dataSource = self.treatmentDelegate;
     
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.storeSymptomKey = _symptom.symptom;
 }
 
 - (void)didReceiveMemoryWarning
@@ -73,6 +75,18 @@
     TreatmentObject *obj = [self.symptom.treatments objectAtIndex:self.selectedRow];
     ctrlr.treatment = obj;
     
+    /*
+    //code for editing mode to edit occurances and treatments
+    if ([[segue identifier] isEqualToString:@"AddOccurrenceSegue"]) {
+        AddOccurrencesController *ctrlr = [segue destinationViewController];
+        ctrlr.occurrences = self.symptom.occurrences;
+    }
+    else
+        if ([[segue identifier] isEqualToString:@"AddTreatmentSegue"]) {
+            AddTreatmentController *ctrlr = [segue destinationViewController];
+            ctrlr.treatments = self.symptom.treatments;
+        }
+    */
     
 }
 
@@ -89,28 +103,18 @@
     else {
         SymptomDictionary *symdic = [SymptomDictionary symptomDictionary];
         //find actual symptom in dictionary with string
-        _symptom = [symdic findSymptom:_SymptomText.text];
+        _symptomToRemove = [symdic findSymptom:_storeSymptomKey];
         //remove from dictionary
-        [symdic changeSymptomREMOVE:_symptom];
-        
-        
+        [symdic changeSymptomREMOVE:_symptomToRemove];
         
         _symptom.symptom = self.SymptomText.text;
         _symptom.pain = roundf(self.PainSlider.value);
         
-        /*
-        if (self.currentSegment == 2) { //if changing segments from the text view, save the text in it
-            self.notes = [((UITextView*)self.currentDynamicView) text];
-        }
-         */
         _symptom.notes = self.notesView.text;
         
         [symdic changeSymptomADD:(_symptom)];
         
         //[self.navigationController popViewControllerAnimated:YES];
-        
-        
-        
         
         // Save the changes if needed and change the views to noneditable.
         NSLog(@"NOT in edit mode");
@@ -118,8 +122,10 @@
         _notesView.editable = NO;
         _PainSlider.enabled = NO;
         
+        
     }
 }
+
 
 - (IBAction)painSlider:(UISlider *)sender
 {

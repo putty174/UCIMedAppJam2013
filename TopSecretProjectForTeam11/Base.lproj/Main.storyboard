@@ -189,7 +189,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oSr-FZ-tRF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1988" y="-1612"/>
+            <point key="canvasLocation" x="3624" y="-1420"/>
         </scene>
         <!--Add Occurrences Controller-->
         <scene sceneID="c2B-aZ-Ojl">
@@ -291,7 +291,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uWV-Da-G46" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1988" y="-2363"/>
+            <point key="canvasLocation" x="3624" y="-2371"/>
         </scene>
         <!--Summary Navigation Controller - Summary-->
         <scene sceneID="CYM-p0-tQx">
@@ -899,11 +899,13 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <outlet property="scrollView" destination="HsQ-Wr-wV5" id="fPU-Hb-Kcl"/>
                         <outlet property="treatmentsTable" destination="Iuz-vS-O9e" id="LCR-Oc-VyC"/>
                         <segue destination="mKY-Sv-azd" kind="push" identifier="SummaryToTreatmentDetailsSegue" id="aiR-Aa-ecX"/>
+                        <segue destination="QC4-gK-Upx" kind="push" identifier="EditOccurrenceSegue" id="dSZ-zh-5kQ"/>
+                        <segue destination="eLn-ZE-Svq" kind="push" identifier="EditTreatmentSegue" id="sTe-SP-rfd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRN-LD-3m2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2573" y="-1012"/>
+            <point key="canvasLocation" x="2701" y="-884"/>
         </scene>
         <!--Treatment Details View Controller-->
         <scene sceneID="u77-Lc-oZE">
@@ -1053,6 +1055,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
     <inferredMetricsTieBreakers>
         <segue reference="w32-30-lhn"/>
         <segue reference="fo7-v2-8U1"/>
+        <segue reference="hPj-jM-MvC"/>
+        <segue reference="lZA-QC-fy4"/>
         <segue reference="X83-lt-Q7y"/>
     </inferredMetricsTieBreakers>
 </document>

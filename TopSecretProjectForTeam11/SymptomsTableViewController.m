@@ -52,6 +52,8 @@
     for (NSString *key in [_symdic symDictionary])
     {
         SymptomObject *obgyn = [self.symdic findSymptom:key];
+        
+        // comment out to change to today
         NSTimeInterval secondsPerDay = 24 * 60 * 60;
         
         NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:obgyn.date];
@@ -59,6 +61,7 @@
         NSInteger tomonth = [components month];
         NSInteger toyear = [components year];
         
+        // keep plain init for today
         NSDateComponents *compartments = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[[NSDate date] initWithTimeIntervalSinceNow:-secondsPerDay]];
         NSInteger day = [compartments day];
         NSInteger month = [compartments month];
