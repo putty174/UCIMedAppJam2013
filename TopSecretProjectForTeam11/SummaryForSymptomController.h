@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface SummaryForSymptomController : UIViewController
+@property (weak, nonatomic) IBOutlet UIScrollView *graph;
+
+
+- (IBAction)button:(id)sender;
 
 @end

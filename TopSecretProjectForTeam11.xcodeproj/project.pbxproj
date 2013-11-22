@@ -61,6 +61,8 @@
 		418B653F183B0509005A668D /* TimesSquare.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 418B6510183B0509005A668D /* TimesSquare.podspec */; };
 		418B6560183B05EC005A668D /* libTimesSquare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 418B6559183B050A005A668D /* libTimesSquare.a */; };
 		418B672F183B3BE3005A668D /* TreatmentDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B672E183B3BE3005A668D /* TreatmentDetailsViewController.m */; };
+		41A54A53183EF9CD00B2E72F /* theGraph.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41A54A52183EF9CD00B2E72F /* theGraph.jpg */; };
+		41A54A58183EFB8C00B2E72F /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A54A57183EFB8C00B2E72F /* GraphView.m */; };
 		41D94C50183C9969004E62A7 /* SummaryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D94C4F183C9969004E62A7 /* SummaryTableViewController.m */; };
 		41D94C53183C99EF004E62A7 /* SummaryForAllController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D94C52183C99EF004E62A7 /* SummaryForAllController.m */; };
 		41D94C56183C9A0D004E62A7 /* SummaryForSymptomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D94C55183C9A0D004E62A7 /* SummaryForSymptomController.m */; };
@@ -176,6 +178,9 @@
 		418B6511183B0509005A668D /* TimesSquare.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TimesSquare.xcodeproj; sourceTree = "<group>"; };
 		418B672D183B3BE3005A668D /* TreatmentDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreatmentDetailsViewController.h; sourceTree = "<group>"; };
 		418B672E183B3BE3005A668D /* TreatmentDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreatmentDetailsViewController.m; sourceTree = "<group>"; };
+		41A54A52183EF9CD00B2E72F /* theGraph.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = theGraph.jpg; path = ../../../../theGraph.jpg; sourceTree = "<group>"; };
+		41A54A56183EFB8C00B2E72F /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
+		41A54A57183EFB8C00B2E72F /* GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphView.m; sourceTree = "<group>"; };
 		41D94C4E183C9969004E62A7 /* SummaryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryTableViewController.h; sourceTree = "<group>"; };
 		41D94C4F183C9969004E62A7 /* SummaryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryTableViewController.m; sourceTree = "<group>"; };
 		41D94C51183C99EF004E62A7 /* SummaryForAllController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryForAllController.h; sourceTree = "<group>"; };
@@ -276,6 +281,7 @@
 			children = (
 				0DD5C277183EA7F100456202 /* updatebutton.png */,
 				0DD5C278183EA7F100456202 /* updatebutton@2x.png */,
+				41A54A52183EF9CD00B2E72F /* theGraph.jpg */,
 				0DD5C266183EA48100456202 /* calendarbutton.png */,
 				0DD5C267183EA48100456202 /* calendarbutton@2x.png */,
 				0DD5C268183EA48100456202 /* homebutton.png */,
@@ -375,6 +381,8 @@
 				41D94C52183C99EF004E62A7 /* SummaryForAllController.m */,
 				41D94C54183C9A0D004E62A7 /* SummaryForSymptomController.h */,
 				41D94C55183C9A0D004E62A7 /* SummaryForSymptomController.m */,
+				41A54A56183EFB8C00B2E72F /* GraphView.h */,
+				41A54A57183EFB8C00B2E72F /* GraphView.m */,
 			);
 			name = Summary;
 			sourceTree = "<group>";
@@ -581,6 +589,7 @@
 				41433E7318357F0B007588F7 /* InfoPlist.strings in Resources */,
 				0DD5C26E183EA48100456202 /* calendarbutton.png in Resources */,
 				0DD5C279183EA7F100456202 /* updatebutton.png in Resources */,
+				41A54A53183EF9CD00B2E72F /* theGraph.jpg in Resources */,
 				418B653F183B0509005A668D /* TimesSquare.podspec in Resources */,
 				0DD5C26F183EA48100456202 /* calendarbutton@2x.png in Resources */,
 				0DD5C272183EA48100456202 /* summarybutton.png in Resources */,
@@ -634,6 +643,7 @@
 				418B64E518387A70005A668D /* TreatmentDelegate.m in Sources */,
 				418B64F9183AD20F005A668D /* SummaryOccurrencesDelegate.m in Sources */,
 				CBF4A0AC183B6620005B38AE /* UpdateSymViewController.m in Sources */,
+				41A54A58183EFB8C00B2E72F /* GraphView.m in Sources */,
 				1B631F531838B99F00B637A6 /* AddOccurrencesController.m in Sources */,
 				CBF4A0A6183B41BE005B38AE /* RecentTableViewController.m in Sources */,
 				418B64E418387A70005A668D /* OccurrencesDelegate.m in Sources */,
