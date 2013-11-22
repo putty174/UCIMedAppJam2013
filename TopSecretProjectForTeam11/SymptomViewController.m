@@ -20,6 +20,7 @@
 @property SummaryOccurrencesDelegate *occurrencesDelegate;
 @property SummaryTreatmentDelegate *treatmentDelegate;
 
+
 @end
 
 @implementation SymptomViewController
@@ -38,7 +39,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     _SymptomText.text = _symptom.symptom;
-    [self.SymptomText setUserInteractionEnabled:NO];
     _PainSlider.value = _symptom.pain;
     _PainNumber.text = [NSString stringWithFormat:@"%d", (int)roundf(_PainSlider.value)];
     _notesView.text = _symptom.notes;
@@ -52,8 +52,6 @@
     self.treatmentsTable.dataSource = self.treatmentDelegate;
     
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    self.storeSymptomKey = _symptom.symptom;
 }
 
 - (void)didReceiveMemoryWarning
@@ -75,18 +73,6 @@
     TreatmentObject *obj = [self.symptom.treatments objectAtIndex:self.selectedRow];
     ctrlr.treatment = obj;
     
-    /*
-    //code for editing mode to edit occurances and treatments
-    if ([[segue identifier] isEqualToString:@"AddOccurrenceSegue"]) {
-        AddOccurrencesController *ctrlr = [segue destinationViewController];
-        ctrlr.occurrences = self.symptom.occurrences;
-    }
-    else
-        if ([[segue identifier] isEqualToString:@"AddTreatmentSegue"]) {
-            AddTreatmentController *ctrlr = [segue destinationViewController];
-            ctrlr.treatments = self.symptom.treatments;
-        }
-    */
     
 }
 
@@ -96,36 +82,26 @@
     if (flag == YES){
         // Change views to edit mode.
         NSLog(@"edit mode");
-        [self.SymptomText setUserInteractionEnabled:YES];
         _notesView.editable = YES;
         _PainSlider.enabled = YES;
     }
     else {
         SymptomDictionary *symdic = [SymptomDictionary symptomDictionary];
         //find actual symptom in dictionary with string
-        _symptomToRemove = [symdic findSymptom:_storeSymptomKey];
+        _symptom = [symdic findSymptom:_SymptomText.text];
         //remove from dictionary
-        [symdic changeSymptomREMOVE:_symptomToRemove];
+        [symdic removeSymptom:_symptom];
         
-        _symptom.symptom = self.SymptomText.text;
-        _symptom.pain = roundf(self.PainSlider.value);
-        
-        _symptom.notes = self.notesView.text;
-        
-        [symdic changeSymptomADD:(_symptom)];
-        
-        //[self.navigationController popViewControllerAnimated:YES];
         
         // Save the changes if needed and change the views to noneditable.
         NSLog(@"NOT in edit mode");
-        [self.SymptomText setUserInteractionEnabled:NO];
+        // _SymptomText.editing = NO;
+        
         _notesView.editable = NO;
         _PainSlider.enabled = NO;
         
-        
     }
 }
-
 
 - (IBAction)painSlider:(UISlider *)sender
 {

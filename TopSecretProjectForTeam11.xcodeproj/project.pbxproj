@@ -52,9 +52,6 @@
 		418B6560183B05EC005A668D /* libTimesSquare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 418B6559183B050A005A668D /* libTimesSquare.a */; };
 		418B672F183B3BE3005A668D /* TreatmentDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B672E183B3BE3005A668D /* TreatmentDetailsViewController.m */; };
 		418B6735183C04D7005A668D /* DayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B6734183C04D7005A668D /* DayViewController.m */; };
-		41D94C50183C9969004E62A7 /* SummaryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D94C4F183C9969004E62A7 /* SummaryTableViewController.m */; };
-		41D94C53183C99EF004E62A7 /* SummaryForAllController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D94C52183C99EF004E62A7 /* SummaryForAllController.m */; };
-		41D94C56183C9A0D004E62A7 /* SummaryForSymptomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D94C55183C9A0D004E62A7 /* SummaryForSymptomController.m */; };
 		5DE630CA1837F8E80005795D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630C91837F8E80005795D /* HomeViewController.m */; };
 		5DE630CD1837F9460005795D /* HomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630CC1837F9460005795D /* HomeNavigationController.m */; };
 		5DE630D11838236C0005795D /* SymptomsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630D01838236C0005795D /* SymptomsTableViewController.m */; };
@@ -158,12 +155,6 @@
 		418B672E183B3BE3005A668D /* TreatmentDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreatmentDetailsViewController.m; sourceTree = "<group>"; };
 		418B6733183C04D7005A668D /* DayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayViewController.h; sourceTree = "<group>"; };
 		418B6734183C04D7005A668D /* DayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayViewController.m; sourceTree = "<group>"; };
-		41D94C4E183C9969004E62A7 /* SummaryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryTableViewController.h; sourceTree = "<group>"; };
-		41D94C4F183C9969004E62A7 /* SummaryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryTableViewController.m; sourceTree = "<group>"; };
-		41D94C51183C99EF004E62A7 /* SummaryForAllController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryForAllController.h; sourceTree = "<group>"; };
-		41D94C52183C99EF004E62A7 /* SummaryForAllController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryForAllController.m; sourceTree = "<group>"; };
-		41D94C54183C9A0D004E62A7 /* SummaryForSymptomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryForSymptomController.h; sourceTree = "<group>"; };
-		41D94C55183C9A0D004E62A7 /* SummaryForSymptomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryForSymptomController.m; sourceTree = "<group>"; };
 		5DE630C81837F8E80005795D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = Home/HomeViewController.h; sourceTree = "<group>"; };
 		5DE630C91837F8E80005795D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = Home/HomeViewController.m; sourceTree = "<group>"; };
 		5DE630CB1837F9460005795D /* HomeNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeNavigationController.h; sourceTree = "<group>"; };
@@ -339,12 +330,6 @@
 				41433EB81835DAC9007588F7 /* SummaryNavigationController.m */,
 				41433EC01835DE11007588F7 /* SummaryViewController.h */,
 				41433EC11835DE11007588F7 /* SummaryViewController.m */,
-				41D94C4E183C9969004E62A7 /* SummaryTableViewController.h */,
-				41D94C4F183C9969004E62A7 /* SummaryTableViewController.m */,
-				41D94C51183C99EF004E62A7 /* SummaryForAllController.h */,
-				41D94C52183C99EF004E62A7 /* SummaryForAllController.m */,
-				41D94C54183C9A0D004E62A7 /* SummaryForSymptomController.h */,
-				41D94C55183C9A0D004E62A7 /* SummaryForSymptomController.m */,
 			);
 			name = Summary;
 			sourceTree = "<group>";
@@ -579,7 +564,6 @@
 				41433EB61835DAA7007588F7 /* CalendarNavigationController.m in Sources */,
 				418B653E183B0509005A668D /* TSQCalendarView.m in Sources */,
 				CBF4A097183B3A52005B38AE /* UpdateViewController.m in Sources */,
-				41D94C50183C9969004E62A7 /* SummaryTableViewController.m in Sources */,
 				5DE630CD1837F9460005795D /* HomeNavigationController.m in Sources */,
 				418B653D183B0509005A668D /* TSQCalendarRowCell.m in Sources */,
 				1B631F561838BB1A00B637A6 /* AddTreatmentController.m in Sources */,
@@ -600,13 +584,11 @@
 				418B64EB1839B81F005A668D /* OccurrencesObject.m in Sources */,
 				418B64E81839B5F6005A668D /* TreatmentObject.m in Sources */,
 				418B653B183B0509005A668D /* TSQCalendarCell.m in Sources */,
-				41D94C56183C9A0D004E62A7 /* SummaryForSymptomController.m in Sources */,
 				41433E7918357F0B007588F7 /* AppDelegate.m in Sources */,
 				0DC2EB5218398C9300C83558 /* SymptomViewController.m in Sources */,
 				418B672F183B3BE3005A668D /* TreatmentDetailsViewController.m in Sources */,
 				5DE630CA1837F8E80005795D /* HomeViewController.m in Sources */,
 				5DE630D11838236C0005795D /* SymptomsTableViewController.m in Sources */,
-				41D94C53183C99EF004E62A7 /* SummaryForAllController.m in Sources */,
 				41433EB91835DAC9007588F7 /* SummaryNavigationController.m in Sources */,
 				418B64FC183AD23D005A668D /* SummaryTreatmentDelegate.m in Sources */,
 				41433E7518357F0B007588F7 /* main.m in Sources */,

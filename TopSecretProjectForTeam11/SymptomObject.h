@@ -17,6 +17,5 @@
 @property NSMutableArray *occurrences;
 @property NSMutableArray *treatments;
 @property NSString *notes;
-@property NSDate *date;
 
 @end

@@ -49,28 +49,11 @@
 - (void) viewDidAppear:(BOOL)animated
 {
     [self.array removeAllObjects];
+    [self.array addObject:@"Symptom1"];
+    [self.array addObject:@"recent symptoms"];
     for (NSString *key in [_symdic symDictionary])
     {
-        SymptomObject *obgyn = [self.symdic findSymptom:key];
-        
-        // comment out to change to today
-        NSTimeInterval secondsPerDay = 24 * 60 * 60;
-        
-        NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:obgyn.date];
-        NSInteger today = [components day];
-        NSInteger tomonth = [components month];
-        NSInteger toyear = [components year];
-        
-        // keep plain init for today
-        NSDateComponents *compartments = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[[NSDate date] initWithTimeIntervalSinceNow:-secondsPerDay]];
-        NSInteger day = [compartments day];
-        NSInteger month = [compartments month];
-        NSInteger year = [compartments year];
-        
-        if((today == day) && (tomonth == month) && (toyear == year))
-        {
-            [self.array addObject:key];
-        }
+        [self.array addObject:key];
     }
     [self.tableView reloadData];
 }
@@ -97,35 +80,31 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     cell.textLabel.text = self.array[indexPath.row];
+    cell.accessoryType = UITableViewCellAccessoryCheckmark;
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *selected = [tableView cellForRowAtIndexPath:indexPath];
-    NSString *name = selected.textLabel.text;
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:name message:@"Would you like to update this symptom?  Pressing no will remove the symptom from recent." delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Yes", @"No", nil];
-    
-    alert.tag = indexPath.row;
-    [alert show];
-}
-
--(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    if(buttonIndex == 0)
+    _index = indexPath.row;
+    UITableViewCell *clicked = [tableView cellForRowAtIndexPath:indexPath];
+    //clicked.accessoryType = UITableViewCellAccessoryNone;
+    if(clicked.accessoryType == UITableViewCellAccessoryNone)
     {
-        // do nothing
-    }else if(buttonIndex == 1)
-    {
-        [self performSegueWithIdentifier:@"HomeTabletoDetailsSegue" sender:self];
+        clicked.accessoryType = UITableViewCellAccessoryCheckmark;
     }else
     {
-        // deletion to be editted once recent symptoms are found
+        clicked.accessoryType = UITableViewCellAccessoryNone;
+    }
+    if (_index >= 2)
+    {
+        [self performSegueWithIdentifier:@"HomeTabletoDetailsSegue" sender:self];
     }
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    if ([[segue identifier] isEqualToString:@"HomeTabletoDetailsSegue"])
     {
         SymptomObject *so = [[SymptomObject alloc] init];
         so = [_symdic findSymptom:[_array objectAtIndex:_index]];
@@ -135,9 +114,6 @@
         
     }
 }
-
-
-
 
 /*
 // Override to support conditional editing of the table view.
