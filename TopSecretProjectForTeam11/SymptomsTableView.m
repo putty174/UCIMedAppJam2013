@@ -118,7 +118,7 @@
             }
         }
     }
-    if (_index >= 1)
+    if (_index >= 2)
     {
         [self performSegueWithIdentifier:@"TabletoDetailSegue" sender:self];
     }

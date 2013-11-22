@@ -69,20 +69,4 @@
     return cell;
 }*/
 
-
-
-//-(IBAction)suggestions:(UIButton *)sender
-//{
-//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Frequently used Symptoms" message:@"constipation\\nbloating\\nnausea\\npalpitation\\nchest pain\\nheadache\\njoint pain\\nwheezing\\ndizziness\\ntingling" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-//    [alert show];
-//}
-
-
--(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    // do nothing
-}
-
-- (IBAction)suggestions:(UIBarButtonItem *)sender {
-}
 @end

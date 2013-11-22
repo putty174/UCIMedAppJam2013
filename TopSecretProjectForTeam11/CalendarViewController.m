@@ -7,7 +7,7 @@
 //
 
 #import "CalendarViewController.h"
-#import "DaySympTableViewController.h"
+#import "DayViewController.h"
 #import <TimesSquare/TimesSquare.h>
 
 @interface CalendarViewController ()
@@ -35,9 +35,9 @@
     NSDateFormatter *mmddccyy = [[NSDateFormatter alloc] init];
     mmddccyy.timeStyle = NSDateFormatterNoStyle;
     mmddccyy.dateFormat = @"MM/dd/yyyy";
-    NSDate *begin = [mmddccyy dateFromString:@"10/11/2013"];
+    NSDate *begin = [mmddccyy dateFromString:@"12/11/2005"];
     [self.myCalendar setFirstDate:begin];
-    NSDate *end = [mmddccyy dateFromString:@"10/11/2014"];
+    NSDate *end = [mmddccyy dateFromString:@"12/11/2006"];
     [self.myCalendar setLastDate:end];
     [self.view addSubview:self.myCalendar];
 }
@@ -56,7 +56,7 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     NSDate *selectedDate = self.myCalendar.selectedDate;
-    DaySympTableViewController *destViewController = segue.destinationViewController;
+    DayViewController *destViewController = segue.destinationViewController;
     destViewController.theDate = selectedDate;
 }
 

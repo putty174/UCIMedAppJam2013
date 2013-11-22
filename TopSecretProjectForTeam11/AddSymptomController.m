@@ -123,7 +123,7 @@
     if (self.currentSegment == 2) { //if changing segments from the text view, save the text in it
         self.notes = [((UITextView*)self.currentDynamicView) text];
     }
-    if (![self.symptomsEditText.text isEqualToString:@""] || self.painValue.value != 0 || ![self.notes isEqualToString:@""] || [self.symptom.occurrences count] > 0 || [self.symptom.treatments count] > 0)
+    if (![self.symptomsEditText.text isEqualToString:@""] || self.painValue.value != 0 || ![self.notes isEqualToString:@""])
     {
         UIAlertView *filledFields = [[UIAlertView alloc] initWithTitle:@"Reset Fields" message:@"Are you sure?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Reset", nil];
         [filledFields show];
@@ -138,10 +138,6 @@
         [[self painValue] setValue:0];
         [[self painNumber] setText: @"0"];
         _notes = @"";
-        [self.symptom.occurrences removeAllObjects];
-        [self.symptom.treatments removeAllObjects];
-        self.occurrencesDelegate = [[OccurencesDelegate alloc] initWithController:self];
-        self.treatmentDelegate = [[TreatmentDelegate alloc] initWithController:self];
         self.currentSegment = 0;
         self.segmentValue.selectedSegmentIndex = 0;
         [self.currentDynamicView removeFromSuperview];

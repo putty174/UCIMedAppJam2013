@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeViewController : UIViewController <UIAlertViewDelegate>
+@interface HomeViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *dateDisplay;
 @property NSString *theDate;
@@ -16,4 +16,5 @@
 @property (strong, nonatomic) NSMutableArray *symptomsArray;
  */
 @property (strong, nonatomic) IBOutlet UIView *recentSymptoms;
+
 @end

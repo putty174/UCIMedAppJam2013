@@ -8,16 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0DC2EB5218398C9300C83558 /* SymptomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC2EB5118398C9300C83558 /* SymptomViewController.m */; };
-		0DD5C26E183EA48100456202 /* calendarbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD5C266183EA48100456202 /* calendarbutton.png */; };
-		0DD5C26F183EA48100456202 /* calendarbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD5C267183EA48100456202 /* calendarbutton@2x.png */; };
-		0DD5C270183EA48100456202 /* homebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD5C268183EA48100456202 /* homebutton.png */; };
-		0DD5C271183EA48100456202 /* homebutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD5C269183EA48100456202 /* homebutton@2x.png */; };
-		0DD5C272183EA48100456202 /* summarybutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD5C26A183EA48100456202 /* summarybutton.png */; };
-		0DD5C273183EA48100456202 /* summarybutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD5C26B183EA48100456202 /* summarybutton@2x.png */; };
-		0DD5C274183EA48100456202 /* symptombutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD5C26C183EA48100456202 /* symptombutton.png */; };
-		0DD5C275183EA48100456202 /* symptombutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD5C26D183EA48100456202 /* symptombutton@2x.png */; };
-		0DD5C279183EA7F100456202 /* updatebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD5C277183EA7F100456202 /* updatebutton.png */; };
-		0DD5C27A183EA7F100456202 /* updatebutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD5C278183EA7F100456202 /* updatebutton@2x.png */; };
 		0DD94D73183745940086C009 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD94D72183745940086C009 /* EventKit.framework */; };
 		0DD94D76183746050086C009 /* SymptomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DD94D75183746050086C009 /* SymptomObject.m */; };
 		1B34D10F183993DD003E6049 /* SymptomDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B34D10E183993DD003E6049 /* SymptomDictionary.m */; };
@@ -61,12 +51,7 @@
 		418B653F183B0509005A668D /* TimesSquare.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 418B6510183B0509005A668D /* TimesSquare.podspec */; };
 		418B6560183B05EC005A668D /* libTimesSquare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 418B6559183B050A005A668D /* libTimesSquare.a */; };
 		418B672F183B3BE3005A668D /* TreatmentDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B672E183B3BE3005A668D /* TreatmentDetailsViewController.m */; };
-		41A54A53183EF9CD00B2E72F /* theGraph.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41A54A52183EF9CD00B2E72F /* theGraph.jpg */; };
-		41A54A58183EFB8C00B2E72F /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A54A57183EFB8C00B2E72F /* GraphView.m */; };
-		41D94C50183C9969004E62A7 /* SummaryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D94C4F183C9969004E62A7 /* SummaryTableViewController.m */; };
-		41D94C53183C99EF004E62A7 /* SummaryForAllController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D94C52183C99EF004E62A7 /* SummaryForAllController.m */; };
-		41D94C56183C9A0D004E62A7 /* SummaryForSymptomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D94C55183C9A0D004E62A7 /* SummaryForSymptomController.m */; };
-		5D014142183E9A4500CBEEAB /* DaySympTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D014141183E9A4500CBEEAB /* DaySympTableViewController.m */; };
+		418B6735183C04D7005A668D /* DayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418B6734183C04D7005A668D /* DayViewController.m */; };
 		5DE630CA1837F8E80005795D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630C91837F8E80005795D /* HomeViewController.m */; };
 		5DE630CD1837F9460005795D /* HomeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630CC1837F9460005795D /* HomeNavigationController.m */; };
 		5DE630D11838236C0005795D /* SymptomsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE630D01838236C0005795D /* SymptomsTableViewController.m */; };
@@ -97,16 +82,6 @@
 /* Begin PBXFileReference section */
 		0DC2EB5018398C9300C83558 /* SymptomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymptomViewController.h; sourceTree = "<group>"; };
 		0DC2EB5118398C9300C83558 /* SymptomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomViewController.m; sourceTree = "<group>"; };
-		0DD5C266183EA48100456202 /* calendarbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendarbutton.png; sourceTree = "<group>"; };
-		0DD5C267183EA48100456202 /* calendarbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendarbutton@2x.png"; sourceTree = "<group>"; };
-		0DD5C268183EA48100456202 /* homebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homebutton.png; sourceTree = "<group>"; };
-		0DD5C269183EA48100456202 /* homebutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "homebutton@2x.png"; sourceTree = "<group>"; };
-		0DD5C26A183EA48100456202 /* summarybutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = summarybutton.png; sourceTree = "<group>"; };
-		0DD5C26B183EA48100456202 /* summarybutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "summarybutton@2x.png"; sourceTree = "<group>"; };
-		0DD5C26C183EA48100456202 /* symptombutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = symptombutton.png; sourceTree = "<group>"; };
-		0DD5C26D183EA48100456202 /* symptombutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "symptombutton@2x.png"; sourceTree = "<group>"; };
-		0DD5C277183EA7F100456202 /* updatebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = updatebutton.png; sourceTree = "<group>"; };
-		0DD5C278183EA7F100456202 /* updatebutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "updatebutton@2x.png"; sourceTree = "<group>"; };
 		0DD94D72183745940086C009 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		0DD94D74183746050086C009 /* SymptomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymptomObject.h; sourceTree = "<group>"; };
 		0DD94D75183746050086C009 /* SymptomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomObject.m; sourceTree = "<group>"; };
@@ -178,17 +153,8 @@
 		418B6511183B0509005A668D /* TimesSquare.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TimesSquare.xcodeproj; sourceTree = "<group>"; };
 		418B672D183B3BE3005A668D /* TreatmentDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreatmentDetailsViewController.h; sourceTree = "<group>"; };
 		418B672E183B3BE3005A668D /* TreatmentDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreatmentDetailsViewController.m; sourceTree = "<group>"; };
-		41A54A52183EF9CD00B2E72F /* theGraph.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = theGraph.jpg; path = ../../../../theGraph.jpg; sourceTree = "<group>"; };
-		41A54A56183EFB8C00B2E72F /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
-		41A54A57183EFB8C00B2E72F /* GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphView.m; sourceTree = "<group>"; };
-		41D94C4E183C9969004E62A7 /* SummaryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryTableViewController.h; sourceTree = "<group>"; };
-		41D94C4F183C9969004E62A7 /* SummaryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryTableViewController.m; sourceTree = "<group>"; };
-		41D94C51183C99EF004E62A7 /* SummaryForAllController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryForAllController.h; sourceTree = "<group>"; };
-		41D94C52183C99EF004E62A7 /* SummaryForAllController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryForAllController.m; sourceTree = "<group>"; };
-		41D94C54183C9A0D004E62A7 /* SummaryForSymptomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryForSymptomController.h; sourceTree = "<group>"; };
-		41D94C55183C9A0D004E62A7 /* SummaryForSymptomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryForSymptomController.m; sourceTree = "<group>"; };
-		5D014140183E9A4500CBEEAB /* DaySympTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaySympTableViewController.h; sourceTree = "<group>"; };
-		5D014141183E9A4500CBEEAB /* DaySympTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaySympTableViewController.m; sourceTree = "<group>"; };
+		418B6733183C04D7005A668D /* DayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayViewController.h; sourceTree = "<group>"; };
+		418B6734183C04D7005A668D /* DayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayViewController.m; sourceTree = "<group>"; };
 		5DE630C81837F8E80005795D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = Home/HomeViewController.h; sourceTree = "<group>"; };
 		5DE630C91837F8E80005795D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = Home/HomeViewController.m; sourceTree = "<group>"; };
 		5DE630CB1837F9460005795D /* HomeNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeNavigationController.h; sourceTree = "<group>"; };
@@ -279,17 +245,6 @@
 		41433E6E18357F0B007588F7 /* TopSecretProjectForTeam11 */ = {
 			isa = PBXGroup;
 			children = (
-				0DD5C277183EA7F100456202 /* updatebutton.png */,
-				0DD5C278183EA7F100456202 /* updatebutton@2x.png */,
-				41A54A52183EF9CD00B2E72F /* theGraph.jpg */,
-				0DD5C266183EA48100456202 /* calendarbutton.png */,
-				0DD5C267183EA48100456202 /* calendarbutton@2x.png */,
-				0DD5C268183EA48100456202 /* homebutton.png */,
-				0DD5C269183EA48100456202 /* homebutton@2x.png */,
-				0DD5C26A183EA48100456202 /* summarybutton.png */,
-				0DD5C26B183EA48100456202 /* summarybutton@2x.png */,
-				0DD5C26C183EA48100456202 /* symptombutton.png */,
-				0DD5C26D183EA48100456202 /* symptombutton@2x.png */,
 				CBF4A092183B3A47005B38AE /* Update */,
 				418B64FF183B0509005A668D /* TSQ */,
 				5DE630D81838D0FD0005795D /* calLib */,
@@ -358,12 +313,12 @@
 		41433EBB1835DB1F007588F7 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				418B6733183C04D7005A668D /* DayViewController.h */,
+				418B6734183C04D7005A668D /* DayViewController.m */,
 				41433EB41835DAA7007588F7 /* CalendarNavigationController.h */,
 				41433EB51835DAA7007588F7 /* CalendarNavigationController.m */,
 				41433EBD1835DDEF007588F7 /* CalendarViewController.h */,
 				41433EBE1835DDEF007588F7 /* CalendarViewController.m */,
-				5D014140183E9A4500CBEEAB /* DaySympTableViewController.h */,
-				5D014141183E9A4500CBEEAB /* DaySympTableViewController.m */,
 			);
 			name = Calendar;
 			sourceTree = "<group>";
@@ -375,14 +330,6 @@
 				41433EB81835DAC9007588F7 /* SummaryNavigationController.m */,
 				41433EC01835DE11007588F7 /* SummaryViewController.h */,
 				41433EC11835DE11007588F7 /* SummaryViewController.m */,
-				41D94C4E183C9969004E62A7 /* SummaryTableViewController.h */,
-				41D94C4F183C9969004E62A7 /* SummaryTableViewController.m */,
-				41D94C51183C99EF004E62A7 /* SummaryForAllController.h */,
-				41D94C52183C99EF004E62A7 /* SummaryForAllController.m */,
-				41D94C54183C9A0D004E62A7 /* SummaryForSymptomController.h */,
-				41D94C55183C9A0D004E62A7 /* SummaryForSymptomController.m */,
-				41A54A56183EFB8C00B2E72F /* GraphView.h */,
-				41A54A57183EFB8C00B2E72F /* GraphView.m */,
 			);
 			name = Summary;
 			sourceTree = "<group>";
@@ -587,24 +534,13 @@
 			files = (
 				41433E8418357F0B007588F7 /* Images.xcassets in Resources */,
 				41433E7318357F0B007588F7 /* InfoPlist.strings in Resources */,
-				0DD5C26E183EA48100456202 /* calendarbutton.png in Resources */,
-				0DD5C279183EA7F100456202 /* updatebutton.png in Resources */,
-				41A54A53183EF9CD00B2E72F /* theGraph.jpg in Resources */,
 				418B653F183B0509005A668D /* TimesSquare.podspec in Resources */,
-				0DD5C26F183EA48100456202 /* calendarbutton@2x.png in Resources */,
-				0DD5C272183EA48100456202 /* summarybutton.png in Resources */,
-				0DD5C27A183EA7F100456202 /* updatebutton@2x.png in Resources */,
 				418B6539183B0509005A668D /* TSQLICENSE in Resources */,
-				0DD5C270183EA48100456202 /* homebutton.png in Resources */,
 				418B6538183B0509005A668D /* hebrew.png in Resources */,
 				41433EC61835EB2B007588F7 /* README.md in Resources */,
-				0DD5C271183EA48100456202 /* homebutton@2x.png in Resources */,
-				0DD5C273183EA48100456202 /* summarybutton@2x.png in Resources */,
-				0DD5C274183EA48100456202 /* symptombutton.png in Resources */,
 				41433EC51835EB2B007588F7 /* LICENSE in Resources */,
 				418B653A183B0509005A668D /* TSQREADME.md in Resources */,
 				418B6537183B0509005A668D /* gregorian.png in Resources */,
-				0DD5C275183EA48100456202 /* symptombutton@2x.png in Resources */,
 				41433E7C18357F0B007588F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -628,35 +564,31 @@
 				41433EB61835DAA7007588F7 /* CalendarNavigationController.m in Sources */,
 				418B653E183B0509005A668D /* TSQCalendarView.m in Sources */,
 				CBF4A097183B3A52005B38AE /* UpdateViewController.m in Sources */,
-				41D94C50183C9969004E62A7 /* SummaryTableViewController.m in Sources */,
 				5DE630CD1837F9460005795D /* HomeNavigationController.m in Sources */,
 				418B653D183B0509005A668D /* TSQCalendarRowCell.m in Sources */,
 				1B631F561838BB1A00B637A6 /* AddTreatmentController.m in Sources */,
 				418B653C183B0509005A668D /* TSQCalendarMonthHeaderCell.m in Sources */,
 				1B34D10F183993DD003E6049 /* SymptomDictionary.m in Sources */,
 				41433EBF1835DDEF007588F7 /* CalendarViewController.m in Sources */,
-				5D014142183E9A4500CBEEAB /* DaySympTableViewController.m in Sources */,
 				CBF4A09D183B3E22005B38AE /* RecentViewController.m in Sources */,
 				CBCE5160183C7FCD00C5B198 /* EditRecSymViewController.m in Sources */,
+				418B6735183C04D7005A668D /* DayViewController.m in Sources */,
 				41433EAD1835AB6D007588F7 /* SymptomsNavigationController.m in Sources */,
 				41433EC21835DE11007588F7 /* SummaryViewController.m in Sources */,
 				418B64E518387A70005A668D /* TreatmentDelegate.m in Sources */,
 				418B64F9183AD20F005A668D /* SummaryOccurrencesDelegate.m in Sources */,
 				CBF4A0AC183B6620005B38AE /* UpdateSymViewController.m in Sources */,
-				41A54A58183EFB8C00B2E72F /* GraphView.m in Sources */,
 				1B631F531838B99F00B637A6 /* AddOccurrencesController.m in Sources */,
 				CBF4A0A6183B41BE005B38AE /* RecentTableViewController.m in Sources */,
 				418B64E418387A70005A668D /* OccurrencesDelegate.m in Sources */,
 				418B64EB1839B81F005A668D /* OccurrencesObject.m in Sources */,
 				418B64E81839B5F6005A668D /* TreatmentObject.m in Sources */,
 				418B653B183B0509005A668D /* TSQCalendarCell.m in Sources */,
-				41D94C56183C9A0D004E62A7 /* SummaryForSymptomController.m in Sources */,
 				41433E7918357F0B007588F7 /* AppDelegate.m in Sources */,
 				0DC2EB5218398C9300C83558 /* SymptomViewController.m in Sources */,
 				418B672F183B3BE3005A668D /* TreatmentDetailsViewController.m in Sources */,
 				5DE630CA1837F8E80005795D /* HomeViewController.m in Sources */,
 				5DE630D11838236C0005795D /* SymptomsTableViewController.m in Sources */,
-				41D94C53183C99EF004E62A7 /* SummaryForAllController.m in Sources */,
 				41433EB91835DAC9007588F7 /* SummaryNavigationController.m in Sources */,
 				418B64FC183AD23D005A668D /* SummaryTreatmentDelegate.m in Sources */,
 				41433E7518357F0B007588F7 /* main.m in Sources */,

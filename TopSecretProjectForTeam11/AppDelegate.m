@@ -13,10 +13,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    
-    //UIImage *tabBarBackground = [UIImage imageNamed:@"homebutton.png"];
-    //[[UITabBar appearance] setBackgroundImage:tabBarBackground];
-    [[UITabBar appearance] setTintColor:[UIColor blueColor]];
     return YES;
 }
 							

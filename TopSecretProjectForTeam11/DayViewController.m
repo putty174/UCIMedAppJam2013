@@ -1,18 +1,18 @@
 //
-//  SummaryForAllController.m
+//  DayViewController.m
 //  TopSecretProjectForTeam11
 //
-//  Created by App Jam on 11/19/13.
+//  Created by Mary Nguyen on 11/18/13.
 //  Copyright (c) 2013 App Jam. All rights reserved.
 //
 
-#import "SummaryForAllController.h"
+#import "DayViewController.h"
 
-@interface SummaryForAllController ()
+@interface DayViewController ()
 
 @end
 
-@implementation SummaryForAllController
+@implementation DayViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +27,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:self.theDate];
+    NSInteger day = [components day];
+    NSInteger month = [components month];
+    NSInteger year = [components year];
+    self.title = [NSString stringWithFormat:@"%d day of the %d month of the %d year", day, month, year];
 }
 
 - (void)didReceiveMemoryWarning
