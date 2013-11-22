@@ -30,4 +30,6 @@
  */
 - (void)createHeaderLabels;
 
+- (void)setBackgroundColor:(UIColor *)backgroundColor;
+
 @end
